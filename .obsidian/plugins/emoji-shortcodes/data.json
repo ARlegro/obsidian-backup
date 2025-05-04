@@ -1,0 +1,26 @@
+{
+  "immediateReplace": true,
+  "suggester": true,
+  "historyPriority": true,
+  "historyLimit": 100,
+  "history": [
+    ":one:",
+    ":repeat_one:",
+    ":two:",
+    ":arrow_right:",
+    ":star:",
+    ":white_check_mark:",
+    ":ballot_box_with_check:",
+    ":anger:",
+    ":question:",
+    ":bulb:",
+    ":arrow_lower_right:",
+    ":arrow_forward:",
+    ":rotating_light:",
+    ":heavy_check_mark:",
+    ":1234:",
+    ":1st_place_medal:",
+    ":smile:",
+    ":blue_book:"
+  ]
+}

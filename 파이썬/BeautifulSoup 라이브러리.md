@@ -73,10 +73,6 @@ soup.select("a[href^='https']")  # href 가 https로 시작하는 a테그
 
 
 
-
-
-
-
 ## 실전
 
 >[!QUESTION] 문제

@@ -78,6 +78,8 @@ soup.select("a[href^='https']")  # href 가 https로 시작하는 a테그
 >[!QUESTION] 문제
 >https://www.imdb.com/chart/top/?ref_=nv_mv_250 에서 첫 번째 영화의 제목, 개봉 연도, 상영시간, 영상물 등급도 같이 스크래핑
 
+> [!INFO] 헤더 확인 법 
+> 💡 
 
 ### 내 정답 
 ```python
@@ -144,4 +146,6 @@ rating_element = movie.select('.cli-title-metadata-item')[2]
 print(rating_element.text)
 
 ```
+
+
 

@@ -1,0 +1,406 @@
+{
+  "main": {
+    "id": "f532cc6d56f093b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "910863001abb7907",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb1225f986226c90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사 - 소프트웨어 설계.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "정보처리기사 - 소프트웨어 설계"
+            }
+          },
+          {
+            "id": "3cacb580da5502c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UML.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UML"
+            }
+          },
+          {
+            "id": "b18bb7934c451834",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UML.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UML"
+            }
+          },
+          {
+            "id": "da6aaeb6e0b000c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/소프트웨어 설계.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "소프트웨어 설계"
+            }
+          },
+          {
+            "id": "04849fff8ff475de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/Use Case.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Use Case"
+            }
+          },
+          {
+            "id": "63a86a2b965db219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/소프트웨어 아키텍쳐.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "소프트웨어 아키텍쳐"
+            }
+          },
+          {
+            "id": "10ef56235c78cbfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UI-UX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UI-UX"
+            }
+          },
+          {
+            "id": "b4e2875f1175c9a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/info-callout.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "info-callout.md"
+            }
+          },
+          {
+            "id": "56029143c3778acc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UI-UX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UI-UX"
+            }
+          },
+          {
+            "id": "8c0751d55017bb1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UI-UX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UI-UX"
+            }
+          },
+          {
+            "id": "4d401efc08511064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UI-UX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UI-UX"
+            }
+          },
+          {
+            "id": "cfea981458808077",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/UI 설계.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UI 설계"
+            }
+          },
+          {
+            "id": "c2245d12e139df20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/가상 환경 및 패키지 설치.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "가상 환경 및 패키지 설치"
+            }
+          },
+          {
+            "id": "254f574d410285d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/BeautifulSoup 라이브러리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "BeautifulSoup 라이브러리"
+            }
+          }
+        ],
+        "currentTab": 13
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "79457b488d887811",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b94688bb5458177",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed54d954bc7cc25b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "7dd77a7ae60720af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "시스템 탬색",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "f78cd1a7bead2d84",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "4d6be8f304502169",
+    "type": "split",
+    "children": [
+      {
+        "id": "294ddfc669d32db4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb79fcf0aed87bd0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "정보처리기사 - 소프트웨어 설계.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "정보처리기사 - 소프트웨어 설계 의 백링크"
+            }
+          },
+          {
+            "id": "e31af55d5d7d33d5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "정보처리기사 - 소프트웨어 설계.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "정보처리기사 - 소프트웨어 설계 의 나가는 링크"
+            }
+          },
+          {
+            "id": "73ebdc7662218c80",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "a4401424553f3a15",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "파이썬/BeautifulSoup 라이브러리.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "BeautifulSoup 라이브러리 의 개요"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "file-cleaner-redux:Clean files": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "254f574d410285d4",
+  "lastOpenFiles": [
+    "파이썬/API 호출 by requests 패키지.md",
+    "obsidian-backup/파이썬/BeautifulSoup 라이브러리.md",
+    "파이썬/가상 환경 및 패키지 설치.md",
+    "파이썬/웹 스크래핑 (feat. BeautifulSoup4).md",
+    "파이썬/BeautifulSoup 라이브러리.md",
+    "파이썬",
+    "정보처리기사/소프트웨어 아키텍쳐.md",
+    "정보처리기사/소프트웨어 설계.md",
+    "정보처리기사/Use Case.md",
+    "정보처리기사/UML.md",
+    "정보처리기사/UI(2) - 설계.md",
+    "정보처리기사/UI(1) - 기본 (feat. UX).md",
+    "정보처리기사",
+    "templates/tip.md.md",
+    "templates/success.md.md",
+    "templates/warning.md.md",
+    "templates/question.md.md",
+    "templates/info-callout.md.md",
+    "templates",
+    "output/UI.html",
+    "output",
+    "image/Pasted image 20250504203417.png",
+    "image/Pasted image 20250504202718.png",
+    "image/Pasted image 20250504202722.png",
+    "image/Pasted image 20250504203145.png",
+    "image/Pasted image 20250504202448.png",
+    "image/Pasted image 20250504171016.png",
+    "image/Pasted image 20250504145826.png",
+    "image/Pasted image 20250504142332.png",
+    "image",
+    "obsidian-backup/파이썬/API 호출 by requests 패키지.md",
+    "obsidian-backup/파이썬/가상 환경 및 패키지 설치.md",
+    "정보처리기사/무제.md",
+    "정보처리기사/무제 1.md",
+    "정보처리기사/UX.md",
+    "정보처리기사/ㅇㄹㄴㅇㄹ.md",
+    "w.md",
+    "무제 2.md",
+    "무제 1.md",
+    "마크다운 사용법.md",
+    "무제 파일.canvas",
+    "Pasted image 20241115232722.png",
+    "1.daily/무제 폴더",
+    "1.daily"
+  ]
+}

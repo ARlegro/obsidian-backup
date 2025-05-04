@@ -79,7 +79,7 @@ soup.select("a[href^='https']")  # href 가 https로 시작하는 a테그
 >https://www.imdb.com/chart/top/?ref_=nv_mv_250 에서 첫 번째 영화의 제목, 개봉 연도, 상영시간, 영상물 등급도 같이 스크래핑
 
 > [!INFO] 헤더 확인 법 
-> 💡 
+> 💡 F12 → 네트워크 탭 → 페이지 새로고침 → 맨위 document → Headers 탭 → requestHeaders → User-Agent
 
 ### 내 정답 
 ```python

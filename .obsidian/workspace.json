@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬/API 호출 by requests 패키지.md",
+                "file": "파이썬/BeautifulSoup 라이브러리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API 호출 by requests 패키지"
+              "title": "BeautifulSoup 라이브러리"
             }
           }
         ],
@@ -372,12 +372,12 @@
   },
   "active": "e8da1609b2764294",
   "lastOpenFiles": [
+    "파이썬/API 호출 by requests 패키지.md",
     "파이썬/웹 스크래핑 (feat. BeautifulSoup4).md",
     "파이썬/BeautifulSoup 라이브러리.md",
     "conflict-files-obsidian-git.md",
     "정보처리기사/UI(2) - 설계.md",
     "정보처리기사/UML.md",
-    "파이썬/API 호출 by requests 패키지.md",
     "templates/success.md.md",
     "templates/warning.md.md",
     "templates/tip.md.md",

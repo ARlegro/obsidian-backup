@@ -78,7 +78,11 @@ Flask는 기능도 몇 개 없어서 라우팅 할 줄 알면 Flask의 절반은
 #### 동적 라우팅 
 그 스프링에서 pathvariable 이랑 똑같은거 기호가 < > 이걸 쓰네 
 ```python
-@app.route('users/<id>)
+@app.route('/users/<id>/)
 def find(id):
 		return "user" + id;
 ```
+
+> [!WARNING]
+> ⚠️ Flask의 route는 슬래시`/` 에 아주 민감한 프레임워크
+> 스프링에서는 슬래시`/` 대충 써도 자

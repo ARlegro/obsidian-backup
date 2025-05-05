@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/미들웨어 솔루션.md",
+                "file": "정보처리기사/모듈.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "미들웨어 솔루션"
+              "title": "모듈"
             }
           }
         ],
@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:output  ",
+                "query": "결합도",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -233,8 +232,9 @@
   },
   "active": "00874e8f0e226f5a",
   "lastOpenFiles": [
-    "정보처리기사/인터페이스 요구사항 확인.md",
+    "정보처리기사/구조적 개발 방법론.md",
     "정보처리기사/미들웨어 솔루션.md",
+    "정보처리기사/인터페이스 요구사항 확인.md",
     "정보처리기사/디자인 패턴.md",
     "정보처리기사/객체 지향 설계.md",
     "정보처리기사/UML.md",
@@ -245,7 +245,6 @@
     "파이썬/가상 환경 및 패키지 설치.md",
     "파이썬/BeautifulSoup 라이브러리.md",
     "정보처리기사/코드 설계.md",
-    "정보처리기사/구조적 개발 방법론.md",
     "정보처리기사/모듈.md",
     "image/Pasted image 20250505205250.png",
     "image/Pasted image 20250505191646.png",

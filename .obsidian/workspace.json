@@ -173,8 +173,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb1225f986226c90",
+  "active": "ed54d954bc7cc25b",
   "lastOpenFiles": [
+    "DB/mongo/기본.md",
+    "DB/mongo/설치.md",
     "파이썬/파이썬으로 몽고 DB 조작.md",
     "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",
@@ -183,7 +185,6 @@
     "templates/info-callout.md.md",
     "파이썬/가상 환경 및 패키지 설치.md",
     "파이썬/BeautifulSoup 라이브러리.md",
-    "DB/mongo/기본.md",
     "파이썬/API 호출 by requests 패키지.md",
     "conflict-files-obsidian-git.md",
     "image/Pasted image 20250505101513.png",
@@ -217,7 +218,6 @@
     "정보처리기사/무제 1.md",
     "정보처리기사/UX.md",
     "정보처리기사/ㅇㄹㄴㅇㄹ.md",
-    "w.md",
     "무제 파일.canvas",
     "Pasted image 20241115232722.png",
     "1.daily/무제 폴더",

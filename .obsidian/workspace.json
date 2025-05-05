@@ -202,9 +202,37 @@
               "icon": "lucide-file",
               "title": "BeautifulSoup 라이브러리"
             }
+          },
+          {
+            "id": "cd9bde32d305ecf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/가상 환경 및 패키지 설치.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "가상 환경 및 패키지 설치"
+            }
+          },
+          {
+            "id": "202581bc599f61bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/BeautifulSoup 라이브러리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "BeautifulSoup 라이브러리"
+            }
           }
         ],
-        "currentTab": 13
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -236,7 +264,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "시스템 탬색",
+                "query": "path:output  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -356,37 +384,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "254f574d410285d4",
+  "active": "202581bc599f61bd",
   "lastOpenFiles": [
     "파이썬/API 호출 by requests 패키지.md",
-    "obsidian-backup/파이썬/BeautifulSoup 라이브러리.md",
-    "파이썬/가상 환경 및 패키지 설치.md",
+    "정보처리기사/UML.md",
+    "templates/warning.md.md",
     "파이썬/웹 스크래핑 (feat. BeautifulSoup4).md",
+    "templates/tip.md.md",
+    "templates/question.md.md",
+    "templates/success.md.md",
+    "templates/info-callout.md.md",
+    "image/Pasted image 20250504142332.png",
+    "image/Pasted image 20250504145826.png",
+    "image/Pasted image 20250504202448.png",
+    "image/Pasted image 20250504203417.png",
+    "image/Pasted image 20250504203145.png",
+    "image/Pasted image 20250504202722.png",
+    "정보처리기사/Use Case.md",
+    "파이썬/가상 환경 및 패키지 설치.md",
     "파이썬/BeautifulSoup 라이브러리.md",
+    "conflict-files-obsidian-git.md",
+    "정보처리기사/소프트웨어 설계.md",
+    "obsidian-backup/파이썬/BeautifulSoup 라이브러리.md",
     "파이썬",
     "정보처리기사/소프트웨어 아키텍쳐.md",
-    "정보처리기사/소프트웨어 설계.md",
-    "정보처리기사/Use Case.md",
-    "정보처리기사/UML.md",
     "정보처리기사/UI(2) - 설계.md",
     "정보처리기사/UI(1) - 기본 (feat. UX).md",
     "정보처리기사",
-    "templates/tip.md.md",
-    "templates/success.md.md",
-    "templates/warning.md.md",
-    "templates/question.md.md",
-    "templates/info-callout.md.md",
     "templates",
     "output/UI.html",
     "output",
-    "image/Pasted image 20250504203417.png",
     "image/Pasted image 20250504202718.png",
-    "image/Pasted image 20250504202722.png",
-    "image/Pasted image 20250504203145.png",
-    "image/Pasted image 20250504202448.png",
     "image/Pasted image 20250504171016.png",
-    "image/Pasted image 20250504145826.png",
-    "image/Pasted image 20250504142332.png",
     "image",
     "obsidian-backup/파이썬/API 호출 by requests 패키지.md",
     "obsidian-backup/파이썬/가상 환경 및 패키지 설치.md",
@@ -396,8 +425,6 @@
     "정보처리기사/ㅇㄹㄴㅇㄹ.md",
     "w.md",
     "무제 2.md",
-    "무제 1.md",
-    "마크다운 사용법.md",
     "무제 파일.canvas",
     "Pasted image 20241115232722.png",
     "1.daily/무제 폴더",

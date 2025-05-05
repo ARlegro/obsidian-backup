@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB/mongo/기본.md",
+                "file": "파이썬/파이썬으로 몽고 DB 조작.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기본"
+              "title": "파이썬으로 몽고 DB 조작"
             }
           }
         ]
@@ -175,8 +175,10 @@
   },
   "active": "fb1225f986226c90",
   "lastOpenFiles": [
-    "DB/mongo/설치.md",
+    "파이썬/BeautifulSoup 라이브러리.md",
+    "파이썬/API 호출 by requests 패키지.md",
     "DB/mongo/기본.md",
+    "DB/mongo/설치.md",
     "파이썬/파이썬으로 몽고 DB 조작.md",
     "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",
@@ -184,8 +186,6 @@
     "정보처리기사/소프트웨어 아키텍쳐.md",
     "templates/info-callout.md.md",
     "파이썬/가상 환경 및 패키지 설치.md",
-    "파이썬/BeautifulSoup 라이브러리.md",
-    "파이썬/API 호출 by requests 패키지.md",
     "conflict-files-obsidian-git.md",
     "image/Pasted image 20250505101513.png",
     "DB/mongo",

@@ -113,3 +113,17 @@ print(list(all_movies))  # Cursor 객체를 list로 변환하여 출력 or for�
 
 ```
 
+#### 모범 답안과의 비교 
+```python
+모범 답안 
+running_time = movie.select_one('.cli-title-metadata-item:nth-child(2)').text
+
+나의 답안 
+running_time = movie.select(".cli-title-metadata-item")[1].text 
+```
+
+
+ 
+ :nth-child(2) 이런 식으로 사용 
+
+

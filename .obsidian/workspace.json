@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "리뷰/코드 리뷰 - 결합도.md",
+                "file": "정보처리기사/모듈.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "코드 리뷰 - 결합도"
+              "title": "모듈"
             }
           }
         ],
@@ -246,8 +246,8 @@
   },
   "active": "8cb3438cbcea286e",
   "lastOpenFiles": [
-    "정보처리기사/모듈.md",
     "리뷰/코드 리뷰 - 결합도.md",
+    "정보처리기사/모듈.md",
     "정보처리기사/무제.md",
     "정보처리기사/무제 1.md",
     "정보처리기사/무제 2.md",

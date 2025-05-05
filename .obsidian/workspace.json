@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/객체 지향 설계.md",
+                "file": "정보처리기사/디자인 패턴.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "객체 지향 설계"
+              "title": "디자인 패턴"
             }
           }
         ],
@@ -204,8 +204,8 @@
   },
   "active": "2a643b9673121ce4",
   "lastOpenFiles": [
-    "정보처리기사/디자인 패턴.md",
     "정보처리기사/객체 지향 설계.md",
+    "정보처리기사/디자인 패턴.md",
     "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",
     "정보처리기사/Use Case.md",

@@ -11,10 +11,14 @@
             "id": "95edf09b0fc618c6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DB/mongo/기본.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "기본"
             }
           }
         ]
@@ -171,6 +175,10 @@
   },
   "active": "95edf09b0fc618c6",
   "lastOpenFiles": [
+    "Mon.md",
+    "DB/mongo/기본.md",
+    "DB/mongo",
+    "DB",
     "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",
     "정보처리기사/Use Case.md",
@@ -208,8 +216,6 @@
     "무제 2.md",
     "무제 1.md",
     "마크다운 사용법.md",
-    "옵시디언 사용법.md",
-    "2025-05-04.md",
     "무제 파일.canvas",
     "정보처리기사",
     "Pasted image 20241115232722.png",

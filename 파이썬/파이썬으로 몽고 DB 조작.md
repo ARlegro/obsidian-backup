@@ -242,3 +242,30 @@ running_time = movie.select(".cli-title-metadata-item")[1].text
 - 즉, 모듈로 재사용할 떄는 실행되지 않도록 하기 위해 
 - DB drop은 위험한 것이므로 이렇게 보호한 듯??
 
+
+
+### 저장한 거 조회 및 update
+```python
+from pymongo import MongoClient
+client = MongoClient("localhost", 27017)
+db = client.movie_db
+
+
+# 영화 제목으로 영화 정보 찾기
+target_movie = db.movies.find_one({"title": "쉰들러 리스트"})
+print(target_movie["released_year"])
+
+  
+# 저장된 영화들의 title을 출력
+movies = list(db.movies.find({}))
+for movie in movies:
+    print(movie["title"])
+
+# update
+db.movies.update_one({"title": "매트릭스"}, {"$set": {"title": "매트릭스2"}})
+  
+metrics = db.movies.find_one({"title": "매트릭스2"}, {"_id": False})
+print(metrics)
+```
+
+

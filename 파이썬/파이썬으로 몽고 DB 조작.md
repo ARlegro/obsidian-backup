@@ -61,3 +61,55 @@ db.users.delete_one({'name': 'Carrel'})
 
 
 
+### 영화 스크래핑 후 DB 저장 
+
+>[!SUCCESS]  미션 
+>영화 랭킹 사이트가서 title, 출시연도, 러닝타임, 등급 스크래핑 후 MongoDB에 저장 
+
+
+```python
+import requests
+from bs4 import BeautifulSoup
+from pymongo import MongoClient
+
+
+header = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+}
+
+client = MongoClient("localhost", 27017)
+db = client.movie_db
+
+def make_movie_doc():
+
+    url = "https://www.imdb.com/chart/top/?ref_=nv_mv_250"
+    res = requests.get(url, headers=header)
+    soup = BeautifulSoup(res.text, "lxml")
+    movies = soup.select(".ipc-metadata-list .cli-parent .cli-children")
+    print("movies 개수 : ", len(movies))
+
+    for movie in movies:
+        title = movie.select_one("h3").text
+        metadatas = movie.select(".cli-title-metadata-item")
+        released_year = metadatas[0].text
+        running_time = metadatas[1].text
+        pg_level = metadatas[2].text
+
+        db.movies.insert_one(
+           {
+                "title": title,
+                "released_year": released_year,
+                "running_time": running_time,
+                "pg_level": pg_level,
+            }
+        )
+
+make_movie_doc()
+
+all_movies = db.movies.find({})  # Cursor 객체를 반환
+print(all_movies)  # 그냥 print하면 Cursor 객체의 주소값이 나옴
+print(type(all_movies))  # <type 'pymongo.syncronous.cursor.Cursor'>
+print(list(all_movies))  # Cursor 객체를 list로 변환하여 출력 or for문으로 돌리기
+
+```
+

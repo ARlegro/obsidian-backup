@@ -18,13 +18,13 @@
 
 **✔ 주요 클래스 - 뒤의 preview 참고** 
 
-| 용어              | 설명               |
-| --------------- | ---------------- |
-| Flask           | 웹 서버를 만들기 위한 클래스 |
-| @app.route()    | URL 경로를 지정하는 것   |
-| run()           | 서버 실행 메서드        |
-| request         | 요청 처리            |
-| render_template | HTML 템플릿 렌더링용 도구 |
+| 용어                | 설명               |
+| ----------------- | ---------------- |
+| `Flask`           | 웹 서버를 만들기 위한 클래스 |
+| `@app.route()`    | URL 경로를 지정하는 것   |
+| `run()`           | 서버 실행 메서드        |
+| `request`         | 요청 처리            |
+| `render_template` | HTML 템플릿 렌더링용 도구 |
 
 
 
@@ -54,10 +54,16 @@ app.run(debug=True)
 
 
 ### 라우팅 
+#### 개념 
 - 네트워크에서 경로를 선택하는 프로세스
 - Client **요청 URL을 기준으로 어떤 함수를 실행할지를 결정하는 매핑**(mapping) 규칙 
 - 즉, 어떤 URL로 접근했을 때 ➡ 어떤 함수로 연결할지를 정해주는 역할 
 - 이로 인해, URL 별 다양한 처리 방식 가능
+```python
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+```
 
 > 일종의, URL 과 함수를 연결짓는 매개체
 
@@ -69,4 +75,10 @@ app.run(debug=True)
 
 Flask는 기능도 몇 개 없어서 라우팅 할 줄 알면 Flask의 절반은 안 것 
 
-
+#### 동적 라우팅 
+그 스프링에서 pathvariable 이랑 똑같은거 기호가 < > 이걸 쓰네 
+```python
+@app.route('users/<id>)
+def find(id):
+		return "user" + id;
+```

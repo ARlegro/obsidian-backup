@@ -237,12 +237,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/코드 설계.md",
+                "file": "정보처리기사/구조적 개발 방법론.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "코드 설계"
+              "title": "구조적 개발 방법론"
             }
           }
         ],
@@ -401,8 +401,8 @@
   },
   "active": "635242c95cf929e8",
   "lastOpenFiles": [
-    "정보처리기사/구조적 개발 방법론.md",
     "정보처리기사/코드 설계.md",
+    "정보처리기사/구조적 개발 방법론.md",
     "정보처리기사/소프트웨어 설계 모델링.md",
     "정보처리기사/소프트웨어 설계.md",
     "파이썬/BeautifulSoup 라이브러리.md",

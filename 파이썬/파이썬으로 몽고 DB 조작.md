@@ -127,14 +127,18 @@ running_time = movie.select(".cli-title-metadata-item")[1].text
 - 1‍⃣ movie라는 부모의 자식 요소 중 2번쨰에 위치한 요소  
   2‍⃣ .cli-title-metadata-item 이 클래스명인 요소 
 
-내가 쓴 [1] 방법 
+**내가 쓴 [1] 방법** 
 - 리스트에서 2번째 요소 
 - 간결함, 직관적, 
-- 단점 
-	- 
+- **단점** 
+	- 구조에 변화 민감도 높다 
+	- 코드를 보고 의도 파악하기 힘들다 
+	- 예외 발생 가능성 높다
+		- 모범답안의 경우 없을 경우 None을 반환하는데 나의 답안은 IndexError 발생 가능 
 
- :nth-child(2) 이런 식으로 사용 
 
+> 그니까, [숫자] 이 방법이 명시성-유연성이 너무 떨어지므로, `:nth-child(n)` 추천 
+> nth ➡  n + th  ➡ n 번쨰 
 
 
 

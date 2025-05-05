@@ -3,7 +3,6 @@ MongoDB라는 프로그램을 조작하기 위해서는 특별한 라이브러�
 `pip install pymongo`
 
 
-
 ### 기본 - 객체 생성, 서버 연결, Insert
 ```python
 from pymongo import MongoClient
@@ -24,7 +23,6 @@ db.users.insert_one({'name': 'Carrel', 'age': 23})
 all_users = list(db.users.find({}))
 print(all_users)
 ```
-
 
 ### 여러 메서드 - find, update
 ```python
@@ -60,3 +58,5 @@ print(f"{carrel['name']}의 나이는 {carrel['age']}입니다.")
 # 삭제하기
 db.users.delete_one({'name': 'Carrel'})
 ```
+
+

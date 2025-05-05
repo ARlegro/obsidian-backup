@@ -251,12 +251,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/모듈.md",
+                "file": "정보처리기사/소프트웨어 아키텍쳐.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "모듈"
+              "title": "소프트웨어 아키텍쳐"
             }
           }
         ],
@@ -317,8 +317,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -415,9 +414,9 @@
   },
   "active": "a5480d21b5a3a200",
   "lastOpenFiles": [
+    "정보처리기사/모듈.md",
     "image/Pasted image 20250505205250.png",
     "정보처리기사/구조적 개발 방법론.md",
-    "정보처리기사/모듈.md",
     "image/Pasted image 20250505191646.png",
     "image/Pasted image 20250505191013.png",
     "정보처리기사/코드 설계.md",
@@ -448,7 +447,6 @@
     "image/Pasted image 20250504145826.png",
     "image/Pasted image 20250504202448.png",
     "image/Pasted image 20250504203417.png",
-    "image/Pasted image 20250504203145.png",
     "정보처리기사/Use Case.md",
     "obsidian-backup/파이썬/BeautifulSoup 라이브러리.md",
     "파이썬",

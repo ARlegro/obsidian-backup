@@ -66,7 +66,7 @@ db.users.delete_one({'name': 'Carrel'})
 >[!SUCCESS]  미션 
 >영화 랭킹 사이트가서 title, 출시연도, 러닝타임, 등급 스크래핑 후 MongoDB에 저장 
 
-
+#### 내 정답 
 ```python
 import requests
 from bs4 import BeautifulSoup
@@ -114,6 +114,7 @@ print(list(all_movies))  # Cursor 객체를 list로 변환하여 출력 or for�
 ```
 
 #### 모범 답안과의 비교 
+##### 1.  :nth-child(숫자) vs `[숫자]` 
 ```python
 모범 답안 
 running_time = movie.select_one('.cli-title-metadata-item:nth-child(2)').text
@@ -125,5 +126,15 @@ running_time = movie.select(".cli-title-metadata-item")[1].text
 
  
  :nth-child(2) 이런 식으로 사용 
+
+
+
+
+#### `if __name__ == '__main__'`: 의미 
+
+`__name__ == '__main__'`
+- 파이썬 파일이 실행될 때 `__name__`이라는 특별한 변수가 자동으로 설정된다.
+- 이 파일을 직접 실행한 경우 `__name__` : `__main__`
+- 이 파일을 모듈로 import한 경우 `__name__` : `파일 이름`
 
 

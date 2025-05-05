@@ -122,9 +122,16 @@ running_time = movie.select_one('.cli-title-metadata-item:nth-child(2)').text
 나의 답안 
 running_time = movie.select(".cli-title-metadata-item")[1].text 
 ```
-`:nth-child(숫자)` 의미 
+**`:nth-child(숫자)` 의미** 
 - 부모 요소의 자식 중에서 n번째 위치한 요소 
-- 즉, `~~~-itme'이라는 부모의 전체 자식 중 n번째 요소를 고르는 것 
+- 1‍⃣ movie라는 부모의 자식 요소 중 2번쨰에 위치한 요소  
+  2‍⃣ .cli-title-metadata-item 이 클래스명인 요소 
+
+내가 쓴 [1] 방법 
+- 리스트에서 2번째 요소 
+- 간결함, 직관적, 
+- 단점 
+	- 
 
  :nth-child(2) 이런 식으로 사용 
 

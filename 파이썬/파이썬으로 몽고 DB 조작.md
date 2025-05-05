@@ -244,7 +244,7 @@ running_time = movie.select(".cli-title-metadata-item")[1].text
 
 
 
-### 저장한 거 조회 및 update
+###  조회 및 update
 ```python
 from pymongo import MongoClient
 client = MongoClient("localhost", 27017)

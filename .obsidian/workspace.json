@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어 설계 모델링.md",
+                "file": "정보처리기사/코드 설계.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "소프트웨어 설계 모델링"
+              "title": "코드 설계"
             }
           }
         ],
@@ -289,8 +289,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -387,12 +386,13 @@
   },
   "active": "202581bc599f61bd",
   "lastOpenFiles": [
-    "파이썬/BeautifulSoup 라이브러리.md",
     "정보처리기사/소프트웨어 설계 모델링.md",
+    "정보처리기사/코드 설계.md",
+    "정보처리기사/소프트웨어 설계.md",
+    "파이썬/BeautifulSoup 라이브러리.md",
     "image/Pasted image 20250505181438.png",
     "image/Pasted image 20250505181437.png",
     "정보처리기사/무제.md",
-    "정보처리기사/소프트웨어 설계.md",
     "정보처리기사/소프트웨어 아키텍쳐.md",
     "파이썬/가상 환경 및 패키지 설치.md",
     "파이썬/파이썬으로 몽고 DB 조작.md",

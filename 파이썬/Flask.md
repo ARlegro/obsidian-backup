@@ -8,12 +8,15 @@
 > 
 
 
-### 개념 
+### 개념
+✔
 
 
 
 
-### 간단한 실행
+
+
+### preview - 간단한 실행
 #### 기본 
 ```python
 from flask import Flask

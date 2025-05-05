@@ -114,7 +114,7 @@ print(list(all_movies))  # Cursor 객체를 list로 변환하여 출력 or for�
 ```
 
 #### 모범 답안과의 비교 
-##### 1.  :nth-child(숫자) vs `[숫자]` 
+##### 1.  `:nth-child(숫자)` vs `[숫자]` 
 ```python
 모범 답안 
 running_time = movie.select_one('.cli-title-metadata-item:nth-child(2)').text
@@ -122,19 +122,24 @@ running_time = movie.select_one('.cli-title-metadata-item:nth-child(2)').text
 나의 답안 
 running_time = movie.select(".cli-title-metadata-item")[1].text 
 ```
+`:nth-child(숫자)` 의미 
+- 부모 요소의 자식 중에서 n번째 위치한 요소 
+- 즉, `~~~-itme'이라는 부모의 전체 자식 중 n번째 요소를 고르는 것 
 
-
- 
  :nth-child(2) 이런 식으로 사용 
 
 
 
 
-#### `if __name__ == '__main__'`: 의미 
+##### 2.  `if __name__ == '__main__'`
 
-`__name__ == '__main__'`
+**`__name__ == '__main__'` 의미** 
 - 파이썬 파일이 실행될 때 `__name__`이라는 특별한 변수가 자동으로 설정된다.
-- 이 파일을 직접 실행한 경우 `__name__` : `__main__`
-- 이 파일을 모듈로 import한 경우 `__name__` : `파일 이름`
+- 이 파일을 **직접 실행한** 경우 `__name__` : `__main__`
+- 이 파일을 **모듈로 import한** 경우 `__name__` : `파일 이름`
 
+목적 
+- 직접 실행할 떄만 특정 코드를 실행하기 위해 
+- 즉, 모듈로 재사용할 떄는 실행되지 않도록 하기 위해 
+- DB drop은 위험한 것이므로 이렇게 보호한 듯??
 

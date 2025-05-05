@@ -173,10 +173,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "fb1225f986226c90",
   "lastOpenFiles": [
-    "DB/mongo/기본.md",
     "DB/mongo/설치.md",
+    "DB/mongo/기본.md",
     "파이썬/파이썬으로 몽고 DB 조작.md",
     "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",

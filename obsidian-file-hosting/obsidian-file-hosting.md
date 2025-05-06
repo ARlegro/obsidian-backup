@@ -1,11 +1,14 @@
 ---
 dg-publish: true
 dg-home: false
+permalink: /obsidian-file-hosting/en/
 ---
+sdfasf sd
+		제발 이번에도 안된다고?? 이번엔 되df잔 
+sdfsdfsadfasfds옵시디언 파일 어디???
+dfdfsfdsfds안돼 d
+이번엔 제발 
 
-제발 
-옵시디언 파일 어디???
-왜 안돼
 
 옵시디언으로 메모하다가 다른 블로그에 옮길 때, 깨지는게 심하다. 그리고 내가 원하는 테마가 적용안되는 것e이 너무 불편했다.
 이러한 문제를 해결하고자 간단하게 나마 옵시디언으로 블로그를 구축하는 방법을 배울 것 

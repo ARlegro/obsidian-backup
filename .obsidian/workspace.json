@@ -132,9 +132,23 @@
               "icon": "lucide-file",
               "title": "obsidian-file-hosting"
             }
+          },
+          {
+            "id": "3049871345b2857f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-file-hosting/obsidian-file-hosting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian-file-hosting"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -287,12 +301,13 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "b713b1e5c30ffce0",
+  "active": "3049871345b2857f",
   "lastOpenFiles": [
     "정보처리기사/객체 지향 설계.md",
+    "obsidian-file-hosting/무제.md",
+    "obsidian-file-hosting/obsidian-file-hosting.md",
     "templates/netlify-publish.md",
     "templates/info-callout.md.md",
-    "obsidian-file-hosting/obsidian-file-hosting.md",
     "Digital Garden Home.md",
     "obsidian-file-hosting/배포 테스트.md",
     "templates/note-fromtmatter.md",
@@ -320,7 +335,6 @@
     "정보처리기사/소프트웨어 아키텍쳐.md",
     "파이썬/BeautifulSoup 라이브러리.md",
     "정보처리기사/코드 설계.md",
-    "정보처리기사/구조적 개발 방법론.md",
     "image/Pasted image 20250505205250.png",
     "image/Pasted image 20250505191646.png",
     "image/Pasted image 20250505191013.png",

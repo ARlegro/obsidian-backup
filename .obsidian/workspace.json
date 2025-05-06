@@ -111,16 +111,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "옵시디언 파일 호스팅/배포 테스트.md",
+                "file": "templates/netlify-publish.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "배포 테스트"
+              "title": "netlify-publish"
+            }
+          },
+          {
+            "id": "b713b1e5c30ffce0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-file-hosting/obsidian-file-hosting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian-file-hosting"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -273,12 +287,14 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "42eb487069c6e36d",
+  "active": "b713b1e5c30ffce0",
   "lastOpenFiles": [
-    "옵시디언 파일 호스팅/옵시디언 파일 호스팅.md",
-    "Digital Garden Home.md",
-    "옵시디언 파일 호스팅/배포 테스트.md",
     "templates/netlify-publish.md",
+    "obsidian-file-hosting/obsidian-file-hosting.md",
+    "Digital Garden Home.md",
+    "obsidian-file-hosting/배포 테스트.md",
+    "templates/note-fromtmatter.md",
+    "정보처리기사/UML.md",
     "templates/warning.md.md",
     "image/Pasted image 20250506125101.png",
     "image/Pasted image 20250506123240.png",
@@ -290,7 +306,7 @@
     "파이썬/파이썬으로 몽고 DB 조작.md",
     "파이썬/가상 환경 및 패키지 설치.md",
     "정보처리기사/미들웨어 솔루션.md",
-    "옵시디언 파일 호스팅",
+    "obsidian-file-hosting",
     "정보처리기사/무제.md",
     "정보처리기사/무제 2.md",
     "정보처리기사/무제 1.md",
@@ -298,7 +314,6 @@
     "정보처리기사/인터페이스 요구사항 확인.md",
     "정보처리기사/디자인 패턴.md",
     "정보처리기사/객체 지향 설계.md",
-    "정보처리기사/UML.md",
     "정보처리기사/소프트웨어 설계.md",
     "정보처리기사/Use Case.md",
     "정보처리기사/소프트웨어 아키텍쳐.md",
@@ -306,7 +321,6 @@
     "파이썬/BeautifulSoup 라이브러리.md",
     "정보처리기사/코드 설계.md",
     "정보처리기사/구조적 개발 방법론.md",
-    "정보처리기사/모듈.md",
     "image/Pasted image 20250505205250.png",
     "image/Pasted image 20250505191646.png",
     "image/Pasted image 20250505191013.png",

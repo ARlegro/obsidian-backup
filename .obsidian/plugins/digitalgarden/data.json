@@ -30,7 +30,7 @@
   "contentClassesKey": "dg-content-classes",
   "defaultNoteSettings": {
     "dgHomeLink": true,
-    "dgPassFrontmatter": true,
+    "dgPassFrontmatter": false,
     "dgShowBacklinks": true,
     "dgShowLocalGraph": true,
     "dgShowInlineTitle": true,

@@ -1,9 +1,8 @@
 ---
 dg-publish: true
 dg-home: false
-permalink: /obsidian-file-hosting/en/
 ---
-sdfasf sd
+sdfasf sd dfs 
 		제발 이번에도 안된다고?? 이번엔 되df잔 
 sdfsdfsadfasfds옵시디언 파일 어디???
 dfdfsfdsfds안돼 d

@@ -241,11 +241,13 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
   "active": "8d28f78709cc9c47",
   "lastOpenFiles": [
+    "image/Pasted image 20250506122706.png",
     "리뷰/코드 리뷰 - 결합도.md",
     "옵시디언 파일 호스팅/옵시디언 파일 호스팅.md",
     "무제 1",
@@ -282,7 +284,6 @@
     "image/Pasted image 20250505101513.png",
     "DB/mongo",
     "DB",
-    "templates/warning.md.md",
     "image/Pasted image 20250504142332.png",
     "image/Pasted image 20250504145826.png",
     "image/Pasted image 20250504202448.png",

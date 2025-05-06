@@ -90,9 +90,23 @@
               "icon": "lucide-file",
               "title": "옵시디언 파일 호스팅"
             }
+          },
+          {
+            "id": "4396e412a754a77a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "옵시디언 파일 호스팅/옵시디언 파일 호스팅.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "옵시디언 파일 호스팅"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -245,11 +259,17 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "8d28f78709cc9c47",
+  "active": "4396e412a754a77a",
   "lastOpenFiles": [
+    "templates/netlify-publish.md",
+    "옵시디언 파일 호스팅/옵시디언 파일 호스팅.md",
+    "templates/warning.md.md",
+    "Digital Garden Home.md",
+    "image/Pasted image 20250506125101.png",
+    "옵시디언 파일 호스팅/무제.md",
+    "image/Pasted image 20250506123240.png",
     "image/Pasted image 20250506122706.png",
     "리뷰/코드 리뷰 - 결합도.md",
-    "옵시디언 파일 호스팅/옵시디언 파일 호스팅.md",
     "무제 1",
     "conflict-files-obsidian-git.md",
     "파이썬/API 호출 by requests 패키지.md",
@@ -276,18 +296,12 @@
     "image/Pasted image 20250505205250.png",
     "image/Pasted image 20250505191646.png",
     "image/Pasted image 20250505191013.png",
-    "정보처리기사/소프트웨어 설계 모델링.md",
     "image/Pasted image 20250505181438.png",
     "image/Pasted image 20250505181437.png",
-    "파이썬/Flask.md",
-    "DB/mongo/기본.md",
     "image/Pasted image 20250505101513.png",
     "DB/mongo",
     "DB",
     "image/Pasted image 20250504142332.png",
-    "image/Pasted image 20250504145826.png",
-    "image/Pasted image 20250504202448.png",
-    "image/Pasted image 20250504203417.png",
     "파이썬",
     "정보처리기사",
     "templates",

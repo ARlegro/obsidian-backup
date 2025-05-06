@@ -1,7 +1,7 @@
 {
-  "githubRepo": "",
-  "githubToken": "",
-  "githubUserName": "",
+  "githubRepo": "digitalgarden",
+  "githubToken": "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",
+  "githubUserName": "ARlegro",
   "gardenBaseUrl": "",
   "prHistory": [],
   "baseTheme": "dark",
@@ -30,14 +30,14 @@
   "contentClassesKey": "dg-content-classes",
   "defaultNoteSettings": {
     "dgHomeLink": true,
-    "dgPassFrontmatter": false,
-    "dgShowBacklinks": false,
-    "dgShowLocalGraph": false,
-    "dgShowInlineTitle": false,
-    "dgShowFileTree": false,
-    "dgEnableSearch": false,
-    "dgShowToc": false,
-    "dgLinkPreview": false,
-    "dgShowTags": false
+    "dgPassFrontmatter": true,
+    "dgShowBacklinks": true,
+    "dgShowLocalGraph": true,
+    "dgShowInlineTitle": true,
+    "dgShowFileTree": true,
+    "dgEnableSearch": true,
+    "dgShowToc": true,
+    "dgLinkPreview": true,
+    "dgShowTags": true
   }
 }

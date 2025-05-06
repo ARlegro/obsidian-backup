@@ -2,7 +2,7 @@
 dg-publish: true
 dg-home: false
 ---
-> 코드 리뷰 - 결합도 
+
 
 [[모듈]]
 
@@ -104,7 +104,7 @@ public static NotificationJdbc create(UUID userId, Interest interest, Long artic
 ```
 
 
-### 최악의 결합도 
+### 최악의 결합도 - 3달전의 나에게 
 
 > 결합도의 6단계 중 최악은 `내용 결합도`  이다 `
 

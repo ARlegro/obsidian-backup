@@ -34,10 +34,6 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "리뷰": {
-    "iconName": "LiEye",
-    "iconColor": "#f056d4"
-  },
   "image": {
     "iconName": "LiImage",
     "iconColor": "#3bc71f"
@@ -57,5 +53,9 @@
   "etc": {
     "iconName": "LiLayers",
     "iconColor": "#6e8500"
+  },
+  "Review": {
+    "iconName": "LiEye",
+    "iconColor": "#f056d4"
   }
 }

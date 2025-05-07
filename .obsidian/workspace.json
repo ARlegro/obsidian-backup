@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "데이터 베이스 명령어"
             }
+          },
+          {
+            "id": "ce94f4992ac3405e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "트랜잭션, 병행 제어"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -189,11 +203,12 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "e9c3f97ca7a1f6f2",
+  "active": "ce94f4992ac3405e",
   "lastOpenFiles": [
+    "정보처리기사/데이터베이스 구축/데이터 베이스 명령어.md",
+    "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
     "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
     "정보처리기사/데이터베이스 구축/관계대수와 연산자.md",
-    "정보처리기사/데이터베이스 구축/데이터 베이스 명령어.md",
     "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
     "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
     "정보처리기사/데이터베이스 구축/검색과 해싱.md",
@@ -227,7 +242,6 @@
     "Review/CodeReview-Coupling.md",
     "etc/배포 테스트.md",
     "etc/etc.md",
-    "정보처리기사/소프트웨어-개발/인터페이스 구현.md",
     "정보처리기사/소프트웨어-개발",
     "무제 1",
     "etc",

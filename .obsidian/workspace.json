@@ -153,16 +153,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
+                "file": "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "애플리케이션-성능개선"
+              "title": "관계형 데이터베이스 모델"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -194,7 +194,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "개념 스키마",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -220,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -316,24 +317,24 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "dbe5e20fe0b2a25a",
+  "active": "ac4546d67b7c098c",
   "lastOpenFiles": [
-    "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
+    "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
     "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
+    "image/Pasted image 20250507200457.png",
+    "image/Pasted image 20250507195817.png",
+    "image/Pasted image 20250507195328.png",
+    "image/Pasted image 20250507195313.png",
+    "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
     "image/Pasted image 20250507182349.png",
     "image/Pasted image 20250507181839.png",
     "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
     "image/Pasted image 20250507172439.png",
     "정보처리기사/데이터베이스 구축/검색과 해싱.md",
-    "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
     "정보처리기사/데이터베이스 구축/자료 구조.md",
     "image/Pasted image 20250507155344.png",
     "image/Pasted image 20250507155335.png",
     "image/Pasted image 20250507155320.png",
-    "image/Pasted image 20250507154416.png",
-    "image/Pasted image 20250507154319.png",
-    "image/Pasted image 20250507153540.png",
-    "image/Pasted image 20250507153501.png",
     "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발/모듈.md",

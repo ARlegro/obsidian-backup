@@ -194,10 +194,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "중간 제곱",
+                "query": "개념 스키마",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -215,12 +215,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -318,9 +318,9 @@
   },
   "active": "dbe5e20fe0b2a25a",
   "lastOpenFiles": [
-    "image/Pasted image 20250507182349.png",
     "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
     "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
+    "image/Pasted image 20250507182349.png",
     "image/Pasted image 20250507181839.png",
     "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
     "image/Pasted image 20250507172439.png",
@@ -350,7 +350,6 @@
     "etc/배포 테스트.md",
     "etc/etc.md",
     "정보처리기사/소프트웨어-개발/인터페이스 구현.md",
-    "image/Pasted image 20250506222944.png",
     "정보처리기사/소프트웨어-개발/소스 코드 최적화.md",
     "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
     "정보처리기사/소프트웨어-개발/제품_소프트웨어_메뉴얼_작성.md",

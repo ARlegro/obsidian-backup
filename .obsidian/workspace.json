@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어-개발/디자인 패턴.md",
-                "mode": "preview",
+                "file": "정보처리기사/데이터베이스 구축/자료 구조.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "디자인 패턴"
+              "title": "자료 구조"
             }
           },
           {
@@ -149,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -247,6 +248,10 @@
   },
   "active": "c5f63ae170956b7e",
   "lastOpenFiles": [
+    "image/Pasted image 20250507153501.png",
+    "정보처리기사/소프트웨어-개발/디자인 패턴.md",
+    "정보처리기사/데이터베이스 구축/자료 구조.md",
+    "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발/모듈.md",
     "Review/Codereview-Coupling.md",
     "정보처리기사/소프트웨어-개발/무제.md",
@@ -275,11 +280,8 @@
     "DB/mongo/기본.md",
     "README.md",
     "정보처리기사/소프트웨어-개발/구조적 개발 방법론.md",
-    "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "templates/netlify-publish.md",
     "정보처리기사/소프트웨어-개발/UI(2) - 설계.md",
-    "정보처리기사/소프트웨어-개발/통합 구현.md",
-    "정보처리기사/소프트웨어-개발/제품 소프트웨어 저작권.md",
     "image/Pasted image 20250506162406.png",
     "정보처리기사/소프트웨어-개발",
     "image/Pasted image 20250506125101.png",
@@ -292,7 +294,6 @@
     "파이썬",
     "정보처리기사",
     "templates",
-    "output/UI.html",
     "무제 파일.canvas"
   ]
 }

@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
+                "file": "정보처리기사/기출 pdf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "트랜잭션, 병행 제어"
+              "title": "기출 pdf"
+            }
+          },
+          {
+            "id": "2202805b649b3dc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "소프트웨어 개발 주기"
             }
           },
           {
@@ -190,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -222,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "트랜잭",
+                "query": "SHELL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -243,8 +257,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -344,8 +357,18 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "193a067c639f375c",
+  "active": "2202805b649b3dc3",
   "lastOpenFiles": [
+    "정보처리기사/프로그래밍 언어 활용/UNIX.md",
+    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
+    "정보처리기사/정보시스템_구축관리",
+    "image/Pasted image 20250508172544.png",
+    "image/Pasted image 20250508172535.png",
+    "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
+    "정보처리기사/잘못된 문장 기출 중.md",
+    "image/Pasted image 20250508170703.png",
+    "정보처리기사/기출 pdf.md",
+    "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
     "정보처리기사/데이터베이스 구축/관계대수와 연산자.md",
     "image/Pasted image 20250508164355.png",
     "정보처리기사/소프트웨어-개발/객체 지향 설계.md",
@@ -361,7 +384,6 @@
     "Excalidraw",
     "정보처리기사/소프트웨어-개발/미들웨어 솔루션.md",
     "정보처리기사/소프트웨어-개발/소프트웨어 설계.md",
-    "정보처리기사/기출 pdf.md",
     "image/Drawing 2025-05-08 15.43.29.excalidraw.md",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "파이썬/Flask.md",
@@ -370,10 +392,6 @@
     "Digital Garden Home.md",
     "README.md",
     "정보처리기사/소프트웨어-개발/UI(1) - 기본 (feat. UX).md",
-    "정보처리기사/소프트웨어-개발/인터페이스 요구사항 확인.md",
-    "정보처리기사/소프트웨어-개발/UML.md",
-    "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
-    "정보처리기사/소프트웨어-개발/코드 설계.md",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
     "image/Pasted image 20250508140513.png",
     "image/Pasted image 20250508132527.png",
@@ -381,16 +399,12 @@
     "image/Pasted image 20250508005728.png",
     "image/Pasted image 20250508004621.png",
     "image/Pasted image 20250508004536.png",
-    "image/Pasted image 20250508003944.png",
     "정보처리기사/프로그래밍 언어 활용",
-    "image/Pasted image 20250507204150.png",
-    "image/Pasted image 20250507203609.png",
     "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발",
     "무제 1",
     "etc",
     "Review",
-    "DB/mongo",
     "무제 파일.canvas"
   ]
 }

@@ -76,9 +76,37 @@
               "icon": "lucide-file",
               "title": "스크립트언어와 Python"
             }
+          },
+          {
+            "id": "73e4bb0a6b79106f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/프로그래밍 언어 활용/운영체제의 개요.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "운영체제의 개요"
+            }
+          },
+          {
+            "id": "329c8ede3615385a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "프로세스 스케쥴링"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -232,10 +260,14 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "879f5d323e7fb08d",
+  "active": "329c8ede3615385a",
   "lastOpenFiles": [
-    "정보처리기사/프로그래밍 언어 활용/C언어.md",
+    "image/Pasted image 20250508132527.png",
+    "정보처리기사/프로그래밍 언어 활용/운영체제의 개요.md",
+    "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
+    "image/Pasted image 20250508131118.png",
     "정보처리기사/프로그래밍 언어 활용/스크립트언어와 Python.md",
+    "정보처리기사/프로그래밍 언어 활용/C언어.md",
     "image/Pasted image 20250508005728.png",
     "image/Pasted image 20250508004621.png",
     "image/Pasted image 20250508004536.png",
@@ -261,7 +293,6 @@
     "image/Pasted image 20250507200457.png",
     "image/Pasted image 20250507195817.png",
     "image/Pasted image 20250507195328.png",
-    "image/Pasted image 20250507195313.png",
     "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "정보처리기사/데이터베이스 구축",
     "Review/Codereview-Coupling.md",
@@ -269,9 +300,6 @@
     "정보처리기사/소프트웨어-개발/무제 3.md",
     "정보처리기사/소프트웨어-개발/무제 2.md",
     "정보처리기사/소프트웨어-개발/무제 1.md",
-    "정보처리기사/소프트웨어-개발/제품 소프트웨어 메뉴얼 작성.md",
-    "정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
-    "정보처리기사/소프트웨어-개발/wpvna.md",
     "정보처리기사/소프트웨어-개발",
     "무제 1",
     "etc",

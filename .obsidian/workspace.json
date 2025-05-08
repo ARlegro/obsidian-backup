@@ -4,235 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "896b4844c944423f",
+        "id": "8dc87c279e747dcc",
         "type": "tabs",
         "children": [
           {
-            "id": "6b1bd79d500b6c09",
+            "id": "1ff046c60a176a7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
+                "file": "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "관리 - 형상, 버전, 변경, 테스트"
+              "title": "테일러링과 프레임워크"
             }
           },
           {
-            "id": "193a067c639f375c",
+            "id": "8a6d5ea48d95b7bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/기출 pdf.md",
+                "file": "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기출 pdf"
-            }
-          },
-          {
-            "id": "2202805b649b3dc3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "소프트웨어 개발 주기"
-            }
-          },
-          {
-            "id": "eca3d9cc74abf219",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/비용 산정 모델.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "비용 산정 모델"
-            }
-          },
-          {
-            "id": "2de8c9c87184e6d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "소프트웨어 개발 표준"
-            }
-          },
-          {
-            "id": "e9c3f97ca7a1f6f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/데이터베이스 구축/데이터 베이스 명령어.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "데이터 베이스 명령어"
-            }
-          },
-          {
-            "id": "ce94f4992ac3405e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/공통 모듈 구현.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "공통 모듈 구현"
-            }
-          },
-          {
-            "id": "e9a048138c6dba98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/C언어.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "C언어"
-            }
-          },
-          {
-            "id": "879f5d323e7fb08d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/스크립트언어와 Python.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "스크립트언어와 Python"
-            }
-          },
-          {
-            "id": "73e4bb0a6b79106f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/운영체제의 개요.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "운영체제의 개요"
-            }
-          },
-          {
-            "id": "329c8ede3615385a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "프로세스 스케쥴링"
-            }
-          },
-          {
-            "id": "fff91b39e7d994e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/프로그래밍 언어 활용/UNIX.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "UNIX"
-            }
-          },
-          {
-            "id": "439c524ebb8eb1ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/데이터베이스 구축/자료 구조.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "자료 구조"
-            }
-          },
-          {
-            "id": "55a23470d1a1d7a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "파이썬/Flask.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Flask"
-            }
-          },
-          {
-            "id": "7a8a833a4576aa10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/기출 pdf.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기출 pdf"
-            }
-          },
-          {
-            "id": "732e4d4a8eb5e54a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "관리 - 형상, 버전, 변경, 테스트"
+              "title": "네트워크 구성"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -264,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SHELL",
+                "query": "COCOMO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -386,43 +190,43 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "2de8c9c87184e6d9",
+  "active": "8a6d5ea48d95b7bf",
   "lastOpenFiles": [
+    "image/Pasted image 20250508190245.png",
+    "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
+    "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
+    "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
+    "정보처리기사/기출 pdf.md",
+    "파이썬/Flask.md",
+    "정보처리기사/데이터베이스 구축/자료 구조.md",
+    "정보처리기사/프로그래밍 언어 활용/UNIX.md",
+    "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
+    "정보처리기사/프로그래밍 언어 활용/운영체제의 개요.md",
+    "정보처리기사/프로그래밍 언어 활용/스크립트언어와 Python.md",
+    "정보처리기사/프로그래밍 언어 활용/C언어.md",
+    "정보처리기사/프로그래밍 언어 활용/공통 모듈 구현.md",
+    "정보처리기사/데이터베이스 구축/데이터 베이스 명령어.md",
+    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
     "정보처리기사/정보시스템_구축관리/비용 산정 모델.md",
     "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
-    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
+    "templates/example.md.md",
     "image/Pasted image 20250508173505.png",
     "image/Pasted image 20250508173500.png",
-    "정보처리기사/프로그래밍 언어 활용/UNIX.md",
     "정보처리기사/정보시스템_구축관리",
     "image/Pasted image 20250508172544.png",
     "image/Pasted image 20250508172535.png",
-    "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
     "정보처리기사/잘못된 문장 기출 중.md",
     "image/Pasted image 20250508170703.png",
-    "정보처리기사/기출 pdf.md",
     "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
     "정보처리기사/데이터베이스 구축/관계대수와 연산자.md",
     "image/Pasted image 20250508164355.png",
     "정보처리기사/소프트웨어-개발/객체 지향 설계.md",
-    "정보처리기사/데이터베이스 구축/자료 구조.md",
     "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
     "정보처리기사/데이터베이스 구축/검색과 해싱.md",
     "정보처리기사/소프트웨어-개발/인터페이스 구현.md",
-    "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
     "Excalidraw/Drawing 2025-05-08 16.14.59.excalidraw.md",
-    "Excalidraw/Drawing 2025-05-08 16.14.31.excalidraw.md",
-    "정보처리기사/소프트웨어-개발/통합 구현.md",
-    "Excalidraw/Drawing 2025-05-08 16.03.04.excalidraw.md",
     "Excalidraw",
-    "정보처리기사/소프트웨어-개발/미들웨어 솔루션.md",
-    "정보처리기사/소프트웨어-개발/소프트웨어 설계.md",
-    "image/Drawing 2025-05-08 15.43.29.excalidraw.md",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
-    "파이썬/Flask.md",
-    "파이썬/파이썬으로 몽고 DB 조작.md",
-    "etc/obsidian-hosting.md",
-    "Digital Garden Home.md",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
     "image/Pasted image 20250508140513.png",
     "image/Pasted image 20250508132527.png",

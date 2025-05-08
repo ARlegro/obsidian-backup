@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/정보시스템_구축관리/보안.md",
+                "file": "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "보안"
+              "title": "프로세스 스케쥴링"
             }
           }
         ],
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "COCOMO",
+                "query": "HRN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -117,12 +117,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -220,8 +220,10 @@
   },
   "active": "834b74bcaf025ebb",
   "lastOpenFiles": [
-    "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
+    "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
+    "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
     "정보처리기사/정보시스템_구축관리/보안.md",
+    "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
     "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
     "image/Pasted image 20250509000353.png",
     "image/Pasted image 20250508190245.png",
@@ -253,8 +255,6 @@
     "image/Pasted image 20250508164355.png",
     "정보처리기사/소프트웨어-개발/객체 지향 설계.md",
     "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
-    "정보처리기사/데이터베이스 구축/검색과 해싱.md",
-    "정보처리기사/소프트웨어-개발/인터페이스 구현.md",
     "Excalidraw",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",

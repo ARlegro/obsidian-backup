@@ -229,7 +229,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -329,7 +330,7 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "29a90dc3d01db9e5",
+  "active": "7dd77a7ae60720af",
   "lastOpenFiles": [
     "정보처리기사/기출/24년 3회.md",
     "정보처리기사/기출/24년 2회차.md",

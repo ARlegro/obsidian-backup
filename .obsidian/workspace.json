@@ -208,7 +208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "삽입 정렬",
+                "query": "세분화",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -333,8 +333,9 @@
   },
   "active": "29a90dc3d01db9e5",
   "lastOpenFiles": [
-    "정보처리기사/데이터베이스 구축/자료 구조.md",
+    "정보처리기사/무제.md",
     "정보처리기사/24년 2회차.md",
+    "정보처리기사/데이터베이스 구축/자료 구조.md",
     "정보처리기사/데이터베이스 구축/데이터 베이스 명령어.md",
     "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
     "정보처리기사/프로그래밍 언어 활용/공통 모듈 구현.md",
@@ -363,7 +364,6 @@
     "정보처리기사/잘못된 문장 기출 중.md",
     "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "정보처리기사/소프트웨어-개발/소프트웨어 설계.md",
-    "정보처리기사/기출 pdf.md",
     "image/Pasted image 20250509000353.png",
     "image/Pasted image 20250508190245.png",
     "image/Pasted image 20250508173505.png",

@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/24년 3회 (2) - 4과목 ~.md",
+                "file": "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "24년 3회 (2) - 4과목 ~"
+              "title": "네트워크 신기술"
             }
           }
         ],
@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "알고리즘",
+                "query": "info protoco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -136,8 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -235,14 +234,16 @@
   },
   "active": "7947e2a7df43d2a6",
   "lastOpenFiles": [
+    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
+    "정보처리기사/정보시스템_구축관리/비용 산정 모델.md",
+    "정보처리기사/24년 3회 (2) - 4과목 ~.md",
+    "image/Pasted image 20250509141155.png",
+    "image/Pasted image 20250509141120.png",
     "정보처리기사/잘못된 문장 기출 중.md",
     "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
     "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "정보처리기사/소프트웨어-개발/소프트웨어 설계.md",
-    "정보처리기사/24년 3회 (2) - 4과목 ~.md",
     "정보처리기사/기출 pdf.md",
-    "정보처리기사/정보시스템_구축관리/비용 산정 모델.md",
-    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
     "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
     "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
     "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
@@ -268,13 +269,10 @@
     "image/Pasted image 20250508172544.png",
     "image/Pasted image 20250508172535.png",
     "image/Pasted image 20250508170703.png",
-    "정보처리기사/데이터베이스 구축/트랜잭션, 병행 제어.md",
     "image/Pasted image 20250508164355.png",
     "Excalidraw",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
-    "image/Pasted image 20250508140513.png",
-    "image/Pasted image 20250508132527.png",
     "정보처리기사/프로그래밍 언어 활용",
     "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발",

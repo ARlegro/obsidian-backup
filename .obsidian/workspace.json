@@ -194,7 +194,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "색인 순차",
+                "query": "패키징",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -220,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -318,8 +319,9 @@
   },
   "active": "2cca3775fe38cc7f",
   "lastOpenFiles": [
-    "정보처리기사/데이터베이스 구축/검색과 해싱.md",
+    "정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
     "정보처리기사/24년 1회.md",
+    "정보처리기사/데이터베이스 구축/검색과 해싱.md",
     "정보처리기사/정보시스템_구축관리/암호화.md",
     "정보처리기사/24년 2회.md",
     "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
@@ -350,7 +352,6 @@
     "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
     "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
     "파이썬/Flask.md",
-    "정보처리기사/데이터베이스 구축/자료 구조.md",
     "image/Pasted image 20250508173505.png",
     "image/Pasted image 20250508173500.png",
     "정보처리기사/정보시스템_구축관리",

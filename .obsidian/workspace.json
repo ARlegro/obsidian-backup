@@ -222,7 +222,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RSA",
+                "query": "하둡",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -243,12 +243,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -344,7 +344,7 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "a564452322a5d765",
+  "active": "7dd77a7ae60720af",
   "lastOpenFiles": [
     "정보처리기사/기출/23년 3회.md",
     "정보처리기사/기출/23년 2회.md",

@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/24년 1회.md",
+                "file": "정보처리기사/24년 2회차.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "24년 1회"
+              "title": "24년 2회차"
             }
           }
         ],
@@ -208,7 +208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mall",
+                "query": "dml",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -234,8 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -331,12 +330,14 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "29a90dc3d01db9e5",
+  "active": "7dd77a7ae60720af",
   "lastOpenFiles": [
+    "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
     "정보처리기사/24년 2회차.md",
+    "정보처리기사/프로그래밍 언어 활용/공통 모듈 구현.md",
+    "정보처리기사/소프트웨어-개발/모듈.md",
     "정보처리기사/24년 1회.md",
     "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
-    "정보처리기사/데이터베이스 구축/관계형 데이터베이스 모델.md",
     "정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
     "정보처리기사/데이터베이스 구축/검색과 해싱.md",
     "정보처리기사/정보시스템_구축관리/암호화.md",
@@ -362,10 +363,8 @@
     "정보처리기사/기출 pdf.md",
     "정보처리기사/프로그래밍 언어 활용/프로세스 스케쥴링.md",
     "정보처리기사/데이터베이스 구축/데이터베이스의 구성과 모델.md",
-    "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
     "image/Pasted image 20250509000353.png",
     "image/Pasted image 20250508190245.png",
-    "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
     "image/Pasted image 20250508173505.png",
     "image/Pasted image 20250508173500.png",
     "정보처리기사/정보시스템_구축관리",

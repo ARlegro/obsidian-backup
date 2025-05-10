@@ -181,12 +181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
+                "file": "정보처리기사/기출/23년 2회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "데이터베이의 개념"
+              "title": "23년 2회"
             }
           }
         ],
@@ -248,7 +248,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -264,7 +265,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
+                "file": "정보처리기사/기출/23년 2회.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -274,7 +275,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "데이터베이의 개념 의 백링크"
+              "title": "23년 2회 의 백링크"
             }
           },
           {
@@ -345,6 +346,7 @@
   },
   "active": "a564452322a5d765",
   "lastOpenFiles": [
+    "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
     "정보처리기사/기출/23년 2회.md",
     "정보처리기사/기출/23년 3회.md",
     "정보처리기사/기출/24년 2회.md",
@@ -367,7 +369,6 @@
     "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
     "정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
     "정보처리기사/데이터베이스 구축/검색과 해싱.md",
-    "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
     "정보처리기사/정보시스템_구축관리/접근 통제 정책 (MAC, DAC, RBAC).md",
     "templates/warning.md.md",
     "image/Pasted image 20250509153449.png",

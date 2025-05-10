@@ -202,9 +202,23 @@
               "icon": "lucide-file",
               "title": "23년 2회"
             }
+          },
+          {
+            "id": "c7f25df2d2903099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/개인 양식 레포트.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "개인 양식 레포트"
+            }
           }
         ],
-        "currentTab": 13
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -236,7 +250,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "⭐",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -261,7 +275,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -277,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "정보처리기사/기출/23년 2회.md",
+                "file": "etc/개인 양식 레포트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +302,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "23년 2회 의 백링크"
+              "title": "개인 양식 레포트 의 백링크"
             }
           },
           {
@@ -356,8 +371,10 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "41c79c7a2103e851",
+  "active": "c7f25df2d2903099",
   "lastOpenFiles": [
+    "정보처리기사/기출/23년 2회.md",
+    "etc/개인 양식 레포트.md",
     "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
     "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
     "정보처리기사/소프트웨어-개발/소스 코드 최적화.md",
@@ -367,7 +384,6 @@
     "정보처리기사/소프트웨어-개발/관리 - 형상, 버전, 변경, 테스트.md",
     "정보처리기사/기출/23년 3회.md",
     "정보처리기사/기출/24년 1회.md",
-    "정보처리기사/기출/23년 2회.md",
     "정보처리기사/소프트웨어-개발/디자인 패턴.md",
     "정보처리기사/소프트웨어-개발/제품 소프트웨어 저작권.md",
     "정보처리기사/데이터베이스 구축/데이터베이의 개념.md",
@@ -385,7 +401,6 @@
     "정보처리기사/데이터베이스 구축/자료 구조.md",
     "정보처리기사/프로그래밍 언어 활용/공통 모듈 구현.md",
     "정보처리기사/소프트웨어-개발/모듈.md",
-    "정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
     "image/Pasted image 20250509153449.png",
     "image/Pasted image 20250509150516.png",
     "image/Pasted image 20250509145814.png",

@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/개인 양식 레포트.md",
+                "file": "파이썬/Flask.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "개인 양식 레포트"
+              "title": "Flask"
             }
           }
         ],
@@ -292,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "etc/개인 양식 레포트.md",
+                "file": "파이썬/Flask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -302,7 +302,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "개인 양식 레포트 의 백링크"
+              "title": "Flask 의 백링크"
             }
           },
           {
@@ -373,9 +373,9 @@
   },
   "active": "c7f25df2d2903099",
   "lastOpenFiles": [
+    "etc/middle_project_report_codeit.md",
     "image/Pasted image 20250510191802.png",
     "정보처리기사/기출/23년 2회.md",
-    "etc/개인 양식 레포트.md",
     "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
     "정보처리기사/정보시스템_구축관리/소프트웨어 개발 주기.md",
     "정보처리기사/소프트웨어-개발/소스 코드 최적화.md",
@@ -409,7 +409,6 @@
     "image/Pasted image 20250509000353.png",
     "image/Pasted image 20250508190245.png",
     "image/Pasted image 20250508173505.png",
-    "image/Pasted image 20250508173500.png",
     "정보처리기사/정보시스템_구축관리",
     "Excalidraw",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",

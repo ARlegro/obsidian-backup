@@ -6,10 +6,11 @@
 ### **1. 프로젝트 개요**
 
 #### 프로젝트의 목적 
-- 
+- 개인 맞춤형 뉴스 스크랩과 소셜 기능을 제공하는 스마트 뉴스 플랫폼인 Monew 서비스 
+- Monew는 다양한 뉴스 API 및 RSS로부터 뉴스를 수집하고, 사용자 관심사 기반으로 선별하여 제공하는 맞춤형 뉴스 스크랩 서비스입니다. 사용자는 관심사에 따라 뉴스를 구독하고, 기사에 댓글을 남기거나 좋아요를 누르며 소통할 수 있습니다. 사용자 활동을 MongoDB에 저장하여 조회 성능을 최적화하며, 기사 데이터는 정기적으로 AWS S3에 백업·복구됩니다.
 
 #### 핵심 기능 
-- 
+
 
 ### **2. 담당한 작업**
 
@@ -24,7 +25,12 @@
 > 프로젝트에서 사용한 기술 스택과 구현한 주요 기능을 설명해 주세요.
 
 #### ✅기술 스택 
-- Spring, Java, Spring batch, MongoDB, PostgreSQL, Swagger
+| 분야         | 기술 스택                                                                |
+| ---------- | -------------------------------------------------------------------- |
+| **백엔드**    | Spring Boot, Spring Batch, Spring Data JPA, QueryDSL                 |
+| **데이터베이스** | PostgreSQL, MongoDB                                                  |
+| **인프라**    | AWS S3, AWS ECS, GitHub Actions, ECR, MongoDB Atlas, RDS, CodeDeploy |
+| **테스트**    | JUnit 5, Mockito                                                     |
 
 #### ✅구현한 주요 기능 
 
@@ -73,15 +79,16 @@ java.lang.UnsupportedOperationException: Amazon S3 resource can not be resolved 
 	- 배치 작업 자체가 러닝커브가 있는 작업인데 MultiPart방법을 또 학습하기에는 시간 부족
 
 #### ✅해결
+https://github.com/4monument/sb1-monew-team04/pull/127
 > 로컬 저장 후 S3 전송 + MultiResourceItemReader**
-- 흐름
+- **흐름**
 	- 매 시간 기사 수집 후 FlatFileItemWriter 로 로컬 CSV 파일 생성 
 	- 완료된 파일을 S3에 업로드
 	- 복구가 필요한 경우 해당 날짜 폴더 내의 모든 파일을 조회
 	- MultiResourceItemReader 를 통해 여러 개의 CSV 파일을 하나의 Step에서 순차적으로 처리 
-- 장점
+- **장점**
 	- 낮은 학습 곡선 : Spring-Batch 기본 구현체 그대로 사용 
-- 단점
+- **단점**
 	- S3객체 수 증가
 
 파일 수 증가라는 단점보다, 배치 구조 단순화 및 개발일정 준수라는 장점이 더 크다고 판단했습니다,
@@ -91,17 +98,19 @@ java.lang.UnsupportedOperationException: Amazon S3 resource can not be resolved 
 > 팀원들과의 협업 과정에서 느낀 점, 배운 점, 그리고 피드백을 기록해 주세요.
 
 #### 협업 
-- 공유 문화 배움 
 
+이번 프로젝트에서 가장 인상 깊었던 점은 **소통 중심의 협업 문화**였습니다. 
+이전까지의 경험에서는 간단한 소통 후 주로 정해진 역할을 맡아 각자 작업하늠 방식이었습니다. 그래서 IT분야에서 협업은 '말보다는 코드로 증명하는 것'이라는 생각을 막연히 갖고 있었습니다.
+하지만 이번 팀에서는 **대화와 피드백을 중심으로 한 협업**이 활발하게 이루어졌습니다. 매일 시간이 오래 걸리더라도 확실히 피드백을 하고 기능 구현에 들어가며, 개발 도중에도 끊임없이 의견을 교환했고, 이를 통해 각자가 구현한 작업이 잘 맞물릴 수 있었습니다.
+물론, 이런 방식으로 인해 개발 시간이 조금 줄어들 수 있었지만, 의도와는 다른 방향으로 개발되는 경우의 수를 줄일 수 있었다는 점에서 '오히려 효율적인 방식이구나' 라는 생각을 하게되었습니다. 
 
 #### 피드백 
-
 **아쉬운점 1‍⃣ : 시간 부족** 
 - 이번 프로젝트를 하면서 중간에 개인적인 외부 일정들이 생기다보니 프로젝트 중간부터 몰입을 못하게 되어서 아쉬웠습니다.
 - 이로 인해, 개선할만한 포인트들을 인지하면서도 못하고 있는 점과 마지막에 팀원들과의 소통에 소홀히하게 됐던점이 아쉬웠습니다.
 
-**아쉬운점 2‍⃣ : 문서화 이슈** 
-- RoadMap을 통해 이슈들의 진행 계획과 상황을 문서화하기로 정했지만 중반부터 소홀히 하게 되었습니다.
+**아쉬운점 2‍⃣ : 문서화 부족**
+- RoadMap을 통해 이슈들의 진행 계획과 상황을 문서화하기로 정했지만 저의 게으름 때문에 중반부터 소홀히 하게 되었습니다.
 
 
 ### **6. 코드 품질 및 최적화**
@@ -135,6 +144,7 @@ public class InterestContainer {
  
 
 **2‍⃣ 컨텍스트 저장 ➡ 싱글톤 패턴 적용** 
+https://github.com/4monument/sb1-monew-team04/pull/171#issue-3040309101
 
 **초기 - 단순 batch Context사용** 
 - 기사관련 배치작업을 할 때 Component가 아닌 pojo객체로 ExecutionContext에 저장해서 다른 Step과 공유를 했었습니다.
@@ -166,7 +176,6 @@ public class InterestContainer {
     this.interests.stream()
 
 ```
-
 
 
 
@@ -220,7 +229,7 @@ PutObjectRequest putObjectRequest = PutObjectRequest.builder()
 
 
 **5‍⃣ JpaWriter ➡ JdbcWriter**
-
+https://github.com/4monument/sb1-monew-team04/pull/148#issue-3028470958
 ```java
 [JdbcWriter]
 @Bean  

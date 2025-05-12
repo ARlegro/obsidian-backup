@@ -78,6 +78,20 @@
             }
           },
           {
+            "id": "b33167ab1d6e2059",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/이요한_중급프로젝트 회고.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "이요한_중급프로젝트 회고"
+            }
+          },
+          {
             "id": "c5f63ae170956b7e",
             "type": "leaf",
             "state": {
@@ -148,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -301,18 +315,21 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "e6e533eb017da96f",
+  "active": "b33167ab1d6e2059",
   "lastOpenFiles": [
+    "etc/커넥션 풀 마르는 트러블 슈팅.md",
+    "Front3-basic/틀렸던 부분.md",
+    "image/Pasted image 20250512140435.png",
+    "image/Pasted image 20250512134630.png",
+    "Front3-basic/부트스트랩-기능.md",
+    "Front3-basic/부트스트랩-불러오기.md",
     "image/Pasted image 20250512105636.png",
     "image/Pasted image 20250512105538.png",
     "image/Pasted image 20250512105536.png",
     "image/Pasted image 20250512105445.png",
     "image/Pasted image 20250512105354.png",
     "image/Pasted image 20250512105324.png",
-    "Front3-basic/부트스트랩-불러오기.md",
-    "Front3-basic/부트스트랩-기능.md",
     "image/Pasted image 20250512101641.png",
-    "etc/커넥션 풀 마르는 트러블 슈팅.md",
     "Front3-basic",
     "etc/이요한_중급프로젝트 회고.md",
     "파이썬/가상 환경 및 패키지 설치.md",
@@ -332,15 +349,11 @@
     "정보처리기사/기출/23년 2회.md",
     "정보처리기사/기출",
     "image/Pasted image 20250510191802.png",
-    "image/Pasted image 20250509235316.png",
     "Review/CodeReview-Coupling.md",
     "정보처리기사/데이터베이스 구축/자료 구조.md",
     "정보처리기사/24년 3회 (2) - 4과목 ~.md",
     "정보처리기사/24년 3회.md",
     "정보처리기사/24년 1회.md",
-    "정보처리기사/정보시스템_구축관리/텍스트 기반 데이터 교환 형식.md",
-    "image/Pasted image 20250509145814.png",
-    "image/Pasted image 20250509141155.png",
     "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",

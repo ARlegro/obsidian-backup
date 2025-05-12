@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/이요한_중급프로젝트 회고.md",
+                "file": "Front3-basic/부트스트랩-기능.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "이요한_중급프로젝트 회고"
+              "title": "부트스트랩-기능"
             }
           },
           {
@@ -303,7 +303,17 @@
   },
   "active": "e6e533eb017da96f",
   "lastOpenFiles": [
+    "image/Pasted image 20250512105636.png",
+    "image/Pasted image 20250512105538.png",
+    "image/Pasted image 20250512105536.png",
+    "image/Pasted image 20250512105445.png",
+    "image/Pasted image 20250512105354.png",
+    "image/Pasted image 20250512105324.png",
+    "Front3-basic/부트스트랩-불러오기.md",
+    "Front3-basic/부트스트랩-기능.md",
+    "image/Pasted image 20250512101641.png",
     "etc/커넥션 풀 마르는 트러블 슈팅.md",
+    "Front3-basic",
     "etc/이요한_중급프로젝트 회고.md",
     "파이썬/가상 환경 및 패키지 설치.md",
     "DB/mongo/기본.md",
@@ -329,18 +339,9 @@
     "정보처리기사/24년 3회.md",
     "정보처리기사/24년 1회.md",
     "정보처리기사/정보시스템_구축관리/텍스트 기반 데이터 교환 형식.md",
-    "정보처리기사/정보시스템_구축관리/접근 통제 정책 (MAC, DAC, RBAC).md",
-    "정보처리기사/정보시스템_구축관리/암호화.md",
-    "정보처리기사/정보시스템_구축관리/서비스 공격.md",
     "image/Pasted image 20250509145814.png",
     "image/Pasted image 20250509141155.png",
-    "image/Pasted image 20250509141120.png",
-    "image/Pasted image 20250509114305.png",
-    "image/Pasted image 20250509113704.png",
-    "image/Pasted image 20250509113651.png",
     "정보처리기사/오답",
-    "image/Pasted image 20250509112411.png",
-    "image/Pasted image 20250508113625.png",
     "정보처리기사/정보시스템_구축관리",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
@@ -348,7 +349,6 @@
     "정보처리기사/프로그래밍 언어 활용",
     "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발",
-    "무제 1",
     "무제 파일.canvas"
   ]
 }

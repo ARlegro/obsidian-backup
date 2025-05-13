@@ -1,3 +1,8 @@
+---
+dg-publish: true
+dg-home: false
+---
+> 커넥션 풀 마르는 트러블 슈팅
 
 ### 문제점 및 해결 과정
 

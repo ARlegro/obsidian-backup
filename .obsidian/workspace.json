@@ -4,73 +4,115 @@
     "type": "split",
     "children": [
       {
-        "id": "896b4844c944423f",
+        "id": "8dc87c279e747dcc",
         "type": "tabs",
         "children": [
           {
-            "id": "6b17bee91c57c831",
+            "id": "1ff046c60a176a7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어-개발/제품_소프트웨어_메뉴얼_작성.md",
+                "file": "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "제품_소프트웨어_메뉴얼_작성"
+              "title": "테일러링과 프레임워크"
             }
           },
           {
-            "id": "447308d31a2c7d80",
+            "id": "8a6d5ea48d95b7bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front3-basic/틀렸던 부분.md",
+                "file": "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "틀렸던 부분"
+              "title": "네트워크 구성"
             }
           },
           {
-            "id": "c8652b6222ff8e42",
+            "id": "b9a052c31409f8c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front3-basic/틀렸던 부분.md",
+                "file": "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "틀렸던 부분"
+              "title": "네트워크 신기술"
             }
           },
           {
-            "id": "0ed55ac3b01cf59b",
+            "id": "834b74bcaf025ebb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front3-basic/틀렸던 부분.md",
+                "file": "정보처리기사/잘못된 문장 기출 중.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "틀렸던 부분"
+              "title": "잘못된 문장 기출 중"
             }
           },
           {
-            "id": "bc6f7af515137d7d",
+            "id": "7947e2a7df43d2a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "네트워크 신기술"
+            }
+          },
+          {
+            "id": "48254d4026aa4cfc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/정보시스템_구축관리/텍스트 기반 데이터 교환 형식.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "텍스트 기반 데이터 교환 형식"
+            }
+          },
+          {
+            "id": "46f88c8b39016e24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/정보시스템_구축관리/암호화.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "암호화"
+            }
+          },
+          {
+            "id": "f165b66015872c87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Front3-basic/nate 뉴스의 핫링크 방지.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -78,203 +120,35 @@
             }
           },
           {
-            "id": "72e753ce5b465cb4",
+            "id": "9c5fcd50997232cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Review/CodeReview-Coupling.md",
+                "file": "infra/Connect_EC2_by_WSL(feat.SSH).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CodeReview-Coupling"
+              "title": "Connect_EC2_by_WSL(feat.SSH)"
             }
           },
           {
-            "id": "d5f7e067edaf017b",
+            "id": "a065d88422abea50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
+                "file": "infra/Connect_EC2_by_WSL(feat.SSH).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "애플리케이션-성능개선"
-            }
-          },
-          {
-            "id": "0fd219b81c98bf75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/이요한_중급프로젝트 회고.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "이요한_중급프로젝트 회고"
-            }
-          },
-          {
-            "id": "e6e533eb017da96f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front3-basic/부트스트랩-기능.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "부트스트랩-기능"
-            }
-          },
-          {
-            "id": "b33167ab1d6e2059",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "파이썬/Flask.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Flask"
-            }
-          },
-          {
-            "id": "a4364eb1115a5ee9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "파이썬/VSCode에 Docker 적용해보기.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VSCode에 Docker 적용해보기"
-            }
-          },
-          {
-            "id": "059bce882452d6c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "파이썬/무제.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "무제"
-            }
-          },
-          {
-            "id": "57ee1fd7eb33bb0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/mongo/기본.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기본"
-            }
-          },
-          {
-            "id": "5e1000d157efb014",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Docker로 띄었을 때 내부 확인하는 법"
-            }
-          },
-          {
-            "id": "c5f63ae170956b7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/obsidian_hosting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "obsidian_hosting"
-            }
-          },
-          {
-            "id": "d151c0dd4c8f5233",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/obsidian_hosting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "obsidian_hosting"
-            }
-          },
-          {
-            "id": "0911dcf02265a4a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/theme_test.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "theme_test"
-            }
-          },
-          {
-            "id": "2e8c86d5ecd79fbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Review/CodeReview-Coupling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CodeReview-Coupling"
-            }
-          },
-          {
-            "id": "ac4546d67b7c098c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "애플리케이션-성능개선"
+              "title": "Connect_EC2_by_WSL(feat.SSH)"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -309,7 +183,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -347,17 +221,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "정보처리기사 - 소프트웨어 설계.md",
+                "file": "파이썬/Flask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "정보처리기사 - 소프트웨어 설계 의 백링크"
+              "title": "Flask 의 백링크"
             }
           },
           {
@@ -404,8 +278,7 @@
               "title": "BeautifulSoup 라이브러리 의 개요"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -427,30 +300,29 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "72e753ce5b465cb4",
+  "active": "a065d88422abea50",
   "lastOpenFiles": [
+    "etc/이요한_중급프로젝트 회고.md",
+    "Front3-basic/new URL.md",
+    "infra/Port-Fowarding.md",
+    "infra/Connect_EC2_by_WSL(feat.SSH).md",
+    "etc/middle_project_report_codeit.md",
+    "infra",
+    "Front3-basic/nate 뉴스의 핫링크 방지.md",
+    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
+    "정보처리기사/기출/23년 3회.md",
+    "정보처리기사/기출/23년 2회.md",
+    "파이썬/Flask.md",
+    "etc/obsidian-hosting.md",
+    "README.md",
+    "Front3-basic/new URL 인터페이스로 검증하기.md",
+    "conflict-files-obsidian-git.md",
+    "Front3-basic/복습하면서.md",
     "Front3-basic/부트스트랩-기능.md",
     "Front3-basic/부트스트랩-불러오기.md",
-    "Front3-basic/틀렸던 부분.md",
-    "Front3-basic/nate 뉴스의 핫링크 방지.md",
-    "Front3-basic/new URL.md",
-    "templates/tip.md.md",
-    "Front3-basic/복습하면서.md",
-    "파이썬/가상 환경 및 패키지 설치.md",
-    "파이썬/VSCode에 Docker 적용해보기.md",
-    "파이썬/Flask.md",
-    "파이썬/BeautifulSoup 라이브러리.md",
-    "파이썬/API 호출 by requests 패키지.md",
     "파이썬/휴대폰으로 보려고 temp.md",
-    "파이썬/파이썬으로 몽고 DB 조작.md",
-    "파이썬/무제.md",
-    "etc/Exhausted Connection-Pool.md",
-    "etc/WSL_SSH_Github Connect.md",
-    "정보처리기사/정보시스템_구축관리/암호화.md",
-    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-    "DB/mongo/기본.md",
+    "파이썬/VSCode에 Docker 적용해보기.md",
     "image/Pasted image 20250513003219.png",
-    "etc/이요한_중급프로젝트 회고.md",
     "image/Pasted image 20250512140435.png",
     "image/Pasted image 20250512134630.png",
     "image/Pasted image 20250512105636.png",
@@ -460,18 +332,19 @@
     "image/Pasted image 20250512105354.png",
     "image/Pasted image 20250512105324.png",
     "image/Pasted image 20250512101641.png",
+    "etc/WSL_SSH_Github Connect.md",
+    "etc/Exhausted Connection-Pool.md",
+    "Front3-basic/틀렸던 부분.md",
     "Front3-basic",
-    "etc/obsidian-hosting.md",
-    "정보처리기사/소프트웨어-개발/소스 코드 최적화.md",
-    "정보처리기사/기출/기출 pdf.md",
-    "정보처리기사/기출/24년 3회.md",
-    "정보처리기사/기출/24년 2회차.md",
+    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "etc/이요한 - 중급 프로젝트 레포트.md",
+    "파이썬/가상 환경 및 패키지 설치.md",
+    "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
     "정보처리기사/기출",
-    "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",
+    "Excalidraw",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
-    "Excalidraw",
     "정보처리기사/프로그래밍 언어 활용",
     "정보처리기사/데이터베이스 구축",
     "정보처리기사/소프트웨어-개발",

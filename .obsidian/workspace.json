@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "447308d31a2c7d80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/소프트웨어-개발/구조적 개발 방법론.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "구조적 개발 방법론"
-            }
-          },
-          {
             "id": "6b17bee91c57c831",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "제품_소프트웨어_메뉴얼_작성"
+            }
+          },
+          {
+            "id": "447308d31a2c7d80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/소프트웨어-개발/구조적 개발 방법론.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "구조적 개발 방법론"
             }
           },
           {
@@ -125,12 +125,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬/무제 1.md",
+                "file": "DB/mongo/기본.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "무제 1"
+              "title": "기본"
+            }
+          },
+          {
+            "id": "5e1000d157efb014",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Docker로 띄었을 때 내부 확인하는 법"
             }
           },
           {
@@ -204,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -357,15 +371,17 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "57ee1fd7eb33bb0c",
+  "active": "5e1000d157efb014",
   "lastOpenFiles": [
+    "image/Pasted image 20250513003219.png",
+    "DB/mongo/기본.md",
+    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "파이썬/휴대폰으로 보려고 temp.md",
     "파이썬/무제.md",
-    "파이썬/무제 1.md",
     "파이썬/VSCode에 Docker 적용해보기.md",
     "파이썬/Flask.md",
     "파이썬/BeautifulSoup 라이브러리.md",
     "Front3-basic/틀렸던 부분.md",
-    "DB/mongo/기본.md",
     "파이썬/API 호출 by requests 패키지.md",
     "파이썬/파이썬으로 몽고 DB 조작.md",
     "파이썬/가상 환경 및 패키지 설치.md",
@@ -395,8 +411,6 @@
     "정보처리기사/기출",
     "image/Pasted image 20250510191802.png",
     "Review/CodeReview-Coupling.md",
-    "정보처리기사/데이터베이스 구축/자료 구조.md",
-    "정보처리기사/24년 3회 (2) - 4과목 ~.md",
     "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",

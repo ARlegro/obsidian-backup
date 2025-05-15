@@ -13,12 +13,68 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "carfton-test/복습/부트스트랩-불러오기.md",
+                "file": "etc/WSL_SSH_Github Connect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "부트스트랩-불러오기"
+              "title": "WSL_SSH_Github Connect"
+            }
+          },
+          {
+            "id": "2d5b456ed90673a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "infra/Connect_EC2_by_WSL(feat.SSH).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Connect_EC2_by_WSL(feat.SSH)"
+            }
+          },
+          {
+            "id": "79465159bd78cd78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/Spacing-Container.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spacing-Container"
+            }
+          },
+          {
+            "id": "faa048e2da7d8235",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/Grid Columns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grid Columns"
+            }
+          },
+          {
+            "id": "fcbc8382fffc6a5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/글자 및 버튼.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "글자 및 버튼"
             }
           },
           {
@@ -115,7 +171,8 @@
               "title": "애플리케이션-성능개선"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -268,53 +325,54 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "fcbc8382fffc6a5e",
   "lastOpenFiles": [
+    "image/Pasted image 20250515180753.png",
+    "image/Pasted image 20250515180744.png",
+    "DB/mongo/메서드 하나씩 써보기.md",
+    "carfton-test/css/글자 및 버튼.md",
+    "carfton-test/css/Grid Columns.md",
+    "image/Pasted image 20250515174717.png",
+    "DB/mongo/기본.md",
+    "carfton-test/css/Spacing-Container.md",
+    "image/캡처_2025_05_15_17_11_41_410.png",
+    "image/캡처_2025_05_15_17_11_33_930.png",
+    "image/Pasted image 20250515170947.png",
+    "image/Pasted image 20250515170629.png",
+    "image/Pasted image 20250515164709.png",
+    "infra/Trouble when basic Deploy (EC2-Docker).md",
+    "carfton-test/css",
+    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
+    "infra/Connect_EC2_by_WSL(feat.SSH).md",
+    "etc/WSL_SSH_Github Connect.md",
+    "infra",
+    "carfton-test/복습/부트스트랩-불러오기.md",
     "carfton-test/오류(or Tip)/new URL.md",
     "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
     "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
-    "carfton-test/복습/부트스트랩-불러오기.md",
     "carfton-test/복습/복습하면서.md",
     "carfton-test/복습",
     "carfton-test/오류(or Tip)",
     "carfton-test/복습/페이버릿 부분 CSS.md",
     "carfton-test/오류(or Tip)/틀렸던 부분.md",
     "carfton-test/복습/부트스트랩-기능.md",
-    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
-    "etc/WSL_SSH_Github Connect.md",
     "etc/What is restful api.md",
     "파이썬/VSCode에 Docker 적용해보기.md",
     "파이썬/Flask.md",
     "etc/이요한_중급프로젝트 회고.md",
     "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
     "정보처리기사/소프트웨어-개발/제품_소프트웨어_메뉴얼_작성.md",
-    "DB/mongo/기본.md",
-    "DB/mongo/메서드 하나씩 써보기.md",
     "etc/obsidian-hosting.md",
     "Review/CodeReview-Coupling.md",
-    "templates/question.md.md",
-    "templates/info-callout.md.md",
-    "templates/note-fromtmatter.md",
-    "etc/Exhausted Connection-Pool.md",
-    "Digital Garden Home.md",
     "image/Pasted image 20250515005139.png",
     "image/Pasted image 20250514223627.png",
     "image/Pasted image 20250514160350.png",
-    "image/Pasted image 20250514160342.png",
-    "image/Pasted image 20250514160334.png",
-    "image/Pasted image 20250514151157.png",
-    "image/Pasted image 20250513003219.png",
-    "image/Pasted image 20250512140435.png",
-    "image/Pasted image 20250512134630.png",
-    "image/Pasted image 20250512105636.png",
     "carfton-test",
     "정보처리기사/기출",
     "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
-    "Excalidraw",
-    "정보처리기사/프로그래밍 언어 활용",
     "무제 파일.canvas"
   ]
 }

@@ -120,6 +120,34 @@
             }
           },
           {
+            "id": "270d6d62e8baaec3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/obsidian-hosting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian-hosting"
+            }
+          },
+          {
+            "id": "78d5279d7a694334",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/What is restful api.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "What is restful api"
+            }
+          },
+          {
             "id": "d5f7e067edaf017b",
             "type": "leaf",
             "state": {
@@ -302,7 +330,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -455,12 +483,18 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "f49e0af8188b30e2",
+  "active": "78d5279d7a694334",
   "lastOpenFiles": [
-    "DB/mongo/기본.md",
-    "DB/mongo/메서드 하나씩 써보기.md",
-    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "Digital Garden Home.md",
+    "image/Pasted image 20250515005139.png",
+    "etc/What is restful api.md",
+    "etc/obsidian-hosting.md",
     "Front3-basic/복습하면서.md",
+    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
+    "image/Pasted image 20250514223627.png",
+    "DB/mongo/메서드 하나씩 써보기.md",
+    "DB/mongo/기본.md",
+    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
     "image/Pasted image 20250514160350.png",
     "image/Pasted image 20250514160342.png",
     "image/Pasted image 20250514160334.png",
@@ -483,17 +517,11 @@
     "파이썬/무제.md",
     "etc/Exhausted Connection-Pool.md",
     "etc/WSL_SSH_Github Connect.md",
-    "정보처리기사/정보시스템_구축관리/암호화.md",
     "image/Pasted image 20250513003219.png",
-    "etc/이요한_중급프로젝트 회고.md",
     "image/Pasted image 20250512140435.png",
     "image/Pasted image 20250512134630.png",
     "image/Pasted image 20250512105636.png",
-    "image/Pasted image 20250512105538.png",
-    "image/Pasted image 20250512105536.png",
     "Front3-basic",
-    "etc/obsidian-hosting.md",
-    "정보처리기사/소프트웨어-개발/소스 코드 최적화.md",
     "정보처리기사/기출",
     "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",

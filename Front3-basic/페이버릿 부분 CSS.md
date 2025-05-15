@@ -89,3 +89,32 @@
   <span>Home</span>
 </span>
 ```
+
+
+
+
+
+
+현재 HTML 코드에서는 링크(`<a>` 태그)에만 `text-primary` 색상이 적용되어 있어서 아이콘과 텍스트가 모두 같은 색상으로 표시됩니다. 아이콘만 다른 색상으로 강조하려면 아래와 같이 수정하세요:
+
+```html
+<!-- 아이콘에 빨간색(danger) 적용 예시 -->
+<a href="#" class="text-primary trash-btn" data-id="${_id}">
+  <i class="fas fa-trash text-danger"></i> 휴지통으로!
+</a>
+
+<!-- 아이콘에 주황색(warning) 적용 예시 -->
+<a href="#" class="text-primary trash-btn" data-id="${_id}">
+  <i class="fas fa-trash text-warning"></i> 휴지통으로!
+</a>
+```
+
+Bootstrap에서 사용할 수 있는 주요 색상 클래스:
+
+- `text-primary`: 파란색 (기본 테마색)
+- `text-secondary`: 회색
+- `text-success`: 녹색
+- `text-danger`: 빨간색
+- `text-warning`: 노란색/주황색
+- `text-info`: 하늘색
+- `text-dark`: 검정색에 가까운 색

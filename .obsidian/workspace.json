@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/WSL_SSH_Github Connect.md",
+                "file": "carfton-test/복습/부트스트랩-불러오기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WSL_SSH_Github Connect"
+              "title": "부트스트랩-불러오기"
             }
           },
           {
@@ -53,14 +53,10 @@
             "id": "c5f63ae170956b7e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/obsidian_hosting.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "obsidian_hosting"
+              "title": "새 탭"
             }
           },
           {
@@ -272,27 +268,29 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "059bce882452d6c8",
+  "active": "ed54d954bc7cc25b",
   "lastOpenFiles": [
+    "carfton-test/오류(or Tip)/new URL.md",
+    "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
+    "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
+    "carfton-test/복습/부트스트랩-불러오기.md",
+    "carfton-test/복습/복습하면서.md",
+    "carfton-test/복습",
+    "carfton-test/오류(or Tip)",
+    "carfton-test/복습/페이버릿 부분 CSS.md",
+    "carfton-test/오류(or Tip)/틀렸던 부분.md",
+    "carfton-test/복습/부트스트랩-기능.md",
+    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
+    "etc/WSL_SSH_Github Connect.md",
     "etc/What is restful api.md",
-    "carfton-test/가벼운 배포 도중 발생한 문제.md",
-    "carfton-test/복습하면서.md",
-    "carfton-test/nate 뉴스의 핫링크 방지.md",
-    "carfton-test/new URL.md",
-    "carfton-test/페이버릿 부분 CSS.md",
-    "carfton-test/틀렸던 부분.md",
     "파이썬/VSCode에 Docker 적용해보기.md",
     "파이썬/Flask.md",
-    "carfton-test/부트스트랩-기능.md",
     "etc/이요한_중급프로젝트 회고.md",
     "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
     "정보처리기사/소프트웨어-개발/제품_소프트웨어_메뉴얼_작성.md",
     "DB/mongo/기본.md",
     "DB/mongo/메서드 하나씩 써보기.md",
     "etc/obsidian-hosting.md",
-    "etc/WSL_SSH_Github Connect.md",
-    "carfton-test/부트스트랩-불러오기.md",
-    "carfton-test/Direct binding vs Event delegation.md",
     "Review/CodeReview-Coupling.md",
     "templates/question.md.md",
     "templates/info-callout.md.md",
@@ -300,7 +298,6 @@
     "etc/Exhausted Connection-Pool.md",
     "Digital Garden Home.md",
     "image/Pasted image 20250515005139.png",
-    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
     "image/Pasted image 20250514223627.png",
     "image/Pasted image 20250514160350.png",
     "image/Pasted image 20250514160342.png",
@@ -318,8 +315,6 @@
     "image/정보처리기사필기_01_필수계산41문제.pdf",
     "Excalidraw",
     "정보처리기사/프로그래밍 언어 활용",
-    "정보처리기사/데이터베이스 구축",
-    "정보처리기사/소프트웨어-개발",
     "무제 파일.canvas"
   ]
 }

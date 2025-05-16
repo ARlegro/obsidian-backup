@@ -77,3 +77,64 @@ card안에 card-content로 감싼다음에 media 구조로 감싸기
 
 
 
+### is-multiline 활용한 가로정렬 카드 만들기
+![[Pasted image 20250516124022.png]]
+>[!tip] 순서
+>1. columns is-multiline의 div 만들기
+>2. 1번 내부 card is-one-third 만들기 
+>3. 각 card별 columns > 이미지 column + content column 부여
+
+```html
+    <section class="section">
+      <div class="columns is-multiline">
+        <div class="card is-one-third">
+          <!-- 가운데 정렬 옵션 : is-vcentered -->
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img
+                  src="https://movie-phinf.pstatic.net/20190115_228/1547528180168jgEP7_JPEG/movie_image.jpg?type=m665_443_2"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+            <div class="column is-8">
+              <div class="card-content">
+                <p class="title">카드 제목</p>
+                <p class="subtitle">카드 부제목</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card is-one-third">
+          <!-- 가운데 정렬 옵션 : is-vcentered -->
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img
+                  src="https://movie-phinf.pstatic.net/20190115_228/1547528180168jgEP7_JPEG/movie_image.jpg?type=m665_443_2"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+            <div class="column is-8">
+              <div class="card-content">
+                <p class="title">카드 제목</p>
+                <p class="subtitle">카드 부제목</p>
+              </div>
+            </div>
+          </div>
+        </div>
+```
+
+> [!INFO]  추가 : card가 y축 가운데 정렬하게 만드는 옵션  ➡ is-vcentered
+```html
+<div class="columns is-vcentered">	
+   		<div class="column is-4">
+```
+
+
+
+
+
+

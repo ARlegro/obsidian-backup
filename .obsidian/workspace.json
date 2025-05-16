@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "carfton-test/css/Grid Columns.md",
+                "file": "carfton-test/복습/복습하면서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Grid Columns"
+              "title": "복습하면서"
             }
           },
           {
@@ -327,11 +327,12 @@
   },
   "active": "fcbc8382fffc6a5e",
   "lastOpenFiles": [
-    "image/Pasted image 20250516124022.png",
-    "DB/mongo/기본.md",
-    "carfton-test/css/Grid Columns.md",
     "carfton-test/복습/부트스트랩-불러오기.md",
     "carfton-test/복습/부트스트랩-기능.md",
+    "carfton-test/복습/복습하면서.md",
+    "carfton-test/css/Grid Columns.md",
+    "image/Pasted image 20250516124022.png",
+    "DB/mongo/기본.md",
     "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
     "carfton-test/css/Spacing-Container.md",
     "carfton-test/css/글자 및 버튼.md",
@@ -352,7 +353,6 @@
     "infra",
     "carfton-test/오류(or Tip)/new URL.md",
     "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
-    "carfton-test/복습/복습하면서.md",
     "carfton-test/복습",
     "carfton-test/오류(or Tip)",
     "carfton-test/복습/페이버릿 부분 CSS.md",
@@ -366,7 +366,6 @@
     "etc/obsidian-hosting.md",
     "Review/CodeReview-Coupling.md",
     "image/Pasted image 20250515005139.png",
-    "image/Pasted image 20250514223627.png",
     "carfton-test",
     "정보처리기사/기출",
     "정보처리기사/오답",

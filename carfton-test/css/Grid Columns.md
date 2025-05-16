@@ -56,3 +56,24 @@ card안에 card-content로 감싼다음에 media 구조로 감싸기
     </div>
   </section>
 ```
+
+### is-multiline 활용하기
+
+- `is-multiline`은 Bulma의  **그리드 옵션 클래스**
+- **자동 줄 바꿈** : 컬럼들이 한 줄을 넘어서 아래 줄로 내려갈 수 있게 해주는 속성
+```html
+<div class="columns is-multiline">
+  <div class="column is-4">1</div>
+  <div class="column is-4">2</div>
+  <div class="column is-4">3</div>
+  <div class="column is-4">4</div> <!-- 자동 줄바꿈되어 아래로 -->
+</div>
+```
+
+> 참고 : 만약 최대 너비 제한 + 가운데 정렬이 필요하면 container 클래스랑 같이 쓰기 
+
+
+
+
+
+

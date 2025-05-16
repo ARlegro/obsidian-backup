@@ -3,11 +3,6 @@ dg-publish: true
 permalink: /infra/connect-ec2-by-wsl-feat-ssh/
 ---
 
-**externally-managed environment**
-
-- Ubuntu/Debian은 파이썬 패키지를 모두 `apt`(Debian 패키지)로 관리하길 권장합니다.
-
-
 
 ✔막혔던 부분 체크 
 - 컨테이너끼리 포트 공유 시 

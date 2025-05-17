@@ -111,12 +111,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "carfton-test/css/마무리 CSS 도입 리팩토링.md",
+                "file": "infra/Trouble when basic Deploy (EC2-Docker).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "마무리 CSS 도입 리팩토링"
+              "title": "Trouble when basic Deploy (EC2-Docker)"
+            }
+          },
+          {
+            "id": "5716ea7dcaaf3a60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
             }
           },
           {
@@ -242,7 +256,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -299,7 +313,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 261.5
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -395,54 +409,54 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ffbe8e6681124c86",
+  "active": "5716ea7dcaaf3a60",
   "lastOpenFiles": [
-    "infra/docker system prune -a --volumes.md",
     "infra/Trouble when basic Deploy (EC2-Docker).md",
-    "carfton-test/css/요구사항.md",
+    "conflict-files-obsidian-git.md",
+    "spring/프로메테우스, 그라파나, 애플리케이션 - 도커로 설치 및 연동.md",
+    "spring/다운로드 코드 만들기.md",
+    "spring/S3Resource사용_순환참조 오류.md",
+    "spring",
+    "jpa/@NotNull vs @Column.md",
+    "jpa/@ManyToOne - optional, cascade.md",
+    "jpa",
+    "java/First-Class Collections and Read-Only Collections.md",
+    "java/Virtual Thread.md",
+    "java",
+    "image/Pasted image 20250517211111.png",
+    "image/Pasted Image 20250517205713_609.png",
+    "image/Pasted Image 20250517205647_384.png",
+    "image/Pasted Image 20250517205626_210.png",
+    "image/Pasted Image 20250517205127_042.png",
+    "image/Pasted Image 20250517205000_842.png",
+    "image/Pasted Image 20250517204844_494.png",
+    "image/Pasted Image 20250517204824_740.png",
+    "batch/SQL mapping Error - when using JdbcBatchItemWriter.md",
+    "batch/Sharing Data Between Steps in Spring Batch.md",
+    "batch/Batch test Error When multi job.md",
+    "batch/@JobScop, @StepScop.md",
+    "batch",
+    "argorism/twoPoint/부분수열.md",
+    "argorism/twoPoint",
+    "argorism",
+    "Excalidraw/Drawing 2025-05-17 20.47.50.excalidraw.md",
+    "CS/Thread vs Process.md",
+    "CS",
+    "Review/Codereview-Coupling.md",
+    "etc/WSL_SSH_Github Connect.md",
+    "infra/docker system prune -a --volumes.md",
+    "infra/Port-Fowarding.md",
+    "infra/Connect_EC2_by_WSL(feat.SSH).md",
     "carfton-test/css/마무리 CSS 도입 리팩토링.md",
+    "백엔드",
+    "carfton-test/css/요구사항.md",
     "carfton-test/css/Grid Columns.md",
     "carfton-test/css/글자 및 버튼.md",
     "파이썬/환경변수 .env파일에 보관.md",
-    "파이썬/API 호출 by requests 패키지.md",
-    "파이썬/Flask.md",
-    "DB/mongo/메서드.md",
-    "파이썬/가상 환경 및 패키지 설치.md",
-    "파이썬/파이썬으로 몽고 DB 조작.md",
-    "파이썬/휴대폰으로 보려고 temp.md",
-    "파이썬/BeautifulSoup 라이브러리.md",
-    "DB/mongo/기본.md",
-    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
-    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-    "carfton-test/복습/복습하면서.md",
-    "carfton-test/복습/부트스트랩-기능.md",
-    "carfton-test/복습/부트스트랩-불러오기.md",
-    "carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
-    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
-    "carfton-test/오류(or Tip)/틀렸던 부분.md",
-    "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
-    "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
-    "carfton-test/오류(or Tip)/new URL.md",
     "image/Pasted image 20250516231732.png",
     "image/Pasted image 20250516231148.png",
-    "image/Pasted image 20250516220116.png",
-    "image/Pasted image 20250516215505.png",
-    "image/Pasted image 20250516215504.png",
-    "image/Pasted image 20250516215115.png",
-    "image/Pasted image 20250516214417.png",
-    "image/Pasted image 20250516195449.png",
-    "image/Pasted image 20250516195440.png",
-    "image/Pasted image 20250516195020.png",
     "carfton-test/css",
     "infra",
-    "carfton-test/복습",
-    "carfton-test/오류(or Tip)",
-    "carfton-test",
-    "정보처리기사/기출",
-    "정보처리기사/오답",
-    "정보처리기사/정보시스템_구축관리",
-    "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
-    "image/정보처리기사필기_01_필수계산41문제.pdf",
     "무제 파일.canvas"
   ]
 }

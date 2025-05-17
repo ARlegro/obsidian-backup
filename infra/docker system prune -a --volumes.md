@@ -13,4 +13,5 @@
 >[!tip] docker system prune -a --volumes
 - 미사용 이미지(`IMAGE`), 중지된 컨테이너, 남은 볼륨을 한 번에 제거
 - 볼륨까지 포함하면 상당한 공간 확보 가능
--
+
+

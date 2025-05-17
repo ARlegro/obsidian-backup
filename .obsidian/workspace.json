@@ -4,123 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "8dc87c279e747dcc",
+        "id": "896b4844c944423f",
         "type": "tabs",
         "children": [
           {
-            "id": "1ff046c60a176a7e",
+            "id": "059bce882452d6c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정보처리기사/정보시스템_구축관리/테일러링과 프레임워크.md",
+                "file": "etc/WSL_SSH_Github Connect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "테일러링과 프레임워크"
+              "title": "WSL_SSH_Github Connect"
             }
           },
           {
-            "id": "8a6d5ea48d95b7bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/네트워크 구성.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "네트워크 구성"
-            }
-          },
-          {
-            "id": "b9a052c31409f8c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "네트워크 신기술"
-            }
-          },
-          {
-            "id": "834b74bcaf025ebb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/잘못된 문장 기출 중.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "잘못된 문장 기출 중"
-            }
-          },
-          {
-            "id": "7947e2a7df43d2a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/네트워크 신기술.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "네트워크 신기술"
-            }
-          },
-          {
-            "id": "48254d4026aa4cfc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/텍스트 기반 데이터 교환 형식.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "텍스트 기반 데이터 교환 형식"
-            }
-          },
-          {
-            "id": "46f88c8b39016e24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/정보시스템_구축관리/암호화.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "암호화"
-            }
-          },
-          {
-            "id": "f165b66015872c87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front3-basic/nate 뉴스의 핫링크 방지.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "nate 뉴스의 핫링크 방지"
-            }
-          },
-          {
-            "id": "9c5fcd50997232cf",
+            "id": "2d5b456ed90673a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -134,21 +36,213 @@
             }
           },
           {
-            "id": "a065d88422abea50",
+            "id": "79465159bd78cd78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front3-basic/nate 뉴스의 핫링크 방지.md",
+                "file": "carfton-test/css/Spacing-Container.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nate 뉴스의 핫링크 방지"
+              "title": "Spacing-Container"
+            }
+          },
+          {
+            "id": "faa048e2da7d8235",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/Grid Columns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grid Columns"
+            }
+          },
+          {
+            "id": "fcbc8382fffc6a5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/Grid Columns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grid Columns"
+            }
+          },
+          {
+            "id": "2f28b53d4ffbd615",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/마무리 정리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "마무리 정리"
+            }
+          },
+          {
+            "id": "68bf786eb4dead82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/API 호출 by requests 패키지.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "API 호출 by requests 패키지"
+            }
+          },
+          {
+            "id": "ffbe8e6681124c86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "carfton-test/css/마무리 CSS 도입 리팩토링.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "마무리 CSS 도입 리팩토링"
+            }
+          },
+          {
+            "id": "08af80bb3ed567cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "infra/Trouble when basic Deploy (EC2-Docker).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Trouble when basic Deploy (EC2-Docker)"
+            }
+          },
+          {
+            "id": "ef0990dae4a6a096",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "infra/docker system prune -a --volumes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "docker system prune -a --volumes"
+            }
+          },
+          {
+            "id": "57ee1fd7eb33bb0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/mongo/기본.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "기본"
+            }
+          },
+          {
+            "id": "5e1000d157efb014",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Docker로 띄었을 때 내부 확인하는 법"
+            }
+          },
+          {
+            "id": "c5f63ae170956b7e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          },
+          {
+            "id": "d151c0dd4c8f5233",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/obsidian_hosting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian_hosting"
+            }
+          },
+          {
+            "id": "0911dcf02265a4a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "etc/theme_test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "theme_test"
+            }
+          },
+          {
+            "id": "2e8c86d5ecd79fbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Review/CodeReview-Coupling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CodeReview-Coupling"
+            }
+          },
+          {
+            "id": "ac4546d67b7c098c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "애플리케이션-성능개선"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -183,7 +277,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -205,7 +299,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 264.5
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -221,17 +315,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파이썬/Flask.md",
+                "file": "정보처리기사 - 소프트웨어 설계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Flask 의 백링크"
+              "title": "정보처리기사 - 소프트웨어 설계 의 백링크"
             }
           },
           {
@@ -278,7 +372,8 @@
               "title": "BeautifulSoup 라이브러리 의 개요"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -300,54 +395,54 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "a065d88422abea50",
+  "active": "ffbe8e6681124c86",
   "lastOpenFiles": [
-    "Front3-basic/new URL 인터페이스로 검증하기.md",
-    "Front3-basic/new URL.md",
-    "Front3-basic/틀렸던 부분.md",
-    "Front3-basic/부트스트랩-불러오기.md",
-    "Front3-basic/복습하면서.md",
-    "Front3-basic/부트스트랩-기능.md",
-    "Front3-basic/nate 뉴스의 핫링크 방지.md",
-    "infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "infra/Port-Fowarding.md",
-    "etc/이요한_중급프로젝트 회고.md",
-    "etc/middle_project_report_codeit.md",
-    "infra",
-    "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
-    "정보처리기사/기출/23년 3회.md",
-    "정보처리기사/기출/23년 2회.md",
+    "infra/docker system prune -a --volumes.md",
+    "infra/Trouble when basic Deploy (EC2-Docker).md",
+    "carfton-test/css/요구사항.md",
+    "carfton-test/css/마무리 CSS 도입 리팩토링.md",
+    "carfton-test/css/Grid Columns.md",
+    "carfton-test/css/글자 및 버튼.md",
+    "파이썬/환경변수 .env파일에 보관.md",
+    "파이썬/API 호출 by requests 패키지.md",
     "파이썬/Flask.md",
-    "etc/obsidian-hosting.md",
-    "README.md",
-    "conflict-files-obsidian-git.md",
-    "파이썬/휴대폰으로 보려고 temp.md",
-    "파이썬/VSCode에 Docker 적용해보기.md",
-    "image/Pasted image 20250513003219.png",
-    "image/Pasted image 20250512140435.png",
-    "image/Pasted image 20250512134630.png",
-    "image/Pasted image 20250512105636.png",
-    "image/Pasted image 20250512105538.png",
-    "image/Pasted image 20250512105536.png",
-    "image/Pasted image 20250512105445.png",
-    "image/Pasted image 20250512105354.png",
-    "image/Pasted image 20250512105324.png",
-    "image/Pasted image 20250512101641.png",
-    "etc/WSL_SSH_Github Connect.md",
-    "etc/Exhausted Connection-Pool.md",
-    "Front3-basic",
-    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-    "etc/이요한 - 중급 프로젝트 레포트.md",
+    "DB/mongo/메서드.md",
     "파이썬/가상 환경 및 패키지 설치.md",
-    "정보처리기사/프로그래밍 언어 활용/OSI 7계층과 오류 제어 방식.md",
+    "파이썬/파이썬으로 몽고 DB 조작.md",
+    "파이썬/휴대폰으로 보려고 temp.md",
+    "파이썬/BeautifulSoup 라이브러리.md",
+    "DB/mongo/기본.md",
+    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
+    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "carfton-test/복습/복습하면서.md",
+    "carfton-test/복습/부트스트랩-기능.md",
+    "carfton-test/복습/부트스트랩-불러오기.md",
+    "carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
+    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
+    "carfton-test/오류(or Tip)/틀렸던 부분.md",
+    "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
+    "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
+    "carfton-test/오류(or Tip)/new URL.md",
+    "image/Pasted image 20250516231732.png",
+    "image/Pasted image 20250516231148.png",
+    "image/Pasted image 20250516220116.png",
+    "image/Pasted image 20250516215505.png",
+    "image/Pasted image 20250516215504.png",
+    "image/Pasted image 20250516215115.png",
+    "image/Pasted image 20250516214417.png",
+    "image/Pasted image 20250516195449.png",
+    "image/Pasted image 20250516195440.png",
+    "image/Pasted image 20250516195020.png",
+    "carfton-test/css",
+    "infra",
+    "carfton-test/복습",
+    "carfton-test/오류(or Tip)",
+    "carfton-test",
     "정보처리기사/기출",
+    "정보처리기사/오답",
     "정보처리기사/정보시스템_구축관리",
-    "Excalidraw",
     "image/정보처리기사필기_03_잘못된문장찾기197문제.pdf",
     "image/정보처리기사필기_01_필수계산41문제.pdf",
-    "정보처리기사/프로그래밍 언어 활용",
-    "정보처리기사/데이터베이스 구축",
-    "정보처리기사/소프트웨어-개발",
     "무제 파일.canvas"
   ]
 }

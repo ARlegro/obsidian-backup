@@ -3,7 +3,6 @@ dg-publish: true
 dg-home: false
 ---
 
-
 # [1편 : @NotNull vs @Column(nullabe=false) ]
 > 1편 : 2개의 애노테이션 비교<br>
 > 2편 : @Column을 쓰는 이유

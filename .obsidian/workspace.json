@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "파이썬/휴대폰으로 보려고 temp.md",
+                "file": "java/First-Class Collections and Read-Only Collections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "휴대폰으로 보려고 temp"
+              "title": "First-Class Collections and Read-Only Collections"
             }
           },
           {
@@ -411,6 +411,11 @@
   },
   "active": "8d5f0596957b61ae",
   "lastOpenFiles": [
+    "java/Virtual Thread.md",
+    "java/First-Class Collections and Read-Only Collections.md",
+    "image/Pasted image 20250517211111.png",
+    "파이썬/휴대폰으로 보려고 temp.md",
+    "java/img_1.png",
     "spring/프로메테우스, 그라파나, 애플리케이션 - 도커로 설치 및 연동.md",
     "spring/S3Resource사용_순환참조 오류.md",
     "spring/다운로드 코드 만들기.md",
@@ -427,10 +432,7 @@
     "jpa/@ManyToOne의 optional, cascade.md",
     "jpa/@NotNull vs @Column.md",
     "jpa",
-    "java/img_1.png",
     "java/img.png",
-    "java/일급 컬렉션과 읽기 전용 컬렉션.md",
-    "java/가상 스레드.md",
     "java",
     "batch",
     "DB/mongo/기본.md",
@@ -451,9 +453,6 @@
     "carfton-test/css/Grid Columns.md",
     "carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
     "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-    "infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "carfton-test/css/마무리 CSS 도입 리팩토링.md",
-    "image/Pasted image 20250516231732.png",
     "carfton-test/css",
     "infra",
     "carfton-test/복습",

@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "infra/Port-Fowarding.md",
+                "file": "Front3-basic/nate 뉴스의 핫링크 방지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Port-Fowarding"
+              "title": "nate 뉴스의 핫링크 방지"
             }
           }
         ],
@@ -302,24 +302,25 @@
   },
   "active": "a065d88422abea50",
   "lastOpenFiles": [
-    "infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "etc/이요한_중급프로젝트 회고.md",
+    "Front3-basic/new URL 인터페이스로 검증하기.md",
     "Front3-basic/new URL.md",
+    "Front3-basic/틀렸던 부분.md",
+    "Front3-basic/부트스트랩-불러오기.md",
+    "Front3-basic/복습하면서.md",
+    "Front3-basic/부트스트랩-기능.md",
+    "Front3-basic/nate 뉴스의 핫링크 방지.md",
+    "infra/Connect_EC2_by_WSL(feat.SSH).md",
     "infra/Port-Fowarding.md",
+    "etc/이요한_중급프로젝트 회고.md",
     "etc/middle_project_report_codeit.md",
     "infra",
-    "Front3-basic/nate 뉴스의 핫링크 방지.md",
     "정보처리기사/정보시스템_구축관리/소프트웨어 개발 표준.md",
     "정보처리기사/기출/23년 3회.md",
     "정보처리기사/기출/23년 2회.md",
     "파이썬/Flask.md",
     "etc/obsidian-hosting.md",
     "README.md",
-    "Front3-basic/new URL 인터페이스로 검증하기.md",
     "conflict-files-obsidian-git.md",
-    "Front3-basic/복습하면서.md",
-    "Front3-basic/부트스트랩-기능.md",
-    "Front3-basic/부트스트랩-불러오기.md",
     "파이썬/휴대폰으로 보려고 temp.md",
     "파이썬/VSCode에 Docker 적용해보기.md",
     "image/Pasted image 20250513003219.png",
@@ -334,7 +335,6 @@
     "image/Pasted image 20250512101641.png",
     "etc/WSL_SSH_Github Connect.md",
     "etc/Exhausted Connection-Pool.md",
-    "Front3-basic/틀렸던 부분.md",
     "Front3-basic",
     "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
     "etc/이요한 - 중급 프로젝트 레포트.md",

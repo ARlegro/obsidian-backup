@@ -28,8 +28,6 @@ function submitMemo(e) {
 ```
 
 
-
-글 나중에 쓸 목차
 - e.preventDefault()를 써서 HTML에서 URL 검증 못한 이슈
 - new URL 써서 올바른 URL 문법인지 검증 
 

@@ -97,12 +97,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+                "file": "파이썬/API 호출 by requests 패키지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker로 띄었을 때 내부 확인하는 법"
+              "title": "API 호출 by requests 패키지"
+            }
+          },
+          {
+            "id": "ffbe8e6681124c86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "파이썬/환경변수 .env파일에 보관.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "환경변수 .env파일에 보관"
             }
           },
           {
@@ -200,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -353,46 +367,46 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "68bf786eb4dead82",
+  "active": "ffbe8e6681124c86",
   "lastOpenFiles": [
-    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
-    "파이썬/Flask.md",
     "파이썬/API 호출 by requests 패키지.md",
-    "파이썬/BeautifulSoup 라이브러리.md",
-    "파이썬/VSCode에 Docker 적용해보기.md",
+    "파이썬/환경변수 .env파일에 보관.md",
+    "파이썬/Flask.md",
+    "carfton-test/css/마무리 CSS 도입 리팩토링.md",
+    "DB/mongo/메서드.md",
     "파이썬/가상 환경 및 패키지 설치.md",
+    "파이썬/파이썬으로 몽고 DB 조작.md",
     "파이썬/휴대폰으로 보려고 temp.md",
-    "carfton-test/복습/페이버릿 부분 CSS.md",
+    "파이썬/BeautifulSoup 라이브러리.md",
+    "carfton-test/css/Grid Columns.md",
+    "DB/mongo/기본.md",
+    "DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
+    "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
     "carfton-test/복습/복습하면서.md",
     "carfton-test/복습/부트스트랩-기능.md",
     "carfton-test/복습/부트스트랩-불러오기.md",
+    "carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
+    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
     "carfton-test/오류(or Tip)/틀렸던 부분.md",
-    "carfton-test/css/글자 및 버튼.md",
+    "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
+    "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
+    "carfton-test/오류(or Tip)/new URL.md",
     "carfton-test/css/Spacing-Container.md",
-    "carfton-test/css/Grid Columns.md",
-    "carfton-test/css/마무리 정리.md",
+    "carfton-test/css/글자 및 버튼.md",
+    "image/Pasted image 20250516231732.png",
+    "image/Pasted image 20250516231148.png",
+    "image/Pasted image 20250516220116.png",
+    "image/Pasted image 20250516215505.png",
+    "image/Pasted image 20250516215504.png",
+    "image/Pasted image 20250516215115.png",
+    "image/Pasted image 20250516214417.png",
+    "파이썬/VSCode에 Docker 적용해보기.md",
     "image/Pasted image 20250516195449.png",
     "image/Pasted image 20250516195440.png",
     "image/Pasted image 20250516195020.png",
-    "image/Pasted image 20250516194632.png",
-    "image/Pasted image 20250516194352.png",
     "Excalidraw/Drawing 2025-05-16 19.30.36.excalidraw.md",
-    "image/Pasted image 20250516194258.png",
-    "image/Pasted image 20250516192320.png",
-    "image/Pasted image 20250516191255.png",
-    "image/Pasted image 20250516191152.png",
-    "infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "infra/Trouble when basic Deploy (EC2-Docker).md",
-    "image/Pasted image 20250516124022.png",
-    "DB/mongo/기본.md",
-    "carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
-    "DB/mongo/메서드 하나씩 써보기.md",
     "carfton-test/css",
-    "carfton-test/오류(or Tip)/가벼운 배포 도중 발생한 문제.md",
-    "etc/WSL_SSH_Github Connect.md",
     "infra",
-    "carfton-test/오류(or Tip)/new URL.md",
-    "carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
     "carfton-test/복습",
     "carfton-test/오류(or Tip)",
     "carfton-test",

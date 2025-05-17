@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/이요한_중급프로젝트 회고.md",
+                "file": "jpa/@NotNull vs @Column.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "이요한_중급프로젝트 회고"
+              "title": "@NotNull vs @Column"
             }
           },
           {
@@ -409,8 +409,9 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "8d5f0596957b61ae",
   "lastOpenFiles": [
+    "etc/이요한_중급프로젝트 회고.md",
     "carfton-test/css/글자 및 버튼.md",
     "carfton-test/css/마무리 CSS 도입 리팩토링.md",
     "carfton-test/css/요구사항.md",
@@ -421,7 +422,6 @@
     "batch/Sharing Data Between Steps in Spring Batch.md",
     "batch/SQL mapping Error - when using JdbcBatchItemWriter.md",
     "CS/Thread vs Process.md",
-    "etc/이요한_중급프로젝트 회고.md",
     "etc/Exhausted Connection-Pool.md",
     "etc/obsidian-hosting.md",
     "etc/What is restful api.md",

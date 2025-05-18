@@ -3,7 +3,6 @@ dg-publish: true
 dg-home: false
 ---
 
-,
 
 >[!EXAMPLE] **✔막혔던 부분 체크** 
 >- 컨테이너끼리 접근 시 사용할 포트 및 host명 헷갈렸던 점 

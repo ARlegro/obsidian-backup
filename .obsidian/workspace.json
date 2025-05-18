@@ -120,6 +120,20 @@
             }
           },
           {
+            "id": "33852254585bf969",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "infra/무제.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "무제"
+            }
+          },
+          {
             "id": "08af80bb3ed567cf",
             "type": "leaf",
             "state": {
@@ -242,7 +256,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -395,10 +409,11 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "ffbe8e6681124c86",
+  "active": "33852254585bf969",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "infra/Trouble when basic Deploy (EC2-Docker).md",
+    "infra/무제.md",
+    "conflict-files-obsidian-git.md",
     "spring/프로메테우스, 그라파나, 애플리케이션 - 도커로 설치 및 연동.md",
     "spring/다운로드 코드 만들기.md",
     "spring/S3Resource사용_순환참조 오류.md",
@@ -438,7 +453,6 @@
     "carfton-test/css/요구사항.md",
     "carfton-test/css/Grid Columns.md",
     "carfton-test/css/글자 및 버튼.md",
-    "파이썬/환경변수 .env파일에 보관.md",
     "image/Pasted image 20250516231732.png",
     "image/Pasted image 20250516231148.png",
     "carfton-test/css",

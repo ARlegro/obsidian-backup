@@ -8,8 +8,8 @@
   "file-cleaner-redux",
   "slash-commander",
   "pinned-notes",
-  "copy-document-as-html",
   "templater-obsidian",
   "obsidian-git",
-  "digitalgarden"
+  "digitalgarden",
+  "pdf-plus"
 ]

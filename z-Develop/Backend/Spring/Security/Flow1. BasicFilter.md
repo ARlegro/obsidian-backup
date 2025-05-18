@@ -1,6 +1,14 @@
 
 ## BasicFilter
 
+>[!SUCCESS]  This page will handle filters before step 2 
+>- After this filter steps, **Authentication object is going to be created**
+>- Authentication object ex. UsernamePasswordAuthenticationToken
+
+![[PDF.pdf#page=13&rect=57,105,1398,647|Spring_Security, p.13]]
+
+
+
 
 ### DefaultLoginPageGeneratingFilter
 ```java
@@ -55,6 +63,7 @@ protected void doFilterInternal(HttpServletRequest request, HttpServletResponse 
         filterChain.doFilter(request, response);  
     } else {  
         try {  
+		        // attempt~ : process by implementation
             Authentication authenticationResult = this.attemptAuthentication(request, response);  
             if (authenticationResult == null) {  
                 filterChain.doFilter(request, response);  
@@ -73,6 +82,8 @@ protected void doFilterInternal(HttpServletRequest request, HttpServletResponse 
     }  
 }
 ```
+attemptAuthentication is defined inside **UsernamePasswordAuthenticationFilter**
+
 
 
 ## Filter When login 
@@ -81,13 +92,16 @@ public abstract class AbstractAuthenticationProcessingFilter extends GenericFilt
 ```
 #Abstract-Class
 
-- have 2 implementatino
+- have 2 implementation
 	1. WebAuthnAuthenticationFilter
 	2. UsernamePasswordAuthenticationFilter
 
-✔Code 
+
+### Code 
+#### Overall
 ```java
 private void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {  
+		// Authentification이 필요한지 처리하는 if 문
     if (!this.requiresAuthentication(request, response)) {  
         chain.doFilter(request, response);  
     } else {  
@@ -115,9 +129,27 @@ private void doFilter(HttpServletRequest request, HttpServletResponse response, 
 	 
 ```
 
+#### dofilter(..) : Core Logic Breadkdwon 
 
-attemptAuthentication
-- process by implementation ex. UsernamePasswordAuthenticationFilter
+```java 
+if (!this.requiresAuthentication(request, response)) {
+    chain.doFilter(request, response);
+    return;
+}
+```
+- **Purpose** : Determines wheter the current **request should trigger authentication**
+
+#### If authentication is required 
+```java 
+Authentication authenticationResult = this.attemptAuthentication(request, response);
+```
+- **Purpose** : Delegates the actual credential extraction and authentication attempt
+- attemptAuthentication is logic provided by concrete filter like `UsernamePasswordAuthenticationFilter`
+- Below is method in UsernamePasswordAuthenticationFilter
+	1. Extract `usernaem` and `password`
+	2. Build an Authentication token (UsernamePasswordAuthenticationToken)
+		- **Authentication token is Authentication's child** ⭐
+	3. Pass it to the Authentication
 ```java
 public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {  
     if (this.postOnly && !request.getMethod().equals("POST")) {  
@@ -134,3 +166,15 @@ public Authentication attemptAuthentication(HttpServletRequest request, HttpServ
         return this.getAuthenticationManager().authenticate(authRequest);  
     }
 ```
+
+>[!Warning] AbstractAuthenticationProcessingFilter doesn't perform verification
+>- Just, Determine if authentication is required
+>- when is required, **pupulate details into security context** and **pass it  to AuthenticationManager**
+
+>[!tip] security context is populated with Authentication details
+
+
+
+
+
+

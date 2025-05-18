@@ -1,21 +1,110 @@
-/* Java 키워드 강조 */
+/***** Show language in code blocks *****/
+body pre[class^="language-"]::before {
+  font-family: var(--font-default);
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+  font-weight: var(--font-semibold);
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+
+body pre[class~="language-c"]::before {
+  content: "C";
+}
+body pre[class~="language-cs"]::before {
+  content: "C#";
+}
+body pre[class~="language-cpp"]::before {
+  content: "C++";
+}
+body pre[class~="language-java"]::before {
+  content: "JAVA";
+}
+body pre[class~="language-py"]::before,
+body pre[class~="language-python"]::before {
+  content: "PYTHON";
+}
+body pre[class~="language-javascript"]::before,
+body pre[class~="language-js"]::before {
+  content: "JS";
+}
+body pre[class~="language-html"]::before {
+  content: "HTML";
+}
+body pre[class~="language-css"]::before {
+  content: "CSS";
+}
+body pre[class~="language-xml"]::before {
+  content: "XML";
+}
+body pre[class~="language-php"]::before {
+  content: "PHP";
+}
+
+body pre[class~="language-shell"]::before,
+body pre[class~="language-bash"]::before {
+  content: "SHELL";
+}
+body pre[class~="language-flow"]::before {
+  content: "FLOW";
+}
+body pre[class~="language-sequence"]::before {
+  content: "SEQUENCE";
+}
+body pre[class~="language-sql"]::before {
+  content: "SQL";
+}
+body pre[class~="language-yml"]::before,
+body pre[class~="language-yaml"]::before {
+  content: "YAML";
+}
+body pre[class~="language-ini"]::before {
+  content: "INI";
+}
+body pre[class~="language-git"]::before {
+  content: "GIT";
+}
+body pre[class~="language-txt"]::before {
+  content: "TXT";
+}
+body pre[class~="language-r"]::before {
+  content: "R";
+}
+.markdown-rendered button.copy-code-button {
+  background-color: var(--background-secondary-alt);
+}
+.markdown-rendered button.copy-code-button:hover {
+  color: var(--text-accent);
+}
+
+
+/* === 미리보기 모드 (Preview) === */
 .markdown-preview-view code[class*="language-java"] .token.keyword {
-  color: #ff79c6;
-  font-weight: bold;
+  color: #ff79c6 !important;
 }
-
-/* Java 주석 강조 */
 .markdown-preview-view code[class*="language-java"] .token.comment {
-  color: #888888;
-  font-style: italic;
+  color: #8a8a8a !important;
+  font-style: italic !important;
 }
-
-/* 타입 강조 (예: String, int 등) */
 .markdown-preview-view code[class*="language-java"] .token.class-name {
-  color: #8be9fd;
+  color: #8be9fd !important;
+}
+.markdown-preview-view code[class*="language-java"] .token.string {
+  color: #f1fa8c !important;
 }
 
-/* 문자열 강조 */
-.markdown-preview-view code[class*="language-java"] .token.string {
-  color: #f1fa8c;
+/* === 라이브 프리뷰 모드 (CodeMirror) === */
+.cm-s-obsidian span.cm-keyword {
+  color: #ff79c6 !important;
+}
+.cm-s-obsidian span.cm-comment {
+  color: #8a8a8a !important;
+  font-style: italic !important;
+}
+.cm-s-obsidian span.cm-string {
+  color: #f1fa8c !important;
+}
+.cm-s-obsidian span.cm-type {
+  color: #8be9fd !important;
 }

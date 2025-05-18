@@ -30,7 +30,7 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "M"
+      "key": "R"
     }
   ],
   "switcher:open": [
@@ -121,5 +121,6 @@
       ],
       "key": "I"
     }
-  ]
+  ],
+  "obsidian-excalidraw-plugin:save": []
 }

@@ -1,7 +1,7 @@
 
 
 ## Before start Security : Learn Servlets & Filters
-![[spring/Spring_Security.pdf#page=12&rect=43,213,742,586|Spring_Security, p.12]]
+![[PDF.pdf#page=12&rect=43,213,742,586|Spring_Security, p.12]]
 
 >[!tip] Why try to learn **Sevlet, Filter** When Learning Spring Security❓
 >- A lot fo function in Spring Security is implemented With the **help of filters and Servlets**
@@ -62,15 +62,10 @@ java is object programming ➡ anything we want has to be **converted** into **j
 
 
 
-
-
-
-
-
 ## Internal Flow 
 > first of all, focus on Overally flow (the details later)
 
-![[spring/Spring_Security.pdf#page=13&rect=57,105,1398,647|Spring_Security, p.13]]
+![[PDF.pdf#page=13&rect=57,105,1398,647|Spring_Security, p.13]]
 
 
 

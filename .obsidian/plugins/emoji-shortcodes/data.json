@@ -4,9 +4,9 @@
   "historyPriority": true,
   "historyLimit": 100,
   "history": [
-    ":left_right_arrow:",
-    ":arrow_right:",
     ":heavy_check_mark:",
+    ":arrow_right:",
+    ":left_right_arrow:",
     ":question:",
     ":star:",
     ":anger:",

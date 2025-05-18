@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiDatabaseBackup",
-      "LiLayers",
-      "LiPackage",
-      "LiFileCode2",
-      "LiBookOpenText"
+      "LiLayoutTemplate",
+      "♊",
+      "📑",
+      "🔄",
+      "LiServer"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,20 +38,28 @@
     "iconName": "LiImage",
     "iconColor": "#3bc71f"
   },
-  "정보처리기사": {
-    "iconName": "LiBookOpenText",
-    "iconColor": "#6f0101"
+  "z-Develop/Backend": {
+    "iconName": "LiServer",
+    "iconColor": "#10b266"
   },
-  "파이썬": {
+  "z-Develop/Backend/파이썬": {
     "iconName": "LiPackage",
     "iconColor": "#17008a"
   },
-  "DB": {
-    "iconName": "LiDatabaseBackup",
-    "iconColor": "#5200a3"
-  },
-  "Review": {
+  "z-Develop/DB": "💽",
+  "z-Develop/Infra": "🔄",
+  "z-Develop/Review": {
     "iconName": "LiEye",
     "iconColor": "#f056d4"
+  },
+  "z-Develop/Study": "♊",
+  "z-Develop/Study/CS": "📑",
+  "z-Develop/Study/정보처리기사": {
+    "iconName": "LiBookOpenText",
+    "iconColor": "#6f0101"
+  },
+  "templates": {
+    "iconName": "LiLayoutTemplate",
+    "iconColor": "#5e0080"
   }
 }

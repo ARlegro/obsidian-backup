@@ -4,287 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "896b4844c944423f",
+        "id": "a9db57e18c1c9f84",
         "type": "tabs",
         "children": [
           {
-            "id": "059bce882452d6c8",
+            "id": "3a40e731c52a687e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etc/WSL_SSH_Github Connect.md",
+                "file": "z-Develop/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WSL_SSH_Github Connect"
+              "title": "Servlets & Filters - Before starting Security"
             }
           },
           {
-            "id": "2d5b456ed90673a9",
+            "id": "5455de2109888f4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "infra/Connect_EC2_by_WSL(feat.SSH).md",
+                "file": "z-Develop/Backend/Spring/Security/Setting Before exploring security implementations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Connect_EC2_by_WSL(feat.SSH)"
+              "title": "Setting Before exploring security implementations"
             }
           },
           {
-            "id": "79465159bd78cd78",
+            "id": "5cf6102f82604422",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "carfton-test/css/Spacing-Container.md",
+                "file": "z-Develop/Backend/Spring/Security/Filter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spacing-Container"
-            }
-          },
-          {
-            "id": "faa048e2da7d8235",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "carfton-test/css/Grid Columns.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Grid Columns"
-            }
-          },
-          {
-            "id": "fcbc8382fffc6a5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "carfton-test/css/Grid Columns.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Grid Columns"
-            }
-          },
-          {
-            "id": "2f28b53d4ffbd615",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "carfton-test/css/마무리 정리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "마무리 정리"
-            }
-          },
-          {
-            "id": "68bf786eb4dead82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "파이썬/API 호출 by requests 패키지.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "API 호출 by requests 패키지"
-            }
-          },
-          {
-            "id": "ffbe8e6681124c86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "infra/Trouble when basic Deploy (EC2-Docker).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Trouble when basic Deploy (EC2-Docker)"
-            }
-          },
-          {
-            "id": "33852254585bf969",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "spring/Preview Before Start Spring Security.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Preview Before Start Spring Security"
-            }
-          },
-          {
-            "id": "a4e6a1b39f90571b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "spring/Preview Before Start Spring Security.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Preview Before Start Spring Security"
-            }
-          },
-          {
-            "id": "e15e5fffd2b3521f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "spring/What is Security & Why need it❓.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "What is Security & Why need it❓"
-            }
-          },
-          {
-            "id": "08af80bb3ed567cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "infra/Trouble when basic Deploy (EC2-Docker).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Trouble when basic Deploy (EC2-Docker)"
-            }
-          },
-          {
-            "id": "ef0990dae4a6a096",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "infra/docker system prune -a --volumes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "docker system prune -a --volumes"
-            }
-          },
-          {
-            "id": "57ee1fd7eb33bb0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/mongo/기본.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기본"
-            }
-          },
-          {
-            "id": "5e1000d157efb014",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Docker로 띄었을 때 내부 확인하는 법"
-            }
-          },
-          {
-            "id": "c5f63ae170956b7e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
-            }
-          },
-          {
-            "id": "d151c0dd4c8f5233",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/obsidian_hosting.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "obsidian_hosting"
-            }
-          },
-          {
-            "id": "0911dcf02265a4a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "etc/theme_test.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "theme_test"
-            }
-          },
-          {
-            "id": "2e8c86d5ecd79fbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Review/CodeReview-Coupling.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CodeReview-Coupling"
-            }
-          },
-          {
-            "id": "ac4546d67b7c098c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "애플리케이션-성능개선"
+              "title": "Filter"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -441,32 +207,46 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e15e5fffd2b3521f",
+  "active": "5cf6102f82604422",
   "lastOpenFiles": [
-    "spring/Spring_Security.pdf",
-    "spring/What is Security & Why need it❓.md",
-    "infra/docker system prune -a --volumes.md",
-    "spring/S3Resource사용_순환참조 오류.md",
+    "image/Pasted image 20250518204446.png",
+    "z-Develop/Backend/Spring/Security/Setting Before exploring security implementations.md",
+    "z-Develop/Backend/Spring/Security/Filter.md",
+    "image/Pasted image 20250518202911.png",
+    "z-Develop/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
+    "z-Develop/Backend/Spring/Security/Preview Before Start Spring Security.md",
+    "z-Develop/Backend/Spring/Security/PDF.pdf",
+    "z-Develop/Backend/Spring/Security",
+    "Digital Garden Home.md",
+    "z-Develop",
+    "z-Develop/Study",
+    "z-Develop/Review/Codereview-Coupling.md",
+    "z-Develop/Backend",
+    "z-Develop/Study/정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
+    "z-Develop/DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "z-Develop/DB/mongo/기본.md",
+    "z-Develop/Infra/docker system prune -a --volumes.md",
+    "z-Develop/Infra/Trouble when basic Deploy (EC2-Docker).md",
+    "ETC/WSL_SSH_Github Connect.md",
+    "z-Develop/Infra/Connect_EC2_by_WSL(feat.SSH).md",
+    "z-Develop/Study/carfton-test/css/Spacing-Container.md",
+    "z-Develop/Study/carfton-test/css/Grid Columns.md",
+    "z-Develop/Backend/파이썬/API 호출 by requests 패키지.md",
+    "z-Develop/Backend/Spring/S3Resource사용_순환참조 오류.md",
     "spring/Spring Security PDF.md",
     "image/Spring_Security 4.pdf",
     "image/Spring_Security 3.pdf",
     "image/Spring_Security 2.pdf",
     "image/Spring_Security 1.pdf",
     "image/Spring_Security.pdf",
-    "spring/Preview Before Start Spring Security.md",
-    "spring/다운로드 코드 만들기.md",
-    "infra/무제.md",
+    "z-Develop/Backend/Spring/다운로드 코드 만들기.md",
+    "z-Develop/Infra/무제.md",
     "image/Pasted image 20250518132756.png",
-    "infra/Trouble when basic Deploy (EC2-Docker).md",
     "conflict-files-obsidian-git.md",
-    "spring/프로메테우스, 그라파나, 애플리케이션 - 도커로 설치 및 연동.md",
-    "spring",
-    "jpa/@NotNull vs @Column.md",
-    "jpa/@ManyToOne - optional, cascade.md",
-    "jpa",
-    "java/First-Class Collections and Read-Only Collections.md",
-    "java/Virtual Thread.md",
-    "java",
+    "z-Develop/Backend/Spring/프로메테우스, 그라파나, 애플리케이션 - 도커로 설치 및 연동.md",
+    "z-Develop/Backend/Jpa/@NotNull vs @Column.md",
+    "z-Develop/Backend/Jpa/@ManyToOne - optional, cascade.md",
+    "z-Develop/Backend/Java/First-Class Collections and Read-Only Collections.md",
     "image/Pasted image 20250517211111.png",
     "image/Pasted Image 20250517205713_609.png",
     "image/Pasted Image 20250517205647_384.png",
@@ -475,19 +255,6 @@
     "image/Pasted Image 20250517205000_842.png",
     "image/Pasted Image 20250517204844_494.png",
     "image/Pasted Image 20250517204824_740.png",
-    "batch/SQL mapping Error - when using JdbcBatchItemWriter.md",
-    "batch/Sharing Data Between Steps in Spring Batch.md",
-    "batch/Batch test Error When multi job.md",
-    "batch/@JobScop, @StepScop.md",
-    "batch",
-    "argorism/twoPoint/부분수열.md",
-    "Excalidraw/Drawing 2025-05-17 20.47.50.excalidraw.md",
-    "CS/Thread vs Process.md",
-    "Review/Codereview-Coupling.md",
-    "etc/WSL_SSH_Github Connect.md",
-    "infra/Port-Fowarding.md",
-    "infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "image/Pasted image 20250516231732.png",
     "무제 파일.canvas"
   ]
 }

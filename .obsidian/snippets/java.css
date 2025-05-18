@@ -1,0 +1,21 @@
+/* Java 키워드 강조 */
+.markdown-preview-view code[class*="language-java"] .token.keyword {
+  color: #ff79c6;
+  font-weight: bold;
+}
+
+/* Java 주석 강조 */
+.markdown-preview-view code[class*="language-java"] .token.comment {
+  color: #888888;
+  font-style: italic;
+}
+
+/* 타입 강조 (예: String, int 등) */
+.markdown-preview-view code[class*="language-java"] .token.class-name {
+  color: #8be9fd;
+}
+
+/* 문자열 강조 */
+.markdown-preview-view code[class*="language-java"] .token.string {
+  color: #f1fa8c;
+}

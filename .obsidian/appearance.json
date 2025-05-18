@@ -1,5 +1,8 @@
 {
   "theme": "obsidian",
   "cssTheme": "Things",
-  "accentColor": "#3eb4cc"
+  "accentColor": "#3eb4cc",
+  "enabledCssSnippets": [
+    "java"
+  ]
 }

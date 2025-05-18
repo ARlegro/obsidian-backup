@@ -8,67 +8,21 @@
 >- 스프링 시큐리티는 내부적으로 로그인한 세션을 기억
 
 #### 원리 
-```java
-package sun.security.util;  
-  
-import java.security.AccessController;  
-import java.security.PrivilegedAction;  
-import java.security.Security;  
-  
-public class SecurityProperties {  
-  
-			public static final boolean INCLUDE_JAR_NAME_IN_EXCEPTIONS  
-			    = includedInExceptions("jar");  
-			  
-			/**  
-			 * Returns the value of the security property propName, which can be overridden * by a system property of the same name * * @param  propName the name of the system or security property  
-			 * @return the value of the system or security property */
-			public static String privilegedGetOverridable(String propName) {  
-			    if (System.getSecurityManager() == null) {  
-			        return getOverridableProperty(propName);  
-			    } else {  
-			        return AccessController.doPrivileged((PrivilegedAction<String>) () -> getOverridableProperty(propName));  
-			    }  
-			}  
-			
-			  
-			private static String getOverridableProperty(String propName) {  
-			    String val = System.getProperty(propName);  
-			    if (val == null) {  
-			        return Security.getProperty(propName);  
-			    } else {  
-			        return val;  
-			    }  
-			}  
-			  
-			/**  
-			 * Returns true in case the system or security property "jdk.includeInExceptions" * contains the category refName * * @param refName the category to check  
-			 * @return true in case the system or security property "jdk.includeInExceptions" *         contains refName, false otherwise */
-			 * public static boolean includedInExceptions(String refName) {  
-			    String val = privilegedGetOverridable("jdk.includeInExceptions");  
-			    if (val == null) {  
-			        return false;  
-			    }  
-			  
-			    String[] tokens = val.split(",");  
-			    for (String token : tokens) {  
-			        token = token.trim();  
-			        if (token.equalsIgnoreCase(refName)) {  
-			            return true;  
-			        }  
-			    }  
-			    return false;  
-			}
-```
-- 라이브러리가 제공해주는 SecurityProperties를 보면 내부적으로 코드검증이 일어난다.
-- `propName`
-	- the name of the system or security property
-	- Returns: the value of the system or security property
+1. 로그인 성공 ➡ 인증 정보가 SecurityContextHolder에 저장
+2. `SecurityContextPersistenceFilter`가 이를 **세션에 저장**
+3. 이후 요청이 들어오면, 세션에 저장된 인증 정보를 다시 꺼내서 `SecurityContextHolder`에 넣음.
+4. 따라서 사용자는 계속 로그인 상태를 유지함.
 
-- refName – the category to check
-- Returns: true in case the system or security property "jdk. includeInExceptions" contains refName, false otherwise
+#### SecurityContextHolderFilter
+
+> 참고 : deprecated 버전 : SecurityContextPersistenceFilter 
+
+- 인증 상태 유지의 핵심 역할 
 
 
+#### 세션 저장소: HttpSessionSecurityContextRepository
 
-
-
+>[!EXAMPLE] 개념
+>- `SecurityContextRepository`의 기본 구현체
+>- 주요 메서드
+>	- loadContext() : 

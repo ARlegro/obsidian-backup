@@ -30,6 +30,7 @@ public class SecurityProperties {
 			        return AccessController.doPrivileged((PrivilegedAction<String>) () -> getOverridableProperty(propName));  
 			    }  
 			}  
+			
 			  
 			private static String getOverridableProperty(String propName) {  
 			    String val = System.getProperty(propName);  
@@ -60,7 +61,12 @@ public class SecurityProperties {
 			}
 ```
 - 라이브러리가 제공해주는 SecurityProperties를 보면 내부적으로 코드검증이 일어난다.
+- `propName`
+	- the name of the system or security property
+	- Returns: the value of the system or security property
 
+- refName – the category to check
+- Returns: true in case the system or security property "jdk. includeInExceptions" contains refName, false otherwise
 
 
 

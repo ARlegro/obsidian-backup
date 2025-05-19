@@ -42,10 +42,6 @@
     "iconName": "LiServer",
     "iconColor": "#10b266"
   },
-  "z-Develop/Backend/파이썬": {
-    "iconName": "LiPackage",
-    "iconColor": "#17008a"
-  },
   "z-Develop/DB": "💽",
   "z-Develop/Infra": "🔄",
   "z-Develop/Review": {
@@ -61,5 +57,9 @@
   "templates": {
     "iconName": "LiLayoutTemplate",
     "iconColor": "#5e0080"
+  },
+  "z-Develop/Backend/Python": {
+    "iconName": "LiPackage",
+    "iconColor": "#17008a"
   }
 }

@@ -239,7 +239,10 @@ PasswordEncoder passwordEncoder(){
 > 	- userdetails에서 pw를 db or memory에 저장 시 기본적으로는 평문으로 저장됨
 > 	- 근데 {} prefix 붙이면 암호화되면서 저장 됨
 > - Encoding해서 저장하고 싶으면 여러가지 방법이 있는데 그건 나중에 배울 것 
-> - below code is one of that solu
+
+below code is one of that solution
+```j
+
 ```java
 UserDetails admin = User  
         .withUsername("admin1").password("{bcrpt}pwd4321")  

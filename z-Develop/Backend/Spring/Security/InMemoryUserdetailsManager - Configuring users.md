@@ -237,9 +237,9 @@ PasswordEncoder passwordEncoder(){
 > - The password will still be stored **in plain text**, unless you explicitly encode it
 > - if custome PWEncoder 
 > 	- userdetails에서 pw를 db or memory에 저장 시 기본적으로는 평문으로 저장됨
-> 	- 평문과 평문이 만나면 자동으로 fall
+> 	- 평문과 평문이 만나면 자동으로 fallback비교 있음 
 > 	- 근데 {} prefix 붙이면 암호화되면서 저장 됨
-> 	- 
+
 > - Encoding해서 저장하고 싶으면 여러가지 방법이 있는데 그건 나중에 배울 것 
 
 below code is one of that solution

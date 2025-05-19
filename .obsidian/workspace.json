@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "supporter/Digital Garden Home.md",
+                "file": "DevStudy/ETC/리팩토링 할만한거 적어놓기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digital Garden Home"
+              "title": "리팩토링 할만한거 적어놓기"
             }
           },
           {
@@ -364,6 +364,10 @@
   },
   "active": "542c0ec3717cfea3",
   "lastOpenFiles": [
+    "Crafton면접준비/질문.md",
+    "DevStudy/ETC/리팩토링 할만한거 적어놓기.md",
+    "DevStudy/ETC/무제",
+    "supporter/Digital Garden Home.md",
     "README.md",
     "DevStudy/ETC/이요한_중급프로젝트 회고.md",
     "DevStudy/ETC/Exhausted Connection-Pool.md",
@@ -372,7 +376,6 @@
     "DevStudy/ETC/WSL_SSH_Github Connect.md",
     "supporter/Excalidraw/Drawing 2025-05-08 16.03.04.excalidraw.md",
     "supporter/Excalidraw/Drawing 2025-05-19 22.57.25.excalidraw.md",
-    "Crafton면접준비/질문.md",
     "supporter/Excalidraw",
     "supporter/image/Pasted image 20250519225521.png",
     "supporter/image/Pasted image 20250519225442.png",
@@ -402,14 +405,11 @@
     "DevStudy/Backend/Spring/Security/Flow2. Authentication Manage.md",
     "supporter/Excalidraw/Drawing 2025-05-18 22.50.59.excalidraw.md",
     "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
-    "DevStudy/Backend/Spring/Security/Preview Before Start Spring Security.md",
     "DevStudy/Backend/Spring/Security",
-    "supporter/Digital Garden Home.md",
     "DevStudy",
     "DevStudy/Fundamentals",
     "DevStudy/Backend",
     "supporter/image/Spring_Security 4.pdf",
-    "supporter/image/Spring_Security 3.pdf",
     "무제 파일.canvas"
   ]
 }

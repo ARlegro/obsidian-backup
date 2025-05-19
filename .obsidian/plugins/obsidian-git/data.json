@@ -1,7 +1,7 @@
 {
-  "commitMessage": "vault backup: {{date}}",
+  "commitMessage": "Backup {{date}}",
   "autoCommitMessage": "vault backup: {{date}}",
-  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "commitDateFormat": "YY-MM-DD HH:mm:ss",
   "autoSaveInterval": 30,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
@@ -11,7 +11,7 @@
   "disablePopups": false,
   "showErrorNotices": true,
   "disablePopupsForNoChanges": false,
-  "listChangedFilesInMessageBody": false,
+  "listChangedFilesInMessageBody": true,
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",

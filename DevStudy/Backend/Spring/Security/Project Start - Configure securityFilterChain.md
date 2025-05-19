@@ -1,6 +1,6 @@
 
 ### REST API 
-![[image/PDF.png]]
+![[PDF.png]]
 
 
 ### See SecurityConfiguration :

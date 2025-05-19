@@ -3,7 +3,7 @@
 > - But Why do they exist ❓ 
 
 
-![[image/PDF 6.png]]
+![[PDF 6.png]]
 
 2 Interfaces(Authentication && User) has similar kind of methods 
 But some methods differ

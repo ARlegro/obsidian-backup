@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBrain",
+      "🧠",
       "LiLayoutTemplate",
       "♊",
-      "📑",
-      "🔄",
-      "LiServer"
+      "📑"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,32 +34,32 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "image": {
-    "iconName": "LiImage",
-    "iconColor": "#3bc71f"
-  },
-  "z-Develop/Backend": {
-    "iconName": "LiServer",
-    "iconColor": "#10b266"
-  },
-  "z-Develop/DB": "💽",
-  "z-Develop/Infra": "🔄",
-  "z-Develop/Review": {
-    "iconName": "LiEye",
-    "iconColor": "#f056d4"
-  },
-  "z-Develop/Study": "♊",
-  "z-Develop/Study/CS": "📑",
-  "z-Develop/Study/정보처리기사": {
-    "iconName": "LiBookOpenText",
-    "iconColor": "#6f0101"
-  },
-  "templates": {
+  "supporter/templates": {
     "iconName": "LiLayoutTemplate",
     "iconColor": "#5e0080"
   },
-  "z-Develop/Backend/Python": {
+  "supporter/image": {
+    "iconName": "LiImage",
+    "iconColor": "#3bc71f"
+  },
+  "DevStudy/Backend": {
+    "iconName": "LiServer",
+    "iconColor": "#10b266"
+  },
+  "DevStudy/DB": "💽",
+  "DevStudy/Infra": "🔄",
+  "DevStudy/Review": {
+    "iconName": "LiEye",
+    "iconColor": "#f056d4"
+  },
+  "DevStudy/Backend/Python": {
     "iconName": "LiPackage",
     "iconColor": "#17008a"
+  },
+  "DevStudy/Fundamentals": "🧠",
+  "DevStudy/Fundamentals/CS": "📑",
+  "DevStudy/Fundamentals/정보처리기사": {
+    "iconName": "LiBookOpenText",
+    "iconColor": "#6f0101"
   }
 }

@@ -50,6 +50,34 @@
             }
           },
           {
+            "id": "b5470d08f69ac710",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Crafton면접준비/질문.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "질문"
+            }
+          },
+          {
+            "id": "542c0ec3717cfea3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "supporter/Digital Garden Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Digital Garden Home"
+            }
+          },
+          {
             "id": "5455de2109888f4c",
             "type": "leaf",
             "state": {
@@ -178,7 +206,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -235,8 +263,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -335,54 +362,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "04de4bba17593707",
+  "active": "542c0ec3717cfea3",
   "lastOpenFiles": [
-    "z-Develop/Backend/Spring/Security/Flow When refresh the page after Authenticate.md",
+    "README.md",
+    "DevStudy/ETC/이요한_중급프로젝트 회고.md",
+    "DevStudy/ETC/Exhausted Connection-Pool.md",
+    "DevStudy/ETC/obsidian-hosting.md",
+    "DevStudy/ETC/What is restful api.md",
+    "DevStudy/ETC/WSL_SSH_Github Connect.md",
+    "supporter/Excalidraw/Drawing 2025-05-08 16.03.04.excalidraw.md",
+    "supporter/Excalidraw/Drawing 2025-05-19 22.57.25.excalidraw.md",
     "Crafton면접준비/질문.md",
+    "supporter/Excalidraw",
+    "supporter/image/Pasted image 20250519225521.png",
+    "supporter/image/Pasted image 20250519225442.png",
+    "DevStudy/Backend/Spring/Security/Flow When refresh the page after Authenticate.md",
+    "supporter",
     "z-Develop/Backend/Spring/Security/무제.md",
     "z-Develop/Backend/Spring/Security/무제 1.md",
-    "z-Develop/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
+    "DevStudy/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
     "Crafton면접준비",
-    "image/PDF 6.png",
-    "z-Develop/Backend/Spring/Security/PDF.pdf",
-    "image/PDF 5.png",
-    "z-Develop/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
-    "image/PDF 4.png",
-    "image/PDF 3.png",
-    "z-Develop/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
-    "z-Develop/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
-    "image/PDF 2.png",
-    "z-Develop/Backend/Spring/Security/CompromisedPasswordChecker from 6.3x.md",
-    "image/Pasted image 20250519141042.png",
-    "z-Develop/Backend/Spring/Security/Flow1. BasicFilter.md",
-    "image/PDF 1.png",
-    "image/PDF.png",
-    "z-Develop/Backend/Spring/Security/FormLogin and HttpBasic.md",
-    "image/Pasted image 20250519115241.png",
-    "image/Pasted image 20250519114513.png",
-    "z-Develop/Backend/Spring/Security/Project Start - Configure securityFilterChain.md",
+    "supporter/image/PDF 6.png",
+    "DevStudy/Backend/Spring/Security/PDF.pdf",
+    "supporter/image/PDF 5.png",
+    "DevStudy/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
+    "supporter/image/PDF 4.png",
+    "supporter/image/PDF 3.png",
+    "DevStudy/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
+    "DevStudy/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
+    "supporter/image/PDF 2.png",
+    "DevStudy/Backend/Spring/Security/CompromisedPasswordChecker from 6.3x.md",
+    "supporter/image/Pasted image 20250519141042.png",
+    "DevStudy/Backend/Spring/Security/Flow1. BasicFilter.md",
+    "supporter/image/PDF 1.png",
+    "supporter/image/PDF.png",
+    "DevStudy/Backend/Spring/Security/FormLogin and HttpBasic.md",
+    "DevStudy/Backend/Spring/Security/Project Start - Configure securityFilterChain.md",
     "z-Develop/Backend/Spring/Security/ㄴ.md",
-    "z-Develop/Backend/Spring/Security/Flow2. Authentication Manage.md",
-    "Excalidraw/Drawing 2025-05-18 22.50.59.excalidraw.md",
-    "z-Develop/Backend/Spring/Security/Setting Before exploring security implementations.md",
-    "z-Develop/Backend/Spring/Security/Preview Before Start Spring Security.md",
-    "z-Develop/Backend/Spring/Security",
-    "Digital Garden Home.md",
-    "z-Develop",
-    "z-Develop/Study",
-    "z-Develop/Review/Codereview-Coupling.md",
-    "z-Develop/Backend",
-    "z-Develop/Study/정보처리기사/소프트웨어-개발/애플리케이션-성능개선.md",
-    "z-Develop/DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
-    "z-Develop/DB/mongo/기본.md",
-    "z-Develop/Infra/docker system prune -a --volumes.md",
-    "z-Develop/Infra/Trouble when basic Deploy (EC2-Docker).md",
-    "ETC/WSL_SSH_Github Connect.md",
-    "z-Develop/Infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "image/Spring_Security 4.pdf",
-    "image/Spring_Security 3.pdf",
-    "image/Spring_Security 2.pdf",
-    "image/Spring_Security 1.pdf",
+    "DevStudy/Backend/Spring/Security/Flow2. Authentication Manage.md",
+    "supporter/Excalidraw/Drawing 2025-05-18 22.50.59.excalidraw.md",
+    "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
+    "DevStudy/Backend/Spring/Security/Preview Before Start Spring Security.md",
+    "DevStudy/Backend/Spring/Security",
+    "supporter/Digital Garden Home.md",
+    "DevStudy",
+    "DevStudy/Fundamentals",
+    "DevStudy/Backend",
+    "supporter/image/Spring_Security 4.pdf",
+    "supporter/image/Spring_Security 3.pdf",
     "무제 파일.canvas"
   ]
 }

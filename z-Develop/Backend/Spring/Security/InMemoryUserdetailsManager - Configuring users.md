@@ -227,18 +227,26 @@ PasswordEncoder passwordEncoder(){
     return new BCryptPasswordEncoder();
 ```
 
-❌But it isn't flexiable 
+❌But it ins't flexiable 
 - if i go to company using legacy programming, 
 - maybe i will face prefix like {noop}
 - In this situation, PasswordEncoderFactories is better choice 
 
 
-```java
+> [!WARNING]  Evne if register a custom PasswordEncoder bean, **automatic encoding will never occur** when storing passwords.
+> - The password will still be stored **in plain text**, unless you explicitly encode it
+> - if custome PWEncoder 
+> 	- userdetails에서 pw를 db or memory에 저장 시 기본적으로는 평문으로 저장됨
+> 	- 근데 {} prefix 붙이면 암호화되면서 저장 됨
+> - Encoding해서 저장하고 싶으면 여러가지 방법이 있는데 그건 나중에 배울 것 
+> - below code is one of that solutions 
+
+```ava
 UserDetails admin = User  
         .withUsername("admin1").password("{bcrpt}pwd4321")  
         .authorities("admin").build();
 ```
 
-,
+
 
 

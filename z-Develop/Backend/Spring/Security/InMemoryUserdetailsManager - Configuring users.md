@@ -227,7 +227,7 @@ PasswordEncoder passwordEncoder(){
     return new BCryptPasswordEncoder();
 ```
 
-❌But it is't flexiable 
+❌But it isn't flexiable 
 - if i go to company using legacy programming, 
 - maybe i will face prefix like {noop}
 - In this situation, PasswordEncoderFactories is better choice 

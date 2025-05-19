@@ -241,8 +241,6 @@ PasswordEncoder passwordEncoder(){
 > - Encoding해서 저장하고 싶으면 여러가지 방법이 있는데 그건 나중에 배울 것 
 
 below code is one of that solution
-```j
-
 ```java
 UserDetails admin = User  
         .withUsername("admin1").password("{bcrpt}pwd4321")  

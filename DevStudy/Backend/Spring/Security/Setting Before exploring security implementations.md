@@ -25,3 +25,6 @@ Cuz
 2. AI 
 
 
+### SQLECTRON
+- super lightweight client
+

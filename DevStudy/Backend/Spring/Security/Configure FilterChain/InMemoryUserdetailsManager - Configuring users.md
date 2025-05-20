@@ -1,7 +1,7 @@
 
 ###  Overview
 
-아래의 yaml은 only one user에 대한 setting이다.
+Setting yaml for situation that exist only for 1 user
 ```yaml
 spring:  
   security:  
@@ -11,7 +11,7 @@ spring:
 ```
 
 But In reality, there's **not just one user**!
-So we need to **setup that allosws us to create a number of users** 
+So, Need to **setup that allosws us to create a number of users** 
 
 > [!SUCCESS] Learning Objectives 
 > - How to create Multiple user accounts
@@ -98,8 +98,8 @@ public UserDetails loadUserByUsername(String username) throws UsernameNotFoundEx
 
 ### noop 
 
-#### Error : encoding 
-아래와 같이 설정하고 올바르게 name, pw를 입력해도 500오류가 뜰 것이다.
+#### 💔Error Cuz missing paasword encoding 
+When coufigure userDetails like this correctly, I'll get 500 Error
 ```java
 UserDetails admin = User  
         .withUsername("admin1").password("pwd4321")   ❌ 여기가 문제 
@@ -111,15 +111,15 @@ return new InMemoryUserDetailsManager(user, admin);
 #### Reason 
 
 >[!EXAMPLE] Background : Spring Sercurity requires pw encoding 
->- Since 5.x, all pw **must be encoede** 
+>- Since 5.x, all pw **must be encoded** 
 >- so **plain text pw like `pwd1234` can't be stored** 
 >- Basically Without any prefix, spring security **assumes it's an encoded pw.**
->- and try to figure out the encoder But it's null
+>- Then, it attempt to match using DelegatingPasswordEncoder 
+>- DelegatingPasswordEncoder try to figure out the encoder But it's null Cuz no prefix
 
-❓Encoding 기본값이 `bcrypt`인데 왜 접두사가 없으면 오류가 날까?
-- encoder를 커스텀하지 않았을 때, DelegatingPasswordEncoder는 match시 오류가 생긴다
-- Cuz 저장된 문자열에서 id를 못 구하면 어떤 인코더를 써야 할지 모르기 때문
-- **`DelegatingPasswordEncoder.matches()`** 로 비교할 때 흐름
+❓Why do I get an error without the prefix even though the encoding defaults to `bcrypt`?
+- Even though Spring Security uses `DelegatingPasswordEncoder` by default, it **requires a prefix to determine which encoder to use**. ⭐
+- **`DelegatingPasswordEncoder.matches()`** flow 
 ```java 
 private class UnmappedIdPasswordEncoder implements PasswordEncoder {
 		
@@ -131,7 +131,7 @@ private class UnmappedIdPasswordEncoder implements PasswordEncoder {
 				        "..."
 ```
 no prefix ➡ `start < 0 && end < 0`  ➡ `IllegalArgumentException`
-
+- if i configure, `.password("{noop}pwd4321)`, DelegatingPasswordEncoder doesn't throw this error 
 
 > [!WARNING]  Encoder를 Custom해도 자동 인코딩은 절대 일어나지 않는다. 
 > - 대신 평문 pw도 오류를 안내는 것일 뿐 
@@ -238,9 +238,9 @@ PasswordEncoder passwordEncoder(){
 > - if custome PWEncoder 
 > 	- userdetails에서 pw를 db or memory에 저장 시 기본적으로는 평문으로 저장됨
 > 	- 근데 {} prefix 붙이면 암호화되면서 저장 됨
-> - Encoding해서 저장하고 싶으면 여러가지 방법이 있는데 그건 나중에 배울 것 
+> - Later, Learning Mehtod of storing in PWD Encoding [[3. REST API that support user-registration]]
 
-below code is one of that solution
+Below code is one of that solution
 ```java
 UserDetails admin = User  
         .withUsername("admin1").password("{bcrpt}pwd4321")  

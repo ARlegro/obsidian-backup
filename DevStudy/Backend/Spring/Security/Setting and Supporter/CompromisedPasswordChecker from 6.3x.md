@@ -20,7 +20,7 @@ public final class HaveIBeenPwnedRestApiPasswordChecker implements CompromisedPa
     private final MessageDigest sha1Digest = getSha1Digest();  
     private RestClient restClient = RestClient.builder().baseUrl("https://api.pwnedpasswords.com/range/").build();  
   
-    public HaveIBeenPwnedRestApiPasswordChecker() {  
+	    public HaveIBeenPwnedRestApiPasswordChecker() {  
     }
 ```
 
@@ -41,7 +41,7 @@ UserDetailsService userDetailsService(PasswordEncoder encoder) {
 #### ❌ERROR❌
 org.springframework.security.authentication.password.CompromisedPasswordException: The provided password **is compromised, please change your password**
 
-- Thanks to HaveIBeenPwnedRestApiPasswordChecker, 
+- Thanks to HaveIBeenPwnedRestApiPasswordChecker
 - When inputing vulnerable password, Error Occurs 
 
 

@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
+                "file": "DevStudy/Backend/Spring/Security/UserDetailsManager Begin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setting Before exploring security implementations"
+              "title": "UserDetailsManager Begin"
+            }
+          },
+          {
+            "id": "cae43f35c361bc4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Spring/Security/UserDetailsManager Cusomize.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UserDetailsManager Cusomize"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -68,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "userdetailsManager",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,11 +103,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 325.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -192,12 +208,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "94b4ba24225e4f0d",
+  "active": "cae43f35c361bc4f",
   "lastOpenFiles": [
-    "DevStudy/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
+    "DevStudy/Backend/Spring/Security/UserDetailsManager Begin.md",
+    "DevStudy/Backend/Spring/Security/UserDetailsManager Cusomize.md",
     "DevStudy/Backend/Spring/Security/Project Start - Configure securityFilterChain.md",
+    "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
+    "DevStudy/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
     "DevStudy/Backend/Spring/Security/Preview Before Start Spring Security.md",
-    "DevStudy/Backend/Spring/Security/무제.md",
     "DevStudy/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
     "DevStudy/Backend/Spring/Security/Flow1. BasicFilter.md",
     "Crafton면접준비/질문.md",
@@ -216,14 +234,12 @@
     "DevStudy/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
     "DevStudy/Backend/Spring/Security/FormLogin and HttpBasic.md",
     "DevStudy/Backend/Spring/S3Resource사용_순환참조 오류.md",
-    "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
     "DevStudy/Backend/Spring/다운로드 코드 만들기.md",
     "DevStudy/Backend/Spring/Batch/@JobScop, @StepScop.md",
     "DevStudy/Backend/Spring/Batch/Batch test Error When multi job.md",
     "DevStudy/ETC/리팩토링 할만한거 적어놓기.md",
     "DevStudy/ETC/무제",
     "supporter/Digital Garden Home.md",
-    "README.md",
     "supporter/Excalidraw",
     "supporter/image/Pasted image 20250519225521.png",
     "supporter/image/Pasted image 20250519225442.png",

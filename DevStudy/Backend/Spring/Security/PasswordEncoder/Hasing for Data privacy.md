@@ -4,7 +4,7 @@
 ### Feaures of Hashing 
 - Data once hashed **is non-reversable** ➡ **No one can derive plain-text** from hash value
 - No One can determine orginal data from hashed data
-- Depending on what hash function i choose, I'll get different results.
+- Depending on what hash function i choose, I'll get different results.,
 - Same input + function ➡ Always get same hash value
 - Always 1 way
 		![[image/PDF 7.png]]

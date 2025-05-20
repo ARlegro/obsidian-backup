@@ -30,9 +30,3 @@ But some methods differ
 >		- Authentication : only focus on authentication status && result 
 >		- can avoid carrying unnessary methods during process
 >	2. Flexiable
-
-
-
-
-
-

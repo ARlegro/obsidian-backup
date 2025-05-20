@@ -48,17 +48,17 @@
   },
   "DevStudy/DB": "💽",
   "DevStudy/Infra": "🔄",
-  "DevStudy/Review": {
-    "iconName": "LiEye",
-    "iconColor": "#f056d4"
-  },
   "DevStudy/Backend/Python": {
     "iconName": "LiPackage",
     "iconColor": "#17008a"
   },
-  "DevStudy/Fundamentals": "🧠",
-  "DevStudy/Fundamentals/CS": "📑",
-  "DevStudy/Fundamentals/정보처리기사": {
+  "DevStudy/ETC/Review": {
+    "iconName": "LiEye",
+    "iconColor": "#f056d4"
+  },
+  "DevStudy/ETC/Fundamentals": "🧠",
+  "DevStudy/ETC/Fundamentals/CS": "📑",
+  "DevStudy/ETC/Fundamentals/정보처리기사": {
     "iconName": "LiBookOpenText",
     "iconColor": "#6f0101"
   }

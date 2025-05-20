@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
+                "file": "Crafton면접준비/질문.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flow1. BasicFilter"
+              "title": "질문"
             }
           }
         ],
@@ -149,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -248,8 +249,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "d2bc94d03da4dfde",
   "lastOpenFiles": [
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
     "DevStudy/Backend/Spring/Security/Basic flow/Flow2. Authentication Manage.md",
     "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
     "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
@@ -282,7 +284,6 @@
     "image/PDF 5.png",
     "image/PDF 4.png",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/CompromisedPasswordChecker from 6.3x.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/Setting Before exploring security implementations.md",
     "image/PDF 3.png",
     "image/PDF 2.png",
     "image/PDF 1.png",

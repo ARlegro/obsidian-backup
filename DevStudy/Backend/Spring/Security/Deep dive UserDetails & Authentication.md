@@ -11,9 +11,10 @@ But some methods differ
 
 **Authentication**
 - This type of object has **methods related Authenticated** (unlike UserDetails)
-- Representative implement : UsernamePasswordAuthenticationToken
+- Representative implement : `UsernamePasswordAuthenticationToken`
 - How can created? 
-	- Made by AuthenticationProvider ex. Dao...
+	- Made by `Spring Security Filter` (authenticated = false) ex. 
+	- Updated authenticated status by AuthenticationProvider 
 - Note : getDetails() return value is principal = Authenticated User Info ex. username, roles
 
 **UserDetails** 
@@ -23,7 +24,14 @@ But some methods differ
 >[!EXAMPLE] Explain : Why seperate 2 Interfaces
 >- **UserDetails's methods** that Authentication doesn't have is used only during actual authentication
 >- **Authentication's methods** that UserDetails doesn' have is not used during actual authentication
->- **⭐By seperating them, can avoid carrying unnessary methods during process**
+>- **⭐By seperating them**
+>	1. SRP 
+>		- UserDetails : only focus on user info 
+>		- Authentication : only focus on authentication status && result 
+>		- can avoid carrying unnessary methods during process
+>	2. Flexiable
+
+
 
 
 

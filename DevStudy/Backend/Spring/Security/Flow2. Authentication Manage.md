@@ -1,17 +1,15 @@
+![[Pasted image 20250520093706.png]]
 
 
-> [!EXAMPLE] A typical implementation is ProviderManager
+> [!EXAMPLE] `ProviderManager` :  A Representative implementation  
 > - Interface ➡ AuthenticationManager 
 > - implementatioin ➡ ProviderManager
-
-
 ```java
 public class ProviderManager implements AuthenticationManager ....{
 }
 ```
-- AuthenticationManager's implementation
 
-
+method 
 ```java
 public Authentication authenticate(Authentication authentication) throws AuthenticationException {  
     Class<? extends Authentication> toTest = authentication.getClass();  

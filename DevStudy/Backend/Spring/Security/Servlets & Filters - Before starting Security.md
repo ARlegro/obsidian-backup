@@ -1,5 +1,4 @@
 
-
 ## Before start Security : Learn Servlets & Filters
 ![[PDF.pdf#page=12&rect=43,213,742,586|Spring_Security, p.12]]
 
@@ -10,7 +9,7 @@
 
 #### why servlet ❓ (based client ↔ server flow)
 - When Client is trying to send a request with the help of browser, ther request is going to come to server in protocla(ex. HTTP, HTTPS)
-- But without servlet, the server can't make sense that server have returned 
+- But **without servlet, the server can't make sense** that server have returned 
 
 #### Sevlet Container ⭐ ex. Tomcat, JBoss 
 
@@ -24,7 +23,7 @@ java is object programming ➡ anything we want has to be **converted** into **j
 - From the **response** perpective (Similar)
 	1. **Recieve** 
 		- Sevlet make output to ServletResponse object. and hand over it to Servlet Container
-		- that is, Servlet container receive ServletReponse from Servlet 
+		- that is, Servlet containe**r receive ServletReponse from Servlet** 
 	2. **Convert** : ServletRequests ➡ HTTP(s) messages 
 
 > [!INFO]

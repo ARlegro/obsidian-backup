@@ -1,7 +1,7 @@
 ![[PDF 4.png]]
 
 ### AuthenticationProvider
->default implementaion ➡ DaoAuthenticationProvider
+>`DaoAuthenticationProvider` : default implementaion
 >AuthenticationProvider has authenticate() method
 
 

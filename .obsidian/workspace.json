@@ -8,101 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3a40e731c52a687e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z-Develop/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "InMemoryUserdetailsManager - Configuring users"
-            }
-          },
-          {
-            "id": "fd16e0ee00f4d763",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z-Develop/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Flow 3. AuthenticationProvider and Manager, encoder"
-            }
-          },
-          {
-            "id": "04de4bba17593707",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Crafton면접준비/질문.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "질문"
-            }
-          },
-          {
-            "id": "b5470d08f69ac710",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Crafton면접준비/질문.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "질문"
-            }
-          },
-          {
-            "id": "542c0ec3717cfea3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/ETC/리팩토링 할만한거 적어놓기.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "리팩토링 할만한거 적어놓기"
-            }
-          },
-          {
-            "id": "5455de2109888f4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z-Develop/Backend/Spring/Security/Setting Before exploring security implementations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Setting Before exploring security implementations"
-            }
-          },
-          {
             "id": "5cf6102f82604422",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z-Develop/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Servlets & Filters - Before starting Security"
+              "title": "새 탭"
             }
           },
           {
@@ -117,20 +29,6 @@
               },
               "icon": "lucide-file",
               "title": "Project Start - Configure securityFilterChain"
-            }
-          },
-          {
-            "id": "b9056e468d050a38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "z-Develop/Backend/Spring/Security/FormLogin and HttpBasic.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FormLogin and HttpBasic"
             }
           },
           {
@@ -197,16 +95,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "z-Develop/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
+                "file": "DevStudy/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flow 3. AuthenticationProvider and Manager, encoder"
+              "title": "Deep dive UserDetails & Authentication"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 325.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -362,54 +260,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "542c0ec3717cfea3",
+  "active": "5cf6102f82604422",
   "lastOpenFiles": [
+    "DevStudy/Backend/Spring/Security/Flow1. BasicFilter.md",
     "Crafton면접준비/질문.md",
+    "DevStudy/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
+    "DevStudy/Fundamentals/정보처리기사/소프트웨어-개발/제품 소프트웨어 메뉴얼 작성.md",
+    "DevStudy/Fundamentals/정보처리기사/프로그래밍 언어 활용/무제.md",
+    "DevStudy/Infra/무제.md",
+    "DevStudy/Fundamentals/정보처리기사/소프트웨어-개발/wpvna.md",
+    "DevStudy/Fundamentals/정보처리기사/소프트웨어-개발/배포-애플리케이션_패키징.md",
+    "DevStudy/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
+    "DevStudy/Backend/Spring/Security/Flow2. Authentication Manage.md",
+    "image/Pasted image 20250520093706.png",
+    "image",
+    "DevStudy/Backend/Spring/Security/PDF.pdf",
+    "DevStudy/Backend/Spring/Security/Flow When refresh the page after Authenticate.md",
+    "DevStudy/Backend/Spring/Security/CompromisedPasswordChecker from 6.3x.md",
+    "DevStudy/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
+    "DevStudy/Backend/Spring/Security/FormLogin and HttpBasic.md",
+    "DevStudy/Backend/Spring/S3Resource사용_순환참조 오류.md",
+    "DevStudy/Backend/Spring/Security/Preview Before Start Spring Security.md",
+    "DevStudy/Backend/Spring/Security/Project Start - Configure securityFilterChain.md",
+    "DevStudy/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
+    "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
+    "DevStudy/Backend/Spring/다운로드 코드 만들기.md",
+    "DevStudy/Backend/Spring/Batch/@JobScop, @StepScop.md",
+    "DevStudy/Backend/Spring/Batch/Batch test Error When multi job.md",
     "DevStudy/ETC/리팩토링 할만한거 적어놓기.md",
     "DevStudy/ETC/무제",
     "supporter/Digital Garden Home.md",
     "README.md",
     "DevStudy/ETC/이요한_중급프로젝트 회고.md",
-    "DevStudy/ETC/Exhausted Connection-Pool.md",
-    "DevStudy/ETC/obsidian-hosting.md",
-    "DevStudy/ETC/What is restful api.md",
-    "DevStudy/ETC/WSL_SSH_Github Connect.md",
-    "supporter/Excalidraw/Drawing 2025-05-08 16.03.04.excalidraw.md",
-    "supporter/Excalidraw/Drawing 2025-05-19 22.57.25.excalidraw.md",
     "supporter/Excalidraw",
     "supporter/image/Pasted image 20250519225521.png",
     "supporter/image/Pasted image 20250519225442.png",
-    "DevStudy/Backend/Spring/Security/Flow When refresh the page after Authenticate.md",
     "supporter",
-    "z-Develop/Backend/Spring/Security/무제.md",
-    "z-Develop/Backend/Spring/Security/무제 1.md",
-    "DevStudy/Backend/Spring/Security/Deep dive UserDetails & Authentication.md",
     "Crafton면접준비",
     "supporter/image/PDF 6.png",
-    "DevStudy/Backend/Spring/Security/PDF.pdf",
     "supporter/image/PDF 5.png",
-    "DevStudy/Backend/Spring/Security/Flow 3. AuthenticationProvider and Manager, encoder.md",
     "supporter/image/PDF 4.png",
     "supporter/image/PDF 3.png",
-    "DevStudy/Backend/Spring/Security/Servlets & Filters - Before starting Security.md",
-    "DevStudy/Backend/Spring/Security/InMemoryUserdetailsManager - Configuring users.md",
     "supporter/image/PDF 2.png",
-    "DevStudy/Backend/Spring/Security/CompromisedPasswordChecker from 6.3x.md",
     "supporter/image/Pasted image 20250519141042.png",
-    "DevStudy/Backend/Spring/Security/Flow1. BasicFilter.md",
     "supporter/image/PDF 1.png",
-    "supporter/image/PDF.png",
-    "DevStudy/Backend/Spring/Security/FormLogin and HttpBasic.md",
-    "DevStudy/Backend/Spring/Security/Project Start - Configure securityFilterChain.md",
-    "z-Develop/Backend/Spring/Security/ㄴ.md",
-    "DevStudy/Backend/Spring/Security/Flow2. Authentication Manage.md",
-    "supporter/Excalidraw/Drawing 2025-05-18 22.50.59.excalidraw.md",
-    "DevStudy/Backend/Spring/Security/Setting Before exploring security implementations.md",
     "DevStudy/Backend/Spring/Security",
     "DevStudy",
     "DevStudy/Fundamentals",
     "DevStudy/Backend",
-    "supporter/image/Spring_Security 4.pdf",
     "무제 파일.canvas"
   ]
 }

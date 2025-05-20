@@ -36,10 +36,11 @@
 
 **✔주요 메서드**
 
-**1‍⃣**loadDeferredContext 
+**1‍⃣**loadDeferredContext()
 ```java
 default DeferredSecurityContext loadDeferredContext(HttpServletRequest request) {  
-    Supplier<SecurityContext> supplier = () -> this.loadContext(new HttpRequestResponseHolder(request, (HttpServletResponse)null));  
+    Supplier<SecurityContext> supplier = () -> 
+		    this.loadContext(new HttpRequestResponseHolder(request, (HttpServletResponse)null));  
     return new SupplierDeferredSecurityContext(SingletonSupplier.of(supplier), SecurityContextHolder.getContextHolderStrategy());  
 }
 ```
@@ -58,7 +59,7 @@ default DeferredSecurityContext loadDeferredContext(HttpServletRequest request) 
 > - 💢 단점 
 > 	- 하지만 과거 버전은 요청이 들어올 떄마다 즉시 SecurityCotext를 불러와야 했다.
 > 	- 이는 비동기 환경과 맞지 않고 실제 필요할 때만 context를 부르는 lazy 로딩을 불가능케했다.
-> 	- 유연성 부족 : `ServletRequest`와 `ServletResponse`를 얽어서 처리하는 점도 유연성이 떨어졌음
+> 	- 유연성 부족 : `ServletRequest`와 `ServletResponse` 모두 읽어서 처리하는 점도 유연성이 떨어졌음
 
 
 

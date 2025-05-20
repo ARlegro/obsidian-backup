@@ -46,8 +46,19 @@ private void doFilter(HttpServletRequest request, HttpServletResponse response, 
 #generatingLoginPageHtml
 - this methods receive "request, response, FilterChain"
 - **Generate LoginPageHtml** 
-
+- 
+--- 
 ### AuthorizationFilter
+```java
+public class AuthorizationFilter extends GenericFilterBean {  
+    private SecurityContextHolderStrategy securityContextHolderStrategy = SecurityContextHolder.getContextHolderStrategy();  
+    private final AuthorizationManager<HttpServletRequest> authorizationManager;  
+    private AuthorizationEventPublisher eventPublisher = new NoopAuthorizationEventPublisher();  
+    private boolean observeOncePerRequest = false;  
+    private boolean filterErrorDispatch = true;  
+    private boolean filterAsyncDispatch = true;
+```
+
 
 ✔Concept
 - is responsible to **identify** whether a user is trying to access protected API or Path **without credentials** and **without authenticated session**
@@ -85,7 +96,7 @@ protected void doFilterInternal(HttpServletRequest request, HttpServletResponse 
 attemptAuthentication is defined inside **UsernamePasswordAuthenticationFilter**
 
 
-
+---
 ## Filter When login 
 ```java
 public abstract class AbstractAuthenticationProcessingFilter extends GenericFilterBean implements ApplicationEventPublisherAware, MessageSourceAware {
@@ -169,7 +180,9 @@ public Authentication attemptAuthentication(HttpServletRequest request, HttpServ
 
 >[!Warning] AbstractAuthenticationProcessingFilter doesn't perform verification
 >- Just, Determine if authentication is required
->- when is required, **pupulate details into security context** and **pass it  to AuthenticationManager**
+>- when is required, 
+>	- Delegate extracition details(ex. UsernamePasswordAuthenticationToken) to other class  
+>	- **pupulate details into security context** and **pass it  to AuthenticationManager**
 
 >[!tip] security context is populated with Authentication details
 

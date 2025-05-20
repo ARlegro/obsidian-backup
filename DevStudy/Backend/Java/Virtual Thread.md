@@ -3,7 +3,6 @@ dg-publish: true
 dg-home: false
 ---
 
-
 ## 개념 및 특장점
 
 **개념**

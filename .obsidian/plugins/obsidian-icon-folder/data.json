@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiApple",
       "LiBrain",
       "🧠",
       "LiLayoutTemplate",
-      "♊",
-      "📑"
+      "♊"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -52,13 +52,17 @@
     "iconName": "LiPackage",
     "iconColor": "#17008a"
   },
-  "DevStudy/ETC/Review": {
+  "DevStudy/Backend/Spring": {
+    "iconName": "LiApple",
+    "iconColor": "#00d165"
+  },
+  "DevStudy/etc/Fundamentals": "🧠",
+  "DevStudy/etc/Review": {
     "iconName": "LiEye",
     "iconColor": "#f056d4"
   },
-  "DevStudy/ETC/Fundamentals": "🧠",
-  "DevStudy/ETC/Fundamentals/CS": "📑",
-  "DevStudy/ETC/Fundamentals/정보처리기사": {
+  "DevStudy/etc/Fundamentals/CS": "📑",
+  "DevStudy/etc/Fundamentals/정보처리기사": {
     "iconName": "LiBookOpenText",
     "iconColor": "#6f0101"
   }

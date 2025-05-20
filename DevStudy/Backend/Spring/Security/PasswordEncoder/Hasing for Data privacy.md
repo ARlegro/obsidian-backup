@@ -22,4 +22,22 @@ SHA2-256(stdin)= 177b845bf42225b6da04ad14df88e4f27b6d872c3c4143f1f37c22431bb9dc1
 
 ### Drawback 
 
+#### 1.  Same Hash Value ➡ Same Input 
+- **Week1 (on Brute Force Attack)** 
+	- Hacker will **cacluate the hash value** By taking commonly used PW 
+	- And **match** user's hash value 
+	#Attack #simple-pw  #used-pw
+
+- **Week2 (on Dictionary or Rainbow Attack)**
+	- **Not calculate hash value** unlike Week1
+	- Instead, **prepare a table** with the most commonly used pw 
+	- and **Match** hashed Data to hacker's table 
+     > this method, don't have to calculate hash value. just take hash value 
+  
+#### 2. Too Fast 
+> Hashing is so fast that it's good for hackers to utilize the hacking techniques.
+
+
+
+### How to overcome Drawback 
 

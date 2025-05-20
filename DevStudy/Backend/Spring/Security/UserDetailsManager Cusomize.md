@@ -18,3 +18,43 @@
 	- Override loadUserByUsername() 
 
 ### Customize 
+
+
+#### Make Custmized UserDetailsService
+
+```java 
+@Service  
+@RequiredArgsConstructor  
+public class BankUserDetailsService implements UserDetailsService {  
+  
+    private final CustomerRepository customerRepository;
+```
+```java 
+@Override  
+public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {  
+    Customer customer = customerRepository.findByEmail(username)  
+            .orElseThrow(() -> new UsernameNotFoundException("User detials not found for the user" + username));  
+    List<GrantedAuthority> authorities = List.of(new SimpleGrantedAuthority(customer.getRole()));  
+    return new User(customer.getEmail(), customer.getPassword(), authorities);
+```
+> This process is to converting Customer Object into an UserDetails Obejct 
+- DaoAuthenticationProvider invoke this method to get UserDetails
+
+```java 
+public User(String username, String password, 
+									Collection<? extends GrantedAuthority> authorities) {  
+    this(username, password, true, true, true, true, authorities);  
+}
+```
+> need to make GrantedAuthority Collection 
+
+> [!WARNING] Remove UserDetailsService Bean if exist own 
+```java 
+//@Bean  
+//UserDetailsService userDetailsService(DataSource dataSource) {  
+//    return new JdbcUserDetailsManager(dataSource);  
+//} 
+```
+
+
+

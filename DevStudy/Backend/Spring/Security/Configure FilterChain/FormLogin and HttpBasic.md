@@ -23,9 +23,18 @@ http.formLogin((flc) -> flc.disable());
 ### HttpBasic()
 #### When using only httpBasic (not loginForm)
 
+✅What does httpBasic(withDefault()) means?
+```java 
+http.httpBasic(withDefaults())
+```
+- HTTP Basic 인증을 켜주는 설정
+- This enalble HTTP Basic authenticaion in Spring Security Where the client set credentials in **every request using Authorization header**
+	- So, it isn't very secure 
+
+
 ☑If using the **httpBasic()** not loginForm 
 - ❌UsernamePasswordAuthenticationFilter will not invoked  
-- 💙Intead, **BasicAuthenticationFilter will invoked**
+- 💙Intead, **BasicAuthenticationFilter will be nvoked**
 - it also conver request ➡ UsernamePasswordAuthenticationToken
 
 ```java

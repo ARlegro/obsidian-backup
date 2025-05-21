@@ -1,6 +1,6 @@
 
 ### REST API 
-![[PDF.png]]
+![[PDF 8.png]]
 
 
 ### See SecurityConfiguration :
@@ -119,7 +119,7 @@ http.authorizeHttpRequests((requests) ->
 | /api/public/**               | **Accessible to everyone** (no login required)   |
 | anyRequest().authenticated() | All **other reuqests require authentication**    |
 
-> [!WARNING] What happens if write this : `.requestMathcers(~).생략~.anyRequest()
+> [!WARNING] What happens if write this : `.requestMathcers(~).생략~.anyRequest()`
 >- line `.requestMatchers("/admin/**")` **only defines a path pattern**.
 >- But it **doesn't specify any access rule** 
 >- Result : does not apply any explicit access control to that path.

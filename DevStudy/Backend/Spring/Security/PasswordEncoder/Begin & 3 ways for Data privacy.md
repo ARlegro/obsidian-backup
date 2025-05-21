@@ -1,6 +1,6 @@
 
 ### How to Valdiate PW 
-![[image/PDF 1.png]]
+![[PDF 1 1.png]]
 Don't use plain-text Password 
 
 --- 
@@ -11,7 +11,7 @@ Don't use plain-text Password
 2. Encryption
 3. Hashing 
 
-![[image/PDF 3.png]]
+![[PDF 3 1.png]]
 
 
 > Which approach to choose depends on situation
@@ -60,7 +60,7 @@ openssl base64 -d -in encode.txt -out decode.txt
 		- Need key during encryption && decryption
 	2. Need to take care of key. can't do anything 
 
-![[image/PDF 4.png]]
+![[PDF 4 1.png]]
 
 ##### **Deep Dive of Encryption** 
 >[!SUCCESS]  There are 2 types of key in encryption algorithm 
@@ -68,7 +68,7 @@ openssl base64 -d -in encode.txt -out decode.txt
 >2. Asymmetric 
 
 **1‍⃣ Symmetric Encryption**
-![[image/PDF 5.png]]
+![[PDF 5 1.png]]
 **☑Concept**
 - **use same secret key** during the encryption and decryption
 	- It is important to manage secret key
@@ -96,7 +96,7 @@ openssl base64 -d -in encode.txt -out decode.txt
   > So, it's not secure process for password encryption
 
 **2‍⃣ Asymmetric** 
-![[image/PDF 6.png]]
+![[PDF 6 1.png]]
 ☑Concept 
 - There is two different key
 	1. Public Key

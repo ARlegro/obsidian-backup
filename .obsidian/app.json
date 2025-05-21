@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "attachmentFolderPath": "image",
+  "attachmentFolderPath": "supporter/image",
   "newFileLocation": "current",
   "tabSize": 2,
   "pdfExportSettings": {

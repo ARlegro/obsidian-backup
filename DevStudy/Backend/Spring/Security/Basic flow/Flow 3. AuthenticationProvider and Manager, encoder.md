@@ -1,4 +1,4 @@
-![[PDF 4.png]]
+![[PDF 4 1.png]]
 
 ### AuthenticationProvider
 >`DaoAuthenticationProvider` : default implementaion
@@ -12,7 +12,7 @@
 
 
 ### UserDetailsService/Manager
-![[PDF 2.png]]
+![[PDF 2 1.png]]
 
 **✔UserDetailService** - Interface
 - Responsible for **loading user information** based on the provided username.

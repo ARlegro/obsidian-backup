@@ -32,7 +32,7 @@ Each of Exception mentioned invoke each Interface which is responsible handle Ex
 	- By default implementation : 
 	- When 
 
-So, To handle Exception in detail ➡ need to override Interfaces 
+So, To handle Exception in detail ➡ need to override Interfaces (~Entrypoint, ~handler)
 
 구현체 들어가보면 아래와 같이 되어 있음
 
@@ -75,50 +75,9 @@ private void handleSpringSecurityException(HttpServletRequest request, HttpServl
     }
 ```
 ➡ The type of exception determines which handler will process it
-➡ Of course, Even  thoght handleAccessDeniedException is happen, Exception can  be changed to AuthenticationException in progrees
+➡ Of course, **Even thoght handleAccessDeniedException is happen, Exception can  be changed to AuthenticationException in progrees**
 
 
-
-
-### Customize AutenticationEntryPoint
-- is capable of handling 401 ERROR  
-
-> [!WARNING] If i use login-form by security, there is LoginUrlAuthenticationEntryPoint
-> - if that, don't have to customize it which is specific UI flow
-> - But most scenario is based on HTTP Flow. 
-
-#### 1. Customize header 
-```java 
-public class CustomBasicAuthenticationEntryPoint implements AuthenticationEntryPoint {  
-    @Override  
-    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {  
-    response.setHeader("custom-error-reason", "Authentication failed");  
-    response.sendError(HttpStatus.UNAUTHORIZED.value(), HttpStatus.UNAUTHORIZED.getReasonPhrase());  
-}  
-        
-```
-setHeader(key, value)
-
-setError
-- Instead of 401, I can throw any status ex. 403, 500 
-
-✅Step2. Configure httpBasic() 
-```java 
-http.formLogin(flc -> flc.disable());  
-http.httpBasic((hbc) -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint())); // Invoke
-```
-customize httpBasic()
-- By withDefault() ➡ register BasicAuthenticationEntryPoint for error handling 
-- Need to customize for Error customizing 
-
-
-#### 2. Customize body 
-```java 
-```
-setConentType 
-
-Construct the JSON response
-- `response.getWriter().write(jsonResponse)`
-
-
-
+--- 
+[[401 - Customize AutenticationEntryPoint]]
+[[403 - Customize AccessDeniedHandler]]

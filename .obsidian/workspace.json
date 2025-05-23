@@ -8,63 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9643f248a5782fba",
+            "id": "7817700052ad17a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
+                "file": "Crafton면접준비/질문.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deep dive UserDetails & Authentication"
+              "title": "질문"
             }
           },
           {
-            "id": "94b4ba24225e4f0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Managing User by DB/1. UserDetailsManager Begin.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. UserDetailsManager Begin"
-            }
-          },
-          {
-            "id": "cae43f35c361bc4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Authentication Provider/The reason of cusmizing provider.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The reason of cusmizing provider"
-            }
-          },
-          {
-            "id": "57b5cb0aec87872b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Setting and Supporter/CompromisedPasswordChecker from 6.3x.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CompromisedPasswordChecker from 6.3x"
-            }
-          },
-          {
-            "id": "d1bf420b1c109478",
+            "id": "cd8fbb59f05a0ee8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -75,34 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "Handling Exception"
-            }
-          },
-          {
-            "id": "7817700052ad17a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Setting and Supporter/CompromisedPasswordChecker from 6.3x.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CompromisedPasswordChecker from 6.3x"
-            }
-          },
-          {
-            "id": "cd8fbb59f05a0ee8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/PasswordEncoder/Begin & 3 ways for Data privacy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Begin & 3 ways for Data privacy"
             }
           },
           {
@@ -119,8 +49,7 @@
               "title": "PasswordEncodder"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "httpbasic",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,8 +102,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -278,53 +206,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "d1bf420b1c109478",
+  "active": "7817700052ad17a9",
   "lastOpenFiles": [
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/FormLogin and HttpBasic.md",
+    "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
     "DevStudy/Backend/Spring/Security/Customize most common/Handling Exception.md",
-    "supporter/image/PDF 10.png",
+    "Crafton면접준비/질문.md",
+    "DevStudy/Backend/Spring/Security/Setting and Supporter/CompromisedPasswordChecker from 6.3x.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/403 - Customize AccessDeniedHandler.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/401 - Customize AutenticationEntryPoint.md",
+    "DevStudy/Backend/Spring/Security/Authentication Provider/The reason of cusmizing provider.md",
+    "DevStudy/Backend/Spring/Security/Setting and Supporter/Setting Before exploring security implementations.md",
+    "DevStudy/Backend/Spring/Security/Setting and Supporter/NPM in WSL.md",
+    "DevStudy/Backend/Spring/다운로드 코드 만들기.md",
+    "DevStudy/Backend/Spring/Security/CORS & CSRF/Start CORS & CSRF.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/Handle Session timeout & invalid session ＆ Concurrent Session.md",
+    "DevStudy/Backend/Spring/Security/CORS & CSRF",
+    "supporter/image/PDF 14.png",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
+    "supporter/image/PDF 13.png",
+    "supporter/image/PDF 12.png",
+    "supporter/image/PDF 11.png",
+    "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
+    "DevStudy/Backend/Spring/Security/PasswordEncoder/Begin & 3 ways for Data privacy.md",
     "DevStudy/Backend/Spring/Security/Customize most common/Configure only for HTTPS.md",
     "DevStudy/Backend/Spring/Security/Authentication Provider/Conditional Security Cofig by profile.md",
-    "DevStudy/Backend/Spring/Security/Managing User by DB/3. REST API that support user-registration.md",
-    "DevStudy/Backend/Spring/Security/Customize most common",
-    "DevStudy/Backend/Spring/Security/Managing User by DB/1. Taste UserDetailsManager.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/Setting Before exploring security implementations.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/CompromisedPasswordChecker from 6.3x.md",
-    "DevStudy/Backend/Spring/Security/Authentication Provider/The reason of cusmizing provider.md",
+    "DevStudy/etc/Fundamentals/carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
+    "DevStudy/etc/Fundamentals/carfton-test/오류(or Tip)/new URL.md",
+    "DevStudy/etc/Fundamentals/carfton-test/오류(or Tip)/nate 뉴스의 핫링크 방지.md",
+    "DevStudy/etc/Fundamentals/carfton-test/오류(or Tip)/틀렸던 부분.md",
+    "DevStudy/etc/Fundamentals/carfton-test/복습/복습하면서.md",
+    "DevStudy/etc/Fundamentals/carfton-test/복습/부트스트랩-기능.md",
+    "DevStudy/etc/Fundamentals/carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
     "DevStudy/Backend/Spring/Security/Managing User by DB/2. UserDetailsManager Cusomize.md",
+    "DevStudy/Backend/Python/파이썬으로 몽고 DB 조작.md",
+    "DevStudy/Backend/Python/환경변수 .env파일에 보관.md",
+    "supporter/image/PDF 10.png",
+    "DevStudy/Backend/Spring/Security/Customize most common",
     "supporter/image/Pasted image 20250521132202.png",
-    "supporter/Excalidraw/Drawing 2025-05-21 13.19.26.excalidraw.md",
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/Project Start - Configure securityFilterChain.md",
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/InMemoryUserdetailsManager - Configuring users.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow2. Authentication Manage.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow When refresh the page after Authenticate.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
     "DevStudy/Backend/Spring/Security/Authentication Provider",
     "supporter/image/PDF 9.png",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/무제.md",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/무제.md",
     "supporter/image/Pasted image 20250520093706.png",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/Hasing for Data privacy.md",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/Begin & 3 ways for Data privacy.md",
-    "Crafton면접준비/질문.md",
-    "DevStudy/Infra/Trouble when basic Deploy (EC2-Docker).md",
-    "DevStudy/etc/Exhausted Connection-Pool.md",
     "supporter/image/PDF 7.png",
     "supporter/image/Pasted image 20250520172404.png",
-    "supporter/image/Pasted image 20250520172336.png",
-    "supporter/image/PDF 6 1.png",
-    "supporter/image/PDF 5 1.png",
-    "supporter/image/PDF 4 1.png",
     "DevStudy/Backend/Spring/Security/PasswordEncoder",
     "DevStudy/Backend/Spring/Security/Basic flow",
     "DevStudy/Backend/Spring/Security/Configure FilterChain/무제",
     "DevStudy/Backend/Spring/Security/Configure FilterChain",
     "DevStudy/Backend/Spring/Security/Begin",
     "DevStudy/Backend/Spring/Security/Setting and Supporter",
-    "DevStudy/Backend/Spring/Security/Managing User by DB",
     "무제 파일.canvas"
   ]
 }

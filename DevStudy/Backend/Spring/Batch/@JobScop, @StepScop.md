@@ -3,13 +3,13 @@ dg-publish: true
 dg-home: false
 ---
 
-## **✅ Scope(스코프)란??**
+## Scope(스코프)란??
 
 - 스프링 컨테이너에서 스코프란, 빈의 생명주기와 접근 범위를 정의하는 개념이다
-- 종류로는 singleton, prototype, request. session 등이 있으며,
+- 종류 : singleton, prototype, request. session 등
 - 스프링에서 빈은 기본적으로 singleton으로 생성된다.
 
-## **✅ 배치 Scope**
+## 배치 Scope
 
 ### 기본 개념
 

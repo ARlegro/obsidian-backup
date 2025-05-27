@@ -1,11 +1,4 @@
 
-CORS (Cross-Origin Resource Sharing)
-
-
-CSRF (Cross-Site Request Forgery)
-
-
-
-The attacks(CORS + CSRF) will be only through the browser
-So, we need to understand UI application
+>The attacks(CORS + CSRF) will be only through the browser
+ So, we need to understand UI application
 

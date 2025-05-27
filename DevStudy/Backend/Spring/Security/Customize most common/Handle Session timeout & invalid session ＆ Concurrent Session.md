@@ -44,9 +44,11 @@ In reality,
 
 ### Configure maximum session
 ```java
+http.sessionManagement( smc ->   
+        smc.invalidSessionUrl("/invalid-session")  
+            .maximumSessions(3)  
+            
 ```
-
-
 
 - If restrict the maximum session = 1, 
 	- A user can maintain **only one active session at a time**

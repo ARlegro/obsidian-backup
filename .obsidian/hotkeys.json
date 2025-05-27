@@ -9,14 +9,6 @@
   ],
   "workspace:goto-tab-1": [],
   "workspace:goto-tab-2": [],
-  "editor:focus": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "1"
-    }
-  ],
   "app:toggle-right-sidebar": [
     {
       "modifiers": [
@@ -122,5 +114,21 @@
       "key": "I"
     }
   ],
-  "obsidian-excalidraw-plugin:save": []
+  "obsidian-excalidraw-plugin:save": [],
+  "editor:focus": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ]
 }

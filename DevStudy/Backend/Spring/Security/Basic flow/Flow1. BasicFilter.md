@@ -8,8 +8,6 @@
 ![[PDF.pdf#page=13&rect=57,105,1398,647|Spring_Security, p.13]]
 
 
-
-
 ### DefaultLoginPageGeneratingFilter
 ```java
 public DefaultLoginPageGeneratingFilter(UsernamePasswordAuthenticationFilter authFilter) {  
@@ -61,7 +59,7 @@ public class AuthorizationFilter extends GenericFilterBean {
 
 
 ✔Concept
-- is responsible to **identify** whether a user is trying to access protected API or Path **without credentials** and **without authenticated session**
+- Responsible to **identify** whether a user is trying to access protected API or Path **without credentials** and **without authenticated session**
 
 ✔Code (dofilter method)
 ```java 
@@ -97,19 +95,72 @@ attemptAuthentication is defined inside **UsernamePasswordAuthenticationFilter**
 
 
 ---
-## Filter When login 
+## Filter When login - AbstractAuthenticationProcessingFilter
 ```java
 public abstract class AbstractAuthenticationProcessingFilter extends GenericFilterBean implements ApplicationEventPublisherAware, MessageSourceAware {
 ```
 #Abstract-Class
+### Concept and flow 
+![[Pasted image 20250525153837.png]]
 
-- have 2 implementation
+
+☑**Concept** of `AbstractAuthenticationProcessingFilter`
+- **User 인증을 위한 기본 필터** : A base `Filter` **for authenticating a user’s credentials.** 
+- **Authentication 객체 생성** 
+	- User가 credentials을 submit ➡  `AbstractAuthenticationProcessingFilter` creates an `Authentication` from the `HttpServletRequest` to be authenticated
+	- 이  filter의 구현체가 인증 객체를 만듬
+	  
+- **인증 객체 타입은 구현체에 따라 다르다** 
+  The type of Authentication depends on implemenation of `AbstractAuthenticationProcessingFilter`
+	- ex. `UsernamePasswordAuthenticationFilter` creates a `UsernamePasswordAuthenticationToken` from a _username_ and _password_ that are submitted in the `HttpServletRequest`.
+	  
+- **Have 2 implementation**
 	1. WebAuthnAuthenticationFilter
 	2. UsernamePasswordAuthenticationFilter
 
+**❓What result of Authentication Fail or Success** 
+1. ✅Case of Success
+```java 
+protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {  
+    SecurityContext context = this.securityContextHolderStrategy.createEmptyContext();  
+    context.setAuthentication(authResult);  
+    this.securityContextHolderStrategy.setContext(context);  
+    this.securityContextRepository.saveContext(context, request, response);  
+    if (this.logger.isDebugEnabled()) {  
+        this.logger.debug(LogMessage.format("Set SecurityContextHolder to %s", authResult));  
+    }  
+  
+    this.rememberMeServices.loginSuccess(request, response, authResult);  
+    if (this.eventPublisher != null) {  
+        this.eventPublisher.publishEvent(new InteractiveAuthenticationSuccessEvent(authResult, this.getClass()));  
+    }
+```
+- The Authentication is set on the `SecurityContextHolder
+- `RememberMeServices.loginSuccess` is invoked
+- etc
+		  
+2. ❌Case of Fail
+```java 
+protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response, AuthenticationException failed) throws IOException, ServletException {  
+    this.securityContextHolderStrategy.clearContext();  
+    this.logger.trace("Failed to process authentication request", failed);  
+    this.logger.trace("Cleared SecurityContextHolder");  
+    this.logger.trace("Handling authentication failure");  
+    this.rememberMeServices.loginFail(request, response);  
+    this.failureHandler.onAuthenticationFailure(request, response, failed);  
+}
+```
+- The SecurityContextHolder is cleared out.
+- `RememberMeServices.loginFail` is invoked.
+- `AuthenticationFailureHandler` is invoked
+
 
 ### Code 
+
 #### Overall
+> 추상 클래스에 구현된 메서드 
+- 인증이 필요한지 확인 
+- 필요 시 : 인증 객체 생성 후 filter 메서드 invoke 
 ```java
 private void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {  
 		// Authentification이 필요한지 처리하는 if 문
@@ -141,9 +192,8 @@ private void doFilter(HttpServletRequest request, HttpServletResponse response, 
 ```
 
 #### dofilter(..) : Core Logic Breadkdwon 
-
 ```java 
-if (!this.requiresAuthentication(request, response)) {
+if (!this.**requiresAuthentication**(request, response)) {
     chain.doFilter(request, response);
     return;
 }
@@ -155,7 +205,7 @@ if (!this.requiresAuthentication(request, response)) {
 Authentication authenticationResult = this.attemptAuthentication(request, response);
 ```
 - **Purpose** : Delegates the actual credential extraction and authentication attempt
-- attemptAuthentication is logic provided by concrete filter like `UsernamePasswordAuthenticationFilter`
+- `attemptAuthentication` is logic provided by concrete filter like `UsernamePasswordAuthenticationFilter`
 - Below is method in UsernamePasswordAuthenticationFilter
 	1. Extract `usernaem` and `password`
 	2. Build an Authentication token (UsernamePasswordAuthenticationToken)
@@ -181,13 +231,13 @@ public Authentication attemptAuthentication(HttpServletRequest request, HttpServ
 >[!Warning] AbstractAuthenticationProcessingFilter doesn't perform verification
 >- Just, Determine if authentication is required
 >- when is required, 
->	- Delegate extracition details(ex. UsernamePasswordAuthenticationToken) to other class  
+>	- **Delegate** extracition details(ex. UsernamePasswordAuthenticationToken) to other class  
 >	- **pupulate details into security context** and **pass it  to AuthenticationManager**
 
 >[!tip] security context is populated with Authentication details
 
 
-
+Next = [[Flow2. Authentication Manager]]
 
 
 

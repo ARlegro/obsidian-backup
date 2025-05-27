@@ -12,10 +12,70 @@
 4. 따라서 사용자는 계속 로그인 상태를 유지함.
 
 #### SecurityContextHolderFilter
-
 > 참고 : deprecated 버전 : SecurityContextPersistenceFilter 
-
+https://docs.spring.io/spring-security/reference/servlet/authentication/persistence.html#securitycontextholderfilter
+![[Pasted image 20250525152305.png]]
 - 인증 상태 유지의 핵심 역할 
+- Responsible for loading the `SecurityContext` between requests using the `SecurityContextRepository`.
+- **지연 로딩** : 세션 접근을 지연시키기 위해 `loadDeferredContext()` + Supplier 기반 구조 사용
+	- 애플리케이션이 실행되기 전에, SecurityContextRepository로부터 `SecurityContext`를 얻어오고 SecurityContextHolder에 세팅한다
+	- 하지만, SecurityContextHolderFilter은 load만 하는거지 SecurityContext를 아직 save하지 않은 것이다.
+
+```java 
+public class SecurityContextHolderFilter extends GenericFilterBean {
+		...
+
+
+		private void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {  
+    if (request.getAttribute(FILTER_APPLIED) != null) {  
+        chain.doFilter(request, response);  
+    } else {  
+        request.setAttribute(FILTER_APPLIED, Boolean.TRUE);  
+        // 지연 로딩 
+        Supplier<SecurityContext> deferredContext = this.securityContextRepository.loadDeferredContext(request);  
+  
+        try {  
+            this.securityContextHolderStrategy.setDeferredContext(deferredContext);  
+            chain.doFilter(request, response);  // 인증/인가 
+        } finally {  
+            this.securityContextHolderStrategy.clearContext();  
+            request.removeAttribute(FILTER_APPLIED);  
+        }  
+  
+    }  
+}
+
+```
+흐름 
+1. 사용자 요청 
+2. `SecurityContextHolderFilter`가 `loadDeferredContext()`로 Supplier를 등록 (지연 로딩)
+3. dofilter 진행으로 인증/인가 실행 
+4. 필터 체인 완료 후 
+	- 필터 체인이 완료되면 `SecurityContextHolderFilter`가 다시 등장해 `clearContext()`로 ThreadLocal을 비운다.
+
+>[!QUESTION] ❓언제 Context가 생성되는가?
+>아래 상황중 하나라도 발생하면 생성 
+>1. `UsernamePasswordAuthenticationFilter`가 인증 여부 확인
+>2. `@PreAuthorize`, `hasRole()`, `getPrincipal()` 등 인증 정보 참조
+>3. 커스텀 필터나 Controller에서 `SecurityContextHolder.getContext()` 호출
+>> 이 시점에 supplier.get()이 호출된다, 
+
+```scss
+[요청 시작]
+   ↓
+SecurityContextHolderFilter
+   ↓
+loadDeferredContext() → Supplier 생성만 (아직 X)
+   ↓
+SecurityContextHolder.setDeferredContext()
+   ↓
+... (필터 체인 진행)
+   ↓
+어딘가에서 getContext() 호출  ❗
+   ↓
+Supplier.get() 실행됨 → 실제로 세션 접근해서 SecurityContext 로딩
+```
+
 
 
 #### 세션 저장소: HttpSessionSecurityContextRepository
@@ -25,7 +85,6 @@
 - SecurityContext를 HttpSession에 저장하고 꺼내는 역할
 	- SecurityContext는 인증(Authentication)객체를 가지고 있다.
 	- Spring Security의 기본 인증 시스템은 인증 객체를 session에 저장해두고 요청이 들어올 때마다 session에서 꺼내서 인증 상태를 유지하는 방식 
-
 
 > [!INFO] session ➡ 서버 메모리에 저장되는 HttpSession 객체 
 > - 사용자는 SeesionId를 가지고 있는거지 Session을 가지고 있는 것이 아니다.

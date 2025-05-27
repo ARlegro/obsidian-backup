@@ -2,12 +2,28 @@
 
 
 > [!EXAMPLE] `ProviderManager` :  A Representative implementation  
-> - Interface ➡ AuthenticationManager 
-> - implementatioin ➡ ProviderManager
+> - Interface : AuthenticationManager 
+> - implementatioin 
+> 	- **ProviderManager** ⭐most commo
+> 	- NoOpAuthenticationManager << for test
+> 	- ObservationAuthenticationManager
+> 	- etc 
+
+## ProviderManger - implementation
 ```java
 public class ProviderManager implements AuthenticationManager ....{
 }
 ```
+
+### Concept 
+- The most commonly used **implementation**
+- **Delegates** to a `List` of `AuthenticationProvider` instances.
+- 만약 AuthenticationPriver List **모두 인증을 실패한다면, 예외**를 던질 것이다.
+	- If none of the configured `AuthenticationProvider` instances can authenticate, authentication fails with a `ProviderNotFoundException`
+	- Note : 각 AuthenticaionProvider는 ProviderManager가 던져준 Autentication의 type을 알고 그에 맞는 validation을 실행한다
+![[Pasted image 20250525163346.png]]
+
+
 
 method 
 ```java
@@ -83,4 +99,4 @@ Purpose
 - Cuz to **invoke theirs authenticate() method**
 - **pass** "Authentication Object" 
 
-
+Next : [[Flow 3. AuthenticationProvider and Manager, encoder]]

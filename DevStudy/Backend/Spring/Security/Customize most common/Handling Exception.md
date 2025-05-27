@@ -14,7 +14,6 @@ There are 2 types of Exception related Security
 - When try to **invalid or incorrect PATH** 
 
 
-
 ### How to handle Exception
 
 >[!QUESTION] ❓ How to handle these types of Exception ➡ **ExceptionTranslationFilter**

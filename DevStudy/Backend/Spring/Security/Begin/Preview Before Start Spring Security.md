@@ -41,10 +41,6 @@ public class SecurityContextHolderFilter extends GenericFilterBean {
             this.securityContextHolderStrategy.clearContext();  
             request.removeAttribute(FILTER_APPLIED);  
         }  
-  
-    }  
-}
-
 ```
 흐름 
 1. 사용자 요청 
@@ -84,7 +80,9 @@ Supplier.get() 실행됨 → 실제로 세션 접근해서 SecurityContext 로�
 - `SecurityContextRepository`의 기본 구현체
 - SecurityContext를 HttpSession에 저장하고 꺼내는 역할
 	- SecurityContext는 인증(Authentication)객체를 가지고 있다.
-	- Spring Security의 기본 인증 시스템은 인증 객체를 session에 저장해두고 요청이 들어올 때마다 session에서 꺼내서 인증 상태를 유지하는 방식 
+	- Note : Spring Security의 기본 인증 시스템
+		- 인증 객체를 session에 저장해둔 뒤, 
+		- 요청이 들어올 때마다 session에서 꺼내서 인증 상태를 유지하는 방식
 
 > [!INFO] session ➡ 서버 메모리에 저장되는 HttpSession 객체 
 > - 사용자는 SeesionId를 가지고 있는거지 Session을 가지고 있는 것이 아니다.

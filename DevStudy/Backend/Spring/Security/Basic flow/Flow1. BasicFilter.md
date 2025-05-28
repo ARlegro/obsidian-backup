@@ -44,7 +44,6 @@ private void doFilter(HttpServletRequest request, HttpServletResponse response, 
 #generatingLoginPageHtml
 - this methods receive "request, response, FilterChain"
 - **Generate LoginPageHtml** 
-- 
 --- 
 ### AuthorizationFilter
 ```java
@@ -108,7 +107,7 @@ public abstract class AbstractAuthenticationProcessingFilter extends GenericFilt
 - **User 인증을 위한 기본 필터** : A base `Filter` **for authenticating a user’s credentials.** 
 - **Authentication 객체 생성** 
 	- User가 credentials을 submit ➡  `AbstractAuthenticationProcessingFilter` creates an `Authentication` from the `HttpServletRequest` to be authenticated
-	- 이  filter의 구현체가 인증 객체를 만듬
+	- 이 filter의 구현체가 인증 객체를 만듬
 	  
 - **인증 객체 타입은 구현체에 따라 다르다** 
   The type of Authentication depends on implemenation of `AbstractAuthenticationProcessingFilter`
@@ -154,7 +153,7 @@ protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServle
 - `RememberMeServices.loginFail` is invoked.
 - `AuthenticationFailureHandler` is invoked
 
-
+![[supporter/image/PDF 18.png]]
 ### Code 
 
 #### Overall
@@ -198,7 +197,7 @@ if (!this.**requiresAuthentication**(request, response)) {
     return;
 }
 ```
-- **Purpose** : Determines wheter the current **request should trigger authentication**
+- **Purpose** : Determines wheather the **current request should trigger authentication**
 
 #### If authentication is required 
 ```java 

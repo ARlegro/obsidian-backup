@@ -19,9 +19,8 @@ public class DaoAuthenticationProvider extends AbstractUserDetailsAuthentication
 
 ![[Pasted image 20250525170759.png]]
 - Looks up the `UserDetails` from the `UserDetailsService`.
--  uses the `PasswordEncoder` to validate the password on the `UserDetails` returned in UserDetailsService.
+- Uses the `PasswordEncoder` to validate the password on the `UserDetails` returned in UserDetailsService.
 - If success
-- df
 ```java 
 @Override  
 protected Authentication createSuccessAuthentication(Object principal, Authentication authentication,  
@@ -115,9 +114,7 @@ public interface UserDetailsService {
 2. After that, invoke the REST API 
 3. REST API's respose will go to filters 
 
-
-![[PDF.pdf#page=18&rect=23,4,1323,697|PDF, p.18]]
-
+![[supporter/image/PDF 18.png]]
 
 
 

@@ -39,8 +39,8 @@ java is object programming ➡ anything we want has to be **converted** into **j
 ### Filter
 >[!tip]  Before request reaching to the sevlet, there are filteres in between 
 
-- filter is inside java web applications
-- **Intercept every request and response**
+- Filter is inside java web applications
+- **Intercept** every request and response #서블릿가기전-관문
 	- identify if the user is authenticated or not
 	- if not, redirect user to login page
 - **main implementaion in securty related logic** 
@@ -49,7 +49,7 @@ java is object programming ➡ anything we want has to be **converted** into **j
 > [!Warning] Filter only used spring security
 
 >[!tip] There are a lot of filter chain in Interal Architecture of Spring Security 
->because a lot of purpose 
+>A lot of purpose 
 >- Authentication
 >- Authorization
 >- Session managing
@@ -64,7 +64,8 @@ java is object programming ➡ anything we want has to be **converted** into **j
 ## Internal Flow 
 > first of all, focus on Overally flow (the details later)
 
-![[PDF.pdf#page=13&rect=57,105,1398,647|Spring_Security, p.13]]
+![[supporter/image/PDF 16.png]]
+
 
 
 

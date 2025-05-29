@@ -1,6 +1,6 @@
 ```bash
-sudo apt-get update
-sudo apt-get install -y openjdk-21-jdk
+sudo apt update
+sudo apt install -y openjdk-21-jdk
 
 java --version
 
@@ -12,3 +12,5 @@ source ~/.zshrc
 # gradlew 실행 권한 주기 
 chmod +x ./gradlew    
 ```
+
+

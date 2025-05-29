@@ -40,7 +40,7 @@ public class ProjectSecurityProdConfig {
     }
 ```
 
-#### Change 
+#### Change : depreciated 
 
 ```java 
 @Bean  
@@ -63,3 +63,23 @@ This is Only HTTP setting for local env
 http.requiresChannel(rcc -> rcc.anyRequest().requiresInsecure())
 ```
 
+#### ⭐최신 cofig : RedirectToHttps 
+> 현재 requiresChannel은 deprecated 
+https://docs.spring.io/spring-security/reference/migration-7/web.html#use-redirect-to-https
+
+requiresChannel ➡ redirectToHttps 
+```java 
+/** @deprecated */  
+@Deprecated  
+public HttpSecurity requiresChannel(Customizer<ChannelSecurityConfigurer<HttpSecurity>.ChannelRequestMatcherRegistry> requiresChannelCustomizer) throws Exception {  
+  ApplicationContext context = this.getContext();  
+  requiresChannelCustomizer.customize(((ChannelSecurityConfigurer)this.getOrApply(new ChannelSecurityConfigurer(context))).getRegistry());  
+  return this;  
+}  
+
+[변경]
+public HttpSecurity redirectToHttps(Customizer<HttpsRedirectConfigurer<HttpSecurity>> httpsRedirectConfigurerCustomizer) throws Exception {  
+  httpsRedirectConfigurerCustomizer.customize((HttpsRedirectConfigurer)this.getOrApply(new HttpsRedirectConfigurer()));  
+  return this;  
+}
+```

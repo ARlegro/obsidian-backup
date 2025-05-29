@@ -76,7 +76,7 @@ openssl base64 -d -in encode.txt -out decode.txt
 - Key sharing is simple
 	- Anyone with access to the key can both encrypt and decrypt the data.
 
-✅When use it
+**❓When use it❓**
 - Best suited for **data at rest** (stored data), such as:
 	- S3 buckets, database files, backups, etc.
 - For example (S3 Bucket shared by a team)

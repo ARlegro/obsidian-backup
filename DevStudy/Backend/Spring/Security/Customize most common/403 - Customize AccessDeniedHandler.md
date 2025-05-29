@@ -24,9 +24,6 @@ public interface AccessDeniedHandler {
 
 
 ### Customize AccessDeniedHandler
-
-
-
 ```java 
 public class CustomAccessDeniedHandler implements AccessDeniedHandler {  
   
@@ -71,10 +68,8 @@ public class ProjectSecurityProdConfig {
 
 >[!tip] There is accessDenied Option
 >`ehc.accessDeniedHandler(new CustomAccessDeniedHandler()).accessDeniedPage("/denied")`
->- Whne 403 error is comming, the user will be redired to the path 
+>- When 403 error is comming, the user will be redired to the path 
 >- But this opition is **rarely used** Cuz most applications follow the REST API
-
-
 
 
 

@@ -78,8 +78,8 @@ Supplier.get() 실행됨 → 실제로 세션 접근해서 SecurityContext 로�
 
 **✔개념** 
 - `SecurityContextRepository`의 기본 구현체
-- SecurityContext를 HttpSession에 저장하고 꺼내는 역할
-	- SecurityContext는 인증(Authentication)객체를 가지고 있다.
+- `SecurityContext`를 HttpSession에 저장하고 꺼내는 역할
+	- `SecurityContext`는 인증(Authentication)객체를 가지고 있다.
 	- Note : Spring Security의 기본 인증 시스템
 		- 인증 객체를 session에 저장해둔 뒤, 
 		- 요청이 들어올 때마다 session에서 꺼내서 인증 상태를 유지하는 방식

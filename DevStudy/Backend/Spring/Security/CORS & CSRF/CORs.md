@@ -12,8 +12,6 @@ private Date createDt;
 private Date updateDt;
 ```
 
-
-
 ### Before start
 
 
@@ -33,7 +31,6 @@ core.mjs:10614 ERROR HttpErrorResponse
 > `has benn blocked by CORS policy` 
 - This happens **only in browsers(UI application)**, not tools like Postman 
 - **Browsers enforce CORS** as a client-side security policy to **prevent** unauthorized data access
-
 
 ## What is CORS 
  > Cross-Origin Resource Sharing
@@ -64,7 +61,7 @@ By default, **browsers block cross-origin HTTP requests** for security reasons.
 >- ✅ **CORS == protection to stop sharing data/info between different origin**
 ### Why user CORS 
 
-- It is trying to be cautions to award some security threats from the hackers with different origin
+- It is trying to **be cautions to award some security threats** from the hackers with different origin
 - **Browsers prevent websites** from feely sending ro requestting data to/from other websites
 
 ![[Pasted image 20250523153751.png]] 
@@ -124,33 +121,33 @@ SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Excepti
 1. configure CorsConfigurationSource
 2. Implement corsConfigurationSorce's method
 	- Construct CorsConfiguration
-	- set origin, methods, credentials, headers  etc 
+	- Set origin, methods, credentials, headers  etc 
 
-note : singletonList is used when use a single value 
+>Note : singletonList is used when use a single value 
 
 ✅**Explanation of method** 
-1. setAllowedOrigins
+1. **setAllowedOrigins**
 	- Specifies which origins are allowed to access resources 
 	  
-2. setAllowedHeaders
+2. **setAllowedHeaders**
 	- Headers the client is allowed to send
 	- if i don't mention allowedHeaders, i need to provide the specific header name
 	  
-3. setAllowCredentials(true)
+3. **setAllowCredentials(true)**
 	- Enables supprots for cookies/sessions/tokens 
 	- When set to `true`, the client must include credentials 
 	  
-4. setMaxAge(3600L)
-	- Setting How long a CORS pre-flight response can be cached by the browser
+4. **setMaxAge(3600L)**
+	- Setting How long a CORS **pre-flight response can be cached** by the browser
 	- ex. 3600L ➡ In hours, browser don't need to send pre-flight Cuz cashing 
 	- this **optimizes** performance by **letting browser cache the CORS permission response** 
 
 
 >[!QUESTION] ❓어떻게 브라우저가 이 설정을 인식할까?
->- 브라우저는 실제 Front의 API request를 보내기 전에 **preflight request**를 보낸다.
+>- 브라우저는 실제 Front의 API request를 보내기 전에 **pre-flight request**를 보낸다.
 >- 이때, 브라우저는 CORS related configuraiton 을 확인한다.
 >- 만약 Backend에서 해당 API로 CORS protect하도록 설정되어있었다면, 브라우저가 Block하고 CORS 에러를 낸다.
-> > preflight request is failse ➡ actual request fail
+> > preflight request is fail ➡ actual request fail
 
 
 ### Test Result 

@@ -8,115 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cd8fbb59f05a0ee8",
+            "id": "2a469dbcdf69af0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
+                "file": "DevStudy/Backend/Spring/Security/JWT/2. Config to use JWT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flow1. BasicFilter"
-            }
-          },
-          {
-            "id": "b876fb533d6ae1c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Crafton면접준비/핵심 질문, 답변 모음.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "핵심 질문, 답변 모음"
-            }
-          },
-          {
-            "id": "1eb49ac1dea89224",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Crafton면접준비/핵심 질문, 답변 모음.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "핵심 질문, 답변 모음"
-            }
-          },
-          {
-            "id": "fc85ea42594652d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Servlets & Filters - Before starting Security"
-            }
-          },
-          {
-            "id": "c51a8cec912c38b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Deep dive UserDetails & Authentication"
-            }
-          },
-          {
-            "id": "ebca325c06c4a7d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Flow 3. AuthenticationProvider and Manager, encoder"
-            }
-          },
-          {
-            "id": "7b49ff8f3a5cc05e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Argorithm/시간복잡도 모음.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "시간복잡도 모음"
-            }
-          },
-          {
-            "id": "572c22a2cd366fe1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/etc/settings/Shell Comand 옵시디언 설정.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Shell Comand 옵시디언 설정"
+              "title": "2. Config to use JWT"
             }
           },
           {
@@ -126,15 +28,14 @@
               "type": "markdown",
               "state": {
                 "file": "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "PasswordEncodder"
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +58,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -166,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#기초체력",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,7 +75,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
@@ -255,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파이썬/BeautifulSoup 라이브러리.md",
+                "file": "DevStudy/Backend/Spring/Security/JWT/2. Config to use JWT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BeautifulSoup 라이브러리 의 개요"
+              "title": "2. Config to use JWT 의 개요"
             }
           }
         ],
@@ -274,12 +175,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
       "templater-obsidian:Templater": false,
@@ -287,58 +188,57 @@
       "digitalgarden:Digital Garden Publication Center": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "572c22a2cd366fe1",
+  "active": "2a469dbcdf69af0f",
   "lastOpenFiles": [
-    "DevStudy/Argorithm/Map 모음.md",
-    "DevStudy/etc/settings/Shell Comand 옵시디언 설정.md",
-    "DevStudy/Argorithm/시간복잡도 모음.md",
-    "DevStudy/Argorithm/문자열 관련 모음.md",
-    "DevStudy/Argorithm",
-    "Crafton면접준비/손코딩 시킬만한거.md",
-    "Crafton면접준비/질문.md",
-    "Crafton면접준비/핵심 질문, 답변 모음.md",
-    "DevStudy/etc/settings/Ubuntu JDK 설치 및 환경변수 설정.md",
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/1. Project Start - Configure securityFilterChain.md",
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/3. InMemoryUserdetailsManager - Configuring users.md",
-    "DevStudy/Backend/Spring/Security/Configure FilterChain/2. FormLogin and HttpBasic.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
-    "DevStudy/Backend/Spring/Security/Managing User by DB/1. Taste UserDetailsManager.md",
-    "DevStudy/Backend/Spring/Security/Authorization/Authentication vs Authorization.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow When refresh the page after Authenticate.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
-    "supporter/image/PDF 18.png",
-    "supporter/image/PDF 17.png",
-    "supporter/image/PDF 6 1.png",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow2. Authentication Manager.md",
-    "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
-    "DevStudy/Backend/Spring/Security/Authorization/Untitled.md",
-    "supporter/image/PDF 16.png",
-    "DevStudy/Backend/Spring/Security/Begin/Preview Before Start Spring Security.md",
-    "supporter/image/Pasted image 20250523171111.png",
-    "supporter/image/Pasted image 20250523170930.png",
-    "supporter/image/Pasted image 20250523170855.png",
-    "supporter/image/Pasted image 20250523170619.png",
-    "supporter/image/Pasted image 20250523170520.png",
-    "supporter/image/Pasted image 20250523170500.png",
-    "supporter/Excalidraw/Drawing 2025-05-23 15.36.18.excalidraw.md",
+    "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
+    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
+    "DevStudy/Backend/Spring/Security/JWT/5. Testing JWT token.md",
+    "DevStudy/Backend/Spring/Security/JWT/2. Config to use JWT.md",
+    "DevStudy/Backend/Spring/Security/JWT/4. Change front-code for JWT.md",
+    "DevStudy/Backend/Spring/Security/JWT/0. Start.md",
+    "DevStudy/Backend/Spring/Security/Method Level Security/Invocation authorization.md",
+    "DevStudy/Backend/Spring/Security/Method Level Security/Intro.md",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/When error in wsl vs angular.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/NPM, nvm in WSL.md",
-    "DevStudy/Backend/Spring/Security/CORS & CSRF/무제.md",
-    "DevStudy/Backend/Spring/Security/CORS & CSRF/CSRF.md",
+    "DevStudy/Backend/Spring/Security/Authentication Provider/Authorization Config.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
+    "DevStudy/Backend/Spring/Security/JWT/1. Advantages of Tokens based AuthN.md",
+    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow2. Authentication Manager.md",
+    "DevStudy/Backend/Spring/Security/Begin/Preview Before Start Spring Security.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
+    "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
+    "DevStudy/Backend/Spring/Security/Configure FilterChain/2. FormLogin and HttpBasic.md",
+    "DevStudy/Backend/Spring/Security/Configure FilterChain/3. InMemoryUserdetailsManager - Configuring users.md",
+    "DevStudy/Backend/Spring/Security/Managing User by DB/2. UserDetailsManager Cusomize.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/Handling Exception.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/Handle Session timeout & invalid session ＆ Concurrent Session.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/Configure only for HTTPS.md",
+    "DevStudy/Backend/Spring/Security/Customize most common/403 - Customize AccessDeniedHandler.md",
+    "DevStudy/Backend/Spring/Security/Managing User by DB/3. REST API that support user-registration.md",
+    "supporter/image/PDF 27.png",
+    "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
+    "supporter/image/PDF 26.png",
+    "supporter/image/PDF 25.png",
+    "supporter/image/PDF 24.png",
+    "supporter/image/PDF 23.png",
+    "DevStudy/Backend/Spring/Security/Method Level Security",
+    "supporter/image/Pasted image 20250530125421.png",
+    "supporter/image/Pasted image 20250530110903.png",
+    "supporter/image/Pasted image 20250530110847.png",
+    "supporter/image/PDF 22.png",
+    "supporter/image/PDF 21.png",
+    "DevStudy/Backend/Spring/Security/JWT",
+    "DevStudy/Backend/Spring/Security/Customize Own Filter",
+    "DevStudy/Infra/trouble",
     "DevStudy/Backend/Spring/Security/Authorization",
     "supporter/image/이요한_중급프로젝트 회고.pdf",
     "supporter/image/핵심 질문, 답변 모음.pdf",
     "DevStudy/etc/settings",
     "DevStudy/etc/settings3",
-    "DevStudy/Backend/Spring/Security/CORS & CSRF",
-    "DevStudy/Backend/Spring/Security/Customize most common",
-    "DevStudy/Backend/Spring/Security/Authentication Provider",
     "무제 파일.canvas"
   ]
 }

@@ -3,6 +3,7 @@
   "cssTheme": "Things",
   "accentColor": "#5487d9",
   "enabledCssSnippets": [
-    "bold"
+    "bold",
+    "comment"
   ]
 }

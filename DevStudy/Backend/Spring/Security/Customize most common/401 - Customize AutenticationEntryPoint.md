@@ -15,7 +15,7 @@
 > 	- most scenario is based on HTTP Flow
 > 	- which **want to return a custom error msg or json body** instead of a redirce or browser popup
 
-#### 0. `commence()` : Target of cumizing method 
+#### 0. `commence()` : Target of customizing method 
 ✅**When this method invoked** 
 - commence() is called when **authentication is requrired but the user is not authenticated**
 

@@ -1,0 +1,17 @@
+/* 프리뷰 모드에서 주석 색상 */
+.markdown-preview-view code span.cm-comment {
+  color: #c5c8c6 !important;
+  font-style: italic;
+}
+
+/* 소스모드에서 주석 색상 */
+.cm-s-obsidian span.cm-comment {
+  color: #c5c8c6 !important;
+  font-style: italic;
+}
+
+/* 라이브 프리뷰 (Live Preview)에서 주석 색상 */
+.markdown-source-view.mod-cm6 .cm-comment {
+  color: #c5c8c6 !important;
+  font-style: italic;
+}

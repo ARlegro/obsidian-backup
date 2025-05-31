@@ -25,11 +25,15 @@ There are 2 types of Exception related Security
 
 Each of Exception mentioned invoke each Interface which is responsible handle Ex 
 1. `AuthenticatonEx` invoke ➡ `AutenticationEntryPoint`✅
-	- default **Implementation** of `AutenticationEntryPoint` : `BasicAuthenticationEntryPoint`
+	- default **Impl** of `AutenticationEntryPoint` : **`BasicAuthenticationEntryPoint`**
+	- Impl
+		- `Http403ForbiddenEntryPoint` : 403 반환
+		- `LoginUrlAuthenticationEntryPoint` : 로그인 URL로 리다이렉트    
+		- **`BasicAuthenticationEntryPoint`** : 401 + Basic 인증 헤더
 	  
 2. `AccessDeniedException` invoke  ➡ `AccessDeniedHandler`✅
-	- By default implementation : 
-	- When 
+	- By default impl : AccessDeniedHandlerImpl
+	- 이것도 impl 많음 
 
 So, To handle Exception in detail ➡ need to override Interfaces (~Entrypoint, ~handler)
 

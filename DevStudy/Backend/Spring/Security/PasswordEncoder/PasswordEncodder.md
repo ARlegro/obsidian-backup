@@ -36,17 +36,15 @@ public interface PasswordEncoder {
     }
 ```
 
-- Preferred implementation : `BCyptPasswordEncoder`⭐
-	- It is default encoder which is recommended by spring security
-- The storeed password itself is never decoded ⭐
+- Preferred implementation : **`BCyptPasswordEncoder`⭐
+	- It is **default encoder** which is recommended by spring security
+- The stored password itself is **never decoded** ⭐
 	- That is, can't deriver original value from DB 
 - UpgradeEncoding is default false 
 	- It is encoding more than 1 
-	- It is usend only for super-critical applications 
+	- It is usend **only for super-critical applications** 
 	- Most of application use single time hashing. so Returns of UpgradingEncoding is false
 	- If i want to multitime encoding, override it 
-
-
 
 > Spring security's Default encoder is **DelegatingPasswordEncoder** 
 > It's baed on **prefix** pw 
@@ -54,13 +52,13 @@ public interface PasswordEncoder {
 
 ### Implementation
 
-1. NoOpPasswordEncoder
-	- It is for legacy 
+1. **NoOpPasswordEncoder**
+	- It is for legacy 💢
 	- no hashing, encoding ➡ just use equals 
 	- If i want to store pw in the plain-text, use it 
 	  
-2. Pbkdf2PasswordEncoder
-	- It it **deprecated** 
+2. **Pbkdf2PasswordEncoder**
+	- It it **deprecated** 💢
 	- uses PBKDF2 that generate random salt value
 	- Don't use it Cuz there are more advanced hashing argolithm
 	  

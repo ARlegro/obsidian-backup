@@ -56,7 +56,6 @@ public class AuthorizationFilter extends GenericFilterBean {
     private boolean filterAsyncDispatch = true;
 ```
 
-
 ✔Concept
 - Responsible to **identify** whether a user is trying to access protected API or Path **without credentials** and **without authenticated session**
 
@@ -125,6 +124,7 @@ protected void successfulAuthentication(HttpServletRequest request, HttpServletR
     context.setAuthentication(authResult);  
     this.securityContextHolderStrategy.setContext(context);  
     this.securityContextRepository.saveContext(context, request, response);  
+    
     if (this.logger.isDebugEnabled()) {  
         this.logger.debug(LogMessage.format("Set SecurityContextHolder to %s", authResult));  
     }  
@@ -155,6 +155,7 @@ protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServle
 
 ![[supporter/image/PDF 18.png]]
 ### Code 
+AbstractAuthenticationProcessingFilter의 메서드를 구경해보자 
 
 #### Overall
 > 추상 클래스에 구현된 메서드 
@@ -228,7 +229,7 @@ public Authentication attemptAuthentication(HttpServletRequest request, HttpServ
 ```
 
 >[!Warning] AbstractAuthenticationProcessingFilter doesn't perform verification
->- Just, Determine if authentication is required
+>- Just, **Determine if authentication is required**
 >- when is required, 
 >	- **Delegate** extracition details(ex. UsernamePasswordAuthenticationToken) to other class  
 >	- **pupulate details into security context** and **pass it  to AuthenticationManager**
@@ -236,7 +237,23 @@ public Authentication attemptAuthentication(HttpServletRequest request, HttpServ
 >[!tip] security context is populated with Authentication details
 
 
-Next = [[Flow2. Authentication Manager]]
+### ❓궁금증 : 로그인된 세션일 경우 확인은 언제???
 
+1. 로그인을 시도하면 그 request를 `SecurityContextHolderFilter`가 받습니다.
+	- 참고 : [[Preview Before Start Spring Security]]
+	- 이 때는 securityContext를 지연로딩으로 설정해 놓아서 실제로 확인하지는 않습니다.
+2. 그 후 여러 필터들을 거치는 데 이 때, 대부분 아래의 코드처럼 authentication을 확인하는 코드가 많다.
+	```java
+	Authentication existing = SecurityContextHolder.getContext().getAuthentication();
+	if (existing != null) {          // 이미 로그인돼 있으면
+	    chain.doFilter(request, response);   // 여기서 즉시 패스
+	    return;
+	}
+	```
+	- ex. `BasicAuthenticationFilter`
+3. 이미 인증되어 있음을 확인하면 UsernamePasswordFilter의 `attemptAuthentication` 자체가 호출되지 않는다.
+
+
+Next = [[Flow2. Authentication Manager]]
 
 

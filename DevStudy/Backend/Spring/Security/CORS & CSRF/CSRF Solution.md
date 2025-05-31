@@ -1,12 +1,12 @@
 ## Solution to handle CSRF attacks 
 
-### 💢Problem 
+### 💢Problem (Root Cause)
 - Backend ⭐ **don'have a mechanism to identify** whether given request coming is from own UI application or from hacker's website 
 	(CSRF 공격의 본질 = 브라우저의 자동 쿠키 전송을 악용하는 것)
-- Cuz **Both website has same JSESSIONID cookie** , both send automatically this cokkie 
+- Cuz **Both website(original + malicious) has same JSESSIONID cookie** , both send automatically this cokkie 
 
 ### ✅Solution - CSRF token
-> With the CSRF token, Server **can differentiate** whether the requests is comming from original website or not 
+> **With the CSRF token**, Server **can differentiate** whether the requests is comming from original website or not 
 
 #### Concept 
 > Backend Server pass CSRF tocken to client for differentiating  when sending JSESSIONID with 
@@ -16,42 +16,39 @@
 - **Large Random value** Cuz to make it difficult to guess 
 - ❓When client recieve this token
 	- Sent after login from server
-- Use 
-	- The Client should include this token in each reqeust header or payload 
-	- And server validate the token 
-- CSRF has to send as part of request (Header, Payload)
-	CSRF has to send as part of the cookie
 
-#### How it works?
+
+#### How it works ❓
+1. Server generates and sends the CSRF token (usually after login).
+2. Client (browser or SPA) includes the CSRF token in all **state-changing** requests (e.g., POST, PUT).
+	- The **Client should include this token** in each reqeust header or payload 
+	- CSRF has to send as part of the cookie
+3. **Server validates the token** before processing the request.
+
+#### Why it works ❓
 >[!tip] Using Character ➡ JS cannot acess other origin tocken/cookie
-- Hacker cannot read CSRF tocken,  
-	- Due to the "Same-Origin Policy"
-- **Same-Origin Policy** is :
+- Due to the **"Same-Origin Policy"❗** : Hacker cannot read CSRF tocken,  
+- **Same-Origin Policy** is : 
 	- Hacker cannot read CSRF in JS When exist CSRF token 
 	- Cuz JS cannot read the CSRF tocken from another origin 
 	- (**CSRF 토큰이 있는 환경에서는** 공격자가 JS로 위조 요청은 해도, **토큰을 제대로 포함시킬 수 없다**)
-- So, Hacker will not able to send cookie value inside the requestHeader or requestPayload 
-
-
-
+- So, **Hacker will not able to send cookie value** inside the requestHeader or requestPayload 
 
 ### Summary 
 - CSRF = sending a fake rquest using user's cookie 
 - CSRF tocken = additional verification to prevent CSRF 
-- **JS cannot read the CSRF tocken from another origin** 
+- **JS cannot read the CSRF tocken from another origin** ⭐⭐⭐
 
 --- 
 
-## Implementation in Spring 
-
+## Impl in Spring Security
 
 > [!QUESTION] Why Cookie기반의 Csrf를 추천할까? (Session에도 CsrfToken을 담을 수 있지만 비추)
 > 1. **서버 부하가 덜하다 (stateless)**
 > 	- Session 방식은 서버 메모리에 세션 정보를 저장하므로 상태유지가 필요 
 > 	- Cookie에 방식은 토큰을 브라우저에 저장하고 client가 헤더에 싣는 방식
-> 	- 서버는 token만 비교하면 되므로 상태 유지 불필요 
-> 	<br>
-> 	  
+> 	- 서버는 token만 비교하면 되므로 **상태 유지 불필요** 
+> 	<br> 	  
 > 2. **SPA와 REST API에 최적** 
 > 	- SPA 구조에서는 Cookie + 헤더 방식이 표준처럼 사용된다.
 > 	- Spring Security 가 session기반으로 만든거는 전통적인 MVC를 바탕으로 만들었기 때문이다.
@@ -59,8 +56,7 @@
 
 
 ### Core Component 
-#### 1. Token
-**✅Interface - CsrfToken** 
+#### 1. CsrfToken - Interface
 ```java 
 public interface CsrfToken extends Serializable {  
   String getHeaderName();  
@@ -74,8 +70,7 @@ public interface CsrfToken extends Serializable {
 - parameterName : the name when sending form 
 - token = random value 
 
-
-**✅Implementation - DefaultCsrfToken**
+#### 2. DefaultCsrfToken - Impl
 ```java 
 public final class DefaultCsrfToken implements CsrfToken {  
   
@@ -118,16 +113,14 @@ public final class DefaultCsrfToken implements CsrfToken {
 
 
 
-#### 2. Token Repo
+#### 3. Token Repo - Interface 
 >Developer cannot generate token direct during the login. 
 >Instead, **CsrfTokenRepo generate it**
 
-Role 
-- Genereate token 
-- save : store token to validate wheter request has same token or not 
-- Load : to differentiate 
-
-Interface - CsrfTokenRepository
+**☑Role** 
+- **Genereate** token 
+- **Store** : store token to validate wheter request has same token or not 
+- **Load** : to differentiate 
 ```java
 public interface CsrfTokenRepository {
 		
@@ -143,14 +136,14 @@ public interface CsrfTokenRepository {
 ```
 CookieCsrfTokenRepository has may methods like generate()
 
-Implementation - 
+
+#### 4. Token Repo - Impl
 ```java 
 /**A CsrfTokenRepository that persists the CSRF token in a cookie named "XSRF-TOKEN" and reads from the header "X-XSRF-TOKEN" following the conventions of AngularJS. When using with AngularJS be sure to use withHttpOnlyFalse()
 **/
 public final class CookieCsrfTokenRepository implements CsrfTokenRepository {
-
-
 ```
+- Saves CSRF token in a cookie (e.g., `XSRF-TOKEN`) and expects it in headers (`X-XSRF-TOKEN`)
 
 참고로 이 구현체는 `withHttpOnlyFalse()`라는 특이한 메서드가 있다.
 ```java
@@ -164,7 +157,7 @@ public static CookieCsrfTokenRepository withHttpOnlyFalse() {
 	- **JS에서 쿠키를 읽을 수 있도록 허용**.
 
 
-#### 3. CsrfFilter
+### CsrfFilter : ❓How CSRF Filter works 
 > Validate CsrfToken 
 
 **순서 정리** 
@@ -212,10 +205,11 @@ public final class CsrfFilter extends OncePerRequestFilter {
 ```
 
 --- 
-## Configure 
+## CSRF Configure 
 
 > [!INFO]  By default = Session base 
-> - Spring Security use implementation based session Cuz traditional webApp
+> - Default Using `HttpSessionCsrfTokenRepository`
+> 	- Spring Security **use impl based session** Cuz traditional webApp
 > 	- But nowdays, Fronend use SPA(react, angular). These framework **fit to CSRF token based Cookie**
 > - So, Token is **Saved based session** 
 > - Validate 
@@ -231,16 +225,15 @@ public final class CsrfConfigurer<H extends HttpSecurityBuilder<H>> extends Abst
 ### Configuring CSRF
 > I'll use token based cookie. (default = based session)
 
-
 #### Step 
 ✅**Step1. Change Token Repo**
 - default is session 
 - So, need to change token repo based cookie
 
 ✅**Step2. Set `withHttpOnlyFalse()`**
-- This method do setting automatically `CookieCsrfTokenRepo` 
+- This setting **is letting** the UI Framework to **read Cookie value** 
+- Note : This method do setting automatically `CookieCsrfTokenRepo` 
 	(이 with~ 메서드는 내부적으로 자동으로 쿠키기반 repo를 생성하고 반환한다)
-- So, This setting **is letting** the UI Framework to **read Cookie value** 
 - 💢**If `true`** 
 	- Cookie can be only read by the browser 
 	- Then, **JS-React code cannot attach this cookie** 
@@ -253,24 +246,46 @@ http.
 					csrfConfig.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
 
 ```
-
+```java 
+public final class CookieCsrfTokenRepository implements CsrfTokenRepository {
+  
+		public static CookieCsrfTokenRepository withHttpOnlyFalse() {  
+		  CookieCsrfTokenRepository result = new CookieCsrfTokenRepository();  
+		  result.cookieHttpOnly = false;   // 자동으로 false 
+		  return result;  
+		}
+```
 ## Problem of general token generation 
 
 **💢일반적인 CSRF 토큰 생성 방식과 문제** 
-- Spring Security는 원래 요청이 오면 **무조건 세션에 CSRF 토큰을 만들어서 저장**함.
+Spring Security는 기본적으로 **모든 요청마다 세션을 생성**하고, **해당 세션에 CSRF 토큰을 저장**합니다.
 - 하지만 GET 요청처럼 **검증이 필요 없는 요청**에도 매번 토큰을 생성하면 **불필요한 세션 낭비**가 생김.
-- 특히 **Stateless API 서버**에서는 세션 자체도 쓰고 싶지 않음.
+- 또한, **Stateless API 서버**에서는 세션 자체도 쓰지 않기에 이런 방식은 부적절.
+ 
+ > [!WARNING] ❗문제 정리 ❗
+ > 1. 불필요한 세션 생성
+ > 2. 서버 메모리 낭비
+ > 3. 성능 저하 
+
+
 
 ### Solution : Lazy generate 
-> 위에서 설정한 것은 Lazy방식으로 token이 생성된다.
 
 #### What is Lazy Generate❓
 - It doesn't generate CSRF Tocken when first request
 - Instead, After invoke `request.getAttribute(CsrfToken.class.getName())` or `csrfToken.getToken()`, it generate token !!
-    > 즉, **필요할 때만(실제로 꺼내쓸 때만) 만든다** = 레이지 생성
-- So, When requests Get Method, there is no need to token. So token is not generated 
-- 모든 요청마다 전부 CSRF 토큰 검증하면 성능 낭비다....
-- It makes performance good 
+    > 즉, **필요할 때만(실제로 꺼내쓸 때만) 만든다** = Lazy Generation
+	```java 
+	CsrfToken csrfToken = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
+	String token = csrfToken.getToken(); // 이 시점에서 토큰 생성됨!
+	```
+- It makes performance good
+
+>[!EXAMPLE] Why it works 
+>- 불필요한 토큰 생성 방지
+>- Stateless 환경에 적합
+>- 불필요한 CSRF 필터 동작 최소화 
+
 
 #### 해결책 : Using OncePerRequestFilter to Lazy generate 
 
@@ -279,8 +294,10 @@ http.
 - 한 요청(request) 당 **딱 한 번만 실행되는 필터**를 만들고 싶을 때 사용
 - 기본 `Filter`는 여러 번 실행될 수도 있기 때문에 안정성 측면에서 이걸 상속함.
 
+❓Why need it 
+- SPA/ REST 초기 요청에서는 Spring 템플릿 엔진이 관여하지 않아 토큰을 꺼내 쓸 코드가 서버에 없다.
+- **서버-사이드 뷰 레이어가 없는** 상황에서도 `_csrf.getToken()`을 **의도적으로 호출**해 줌으로써 첫 인증 이후 응답에 `XSRF-TOKEN` 쿠키를 보낼 수 있다.
 <br>
-
 ✅Step1. OncePerRequestFilter 오버라이딩 
 ```java 
 public class CsrfCookieFilter extends OncePerRequestFilter {  
@@ -299,18 +316,30 @@ csrfToken.getToken();
 ✅Step 2. addFilterAfter 
 - `BasicAuthenticationFilter` 이후에 실행되도록 필터 체인에 삽입
 - 보통 CSRF 토큰은 Authentication filter 이후에 생성·삽입하면 충분함
+	- 인증이 완료된 후 토큰 생성해서 클라이언트에 제공하기 위함 
 ```java
 .csrf( ... )
 .addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
 ```
 
+>[!tip] **세션 생성**에 드는 비용이 Authentication 비용보다 더 나가기 때문에 Authentication 먼저 처리하는게 비용적 측면에서도 유리 
+> 핵심은 '**세션 사용 여부**'
+> CPU 연산은 거의 비슷.
+> 단지, **메모리 및 네트워크 자원 절감 목적의 최적화** 
+
+
 📘**Conclusion**
 - `OncePerRequestFilter` : 요청당 1번 실행 보장되는 필터 
 - addFilterAfter( ~ , ~) : 인증 이후 인증에 대한 응답 전에 Token cookie를 클라이언트에 주기 위해 
 
-
-
-## ㅊDSF??
+#### 번외 :  커스텀 없이, 언제 CsrfFilter가 일어날까?
+> 아래 사진을 보면 알 수 있듯이, 
+> 기본적으로 CsrfFilter는 **`CsrfFilter`는 기본적으로 HeaderWriterFilter 바로 뒤, LogoutFilter 앞**에 자동 배치된다.
+> 즉, Authentication이 되기 전에 일어난다. 
+> 인증 실패(401) 상황에서는 굳이 쿠키를 줄 필요가 없음
+https://medium.com/%40AlexanderObregon/the-mechanics-of-spring-boots-security-filter-chain-1fe716ba22db
+![[Pasted image 20250529110243.png]]
+## CsrfTokenRequestAttributeHandler
 
 - 로그인 후 첫 POST 요청이 들어오면 `CsrfFilter`가 동작
 - 그런데 이 필터는 토큰을 어디서 **어떻게 읽어야 할지** 알아야 함
@@ -390,4 +419,3 @@ CsrfTokenRequestAttributeHandler역할
 
   
   >이전에는 BREACH 공격 방지 전용 핸들러였다면, 이 설정을 통해 CSRF방지 전용 핸들러로 바뀌게 되었다 
-

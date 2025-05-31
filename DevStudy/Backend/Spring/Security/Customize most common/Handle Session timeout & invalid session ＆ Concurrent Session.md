@@ -38,7 +38,7 @@ Redirects to the configured url path instead of login pag
 
 In reality, 
 - Sometimes, we want to restrict the *user to have only a single concurrent session*
-- and other tiems want to restrict the *user to hav 2~3 concurrent sessions*
+- and other tiems want to restrict the *user to have 2~3 concurrent sessions*
 - It depends on the situation 
 >Let's try configure it 
 

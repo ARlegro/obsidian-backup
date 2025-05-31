@@ -8,3 +8,13 @@ pluginManagement {
     }
 }
 ```
+
+
+
+
+
+참고 : wsl 에서 gradle 버전 깔기
+```bash
+sudo apt update
+sudo apt install -y openjdk-17-jdk
+```

@@ -12,5 +12,6 @@
   "templater-obsidian",
   "obsidian-git",
   "digitalgarden",
-  "pdf-plus"
+  "pdf-plus",
+  "obsidian-shellcommands"
 ]

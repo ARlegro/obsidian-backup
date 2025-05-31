@@ -1,0 +1,58 @@
+{
+  "settings_version": "0.23.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "",
+  "default_shells": {},
+  "environment_variable_path_augmentations": {},
+  "show_installation_warnings": true,
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "execution_notification_mode": "disabled",
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "output_channel_notification_decorates_output": true,
+  "enable_events": true,
+  "approve_modals_by_pressing_enter_key": true,
+  "command_palette": {
+    "re_execute_last_shell_command": {
+      "enabled": true,
+      "prefix": "Re-execute: "
+    }
+  },
+  "max_visible_lines_in_shell_command_fields": false,
+  "shell_commands": [],
+  "prompts": [],
+  "builtin_variables": {},
+  "custom_variables": [],
+  "custom_variables_notify_changes_via": {
+    "obsidian_uri": true,
+    "output_assignment": true
+  },
+  "custom_shells": [
+    {
+      "id": "4vav7a4u8s",
+      "name": "Windw Subsystem Linux(WSL)",
+      "description": "WSL",
+      "binary_path": "C:\\WINDOWS\\system32\\wsl.exe",
+      "shell_arguments": [
+        "--shell-type login",
+        "--",
+        "{{!shell_command_content}}"
+      ],
+      "host_platform": "win32",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": false
+        }
+      },
+      "shell_platform": "linux",
+      "escaper": "UnixShell",
+      "path_translator": "const pathParts = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = pathParts[1];\nconst trailingPath = pathParts[2];\nreturn '/mnt/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
+      "shell_command_wrapper": null,
+      "shell_command_test": "echo \"Hello $USER, current working directory is: $(pwd)\""
+    }
+  ],
+  "output_wrappers": []
+}

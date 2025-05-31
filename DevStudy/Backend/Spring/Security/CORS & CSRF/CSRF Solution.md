@@ -210,7 +210,7 @@ public final class CsrfFilter extends OncePerRequestFilter {
 > [!INFO]  By default = Session base 
 > - Default Using `HttpSessionCsrfTokenRepository`
 > 	- Spring Security **use impl based session** Cuz traditional webApp
-> 	- But nowdays, Fronend use SPA(react, angular). These framework **fit to CSRF token based Cookie**
+> 	- But nowdays, Frontend use SPA(react, angular). These framework **fit to CSRF token based Cookie**
 > - So, Token is **Saved based session** 
 > - Validate 
 > 	- 기본적으로 위험한 메서드만 검증 

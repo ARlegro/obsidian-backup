@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ACID"
+              "title": "How tables and indexes are stored on disk"
             }
           },
           {
@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -221,10 +222,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "f5eb966f8e2cf652",
   "lastOpenFiles": [
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled 1.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/0. What is Transaction❓.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled 1.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/Deep Dive Read Phenomena.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/3. Consistency of ACID.md",
@@ -236,7 +240,6 @@
     "supporter/image/Pasted image 20250603103338.png",
     "supporter/image/Pasted image 20250603103320.png",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/4. Durability of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/0. What is Transaction❓.md",
     "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
     "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
     "Crafton면접준비/핵심 질문, 답변 모음.md",
@@ -259,7 +262,6 @@
     "DevStudy/Argorithm/Map 모음.md",
     "DevStudy/Backend/Spring/Security/CORS & CSRF/CSRF Solution.md",
     "DevStudy/etc/settings/Gradle에게 jdk 자동 설정.md",
-    "DevStudy/etc/settings/WSL_SSH_Github Connect.md",
     "supporter/image/Pasted image 20250531104343.png",
     "supporter/image/Spring_Security.pdf",
     "supporter/image/Spring_Security 1.pdf",
@@ -268,7 +270,6 @@
     "DevStudy/Infra/trouble",
     "DevStudy/Backend/Spring/Security/Method Level Security",
     "DevStudy/Backend/Spring/Security/JWT",
-    "DevStudy/Backend/Spring/Security/Customize Own Filter",
     "무제 파일.canvas"
   ]
 }

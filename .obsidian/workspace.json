@@ -4,137 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "a9db57e18c1c9f84",
+        "id": "10b86551f80f8341",
         "type": "tabs",
         "children": [
           {
-            "id": "cd8fbb59f05a0ee8",
+            "id": "f4cec7d95309c9a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/1. Atomicity of ACID/1. Atomicity of ACID.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flow1. BasicFilter"
+              "title": "1. Atomicity of ACID"
             }
           },
           {
-            "id": "b876fb533d6ae1c5",
+            "id": "7a347f1fe03ba4fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crafton면접준비/핵심 질문, 답변 모음.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/1. Atomicity of ACID/ACID 실전.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "핵심 질문, 답변 모음"
+              "title": "ACID 실전"
             }
           },
           {
-            "id": "1eb49ac1dea89224",
+            "id": "f5eb966f8e2cf652",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crafton면접준비/핵심 질문, 답변 모음.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "핵심 질문, 답변 모음"
+              "title": "ACID"
             }
           },
           {
-            "id": "fc85ea42594652d5",
+            "id": "fb33a4ad705ccda1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/ACID/3. Consistency of ACID.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Servlets & Filters - Before starting Security"
-            }
-          },
-          {
-            "id": "c51a8cec912c38b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Deep dive UserDetails & Authentication"
-            }
-          },
-          {
-            "id": "ebca325c06c4a7d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Flow 3. AuthenticationProvider and Manager, encoder"
-            }
-          },
-          {
-            "id": "7b49ff8f3a5cc05e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Argorithm/시간복잡도 모음.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "시간복잡도 모음"
-            }
-          },
-          {
-            "id": "572c22a2cd366fe1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/CORS & CSRF/CSRF Solution.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CSRF Solution"
-            }
-          },
-          {
-            "id": "d2bc94d03da4dfde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PasswordEncodder"
+              "title": "3. Consistency of ACID"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CookieCsrfTokenRepository",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,8 +117,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -292,54 +221,54 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "572c22a2cd366fe1",
+  "active": "ed54d954bc7cc25b",
   "lastOpenFiles": [
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled 1.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/Deep Dive Read Phenomena.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/3. Consistency of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/Eventually Consistency.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/2. Isolation of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID 실전.md",
+    "supporter/image/Pasted image 20250603104133.png",
+    "supporter/image/Pasted image 20250603103355.png",
+    "supporter/image/Pasted image 20250603103338.png",
+    "supporter/image/Pasted image 20250603103320.png",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/4. Durability of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/0. What is Transaction❓.md",
+    "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
+    "Crafton면접준비/핵심 질문, 답변 모음.md",
+    "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
+    "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
+    "DevStudy/Argorithm/시간복잡도 모음.md",
+    "DevStudy/Backend/Spring/S3Resource사용_순환참조 오류.md",
+    "supporter/image/Pasted image 20250602162930.png",
+    "supporter/Excalidraw/Drawing 2025-06-02 16.21.22.excalidraw.md",
+    "supporter/image/Pasted image 20250602162723.png",
+    "supporter/image/Pasted Image 20250602162400_416.png",
+    "supporter/image/Pasted Image 20250602162216_013.png",
+    "supporter/image/Pasted image 20250602151851.png",
+    "supporter/templates/danger.md.md",
+    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID",
+    "DevStudy/DB/Fundamentals of DB engineering",
+    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
+    "DevStudy/Argorithm/Map 모음.md",
+    "DevStudy/Backend/Spring/Security/CORS & CSRF/CSRF Solution.md",
     "DevStudy/etc/settings/Gradle에게 jdk 자동 설정.md",
     "DevStudy/etc/settings/WSL_SSH_Github Connect.md",
-    "DevStudy/etc/settings/WSL Idea . 작동하도록.md",
-    "DevStudy/etc/settings/WSL 꾸미기.md",
-    "DevStudy/etc/settings/Shell Comand 옵시디언 설정.md",
-    "DevStudy/etc/settings/obsidian_shortcuts.md",
-    "DevStudy/etc/settings/Ubuntu JDK 설치 및 환경변수 설정.md",
-    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
-    "DevStudy/Backend/Spring/Security/JWT/5. Testing JWT token.md",
-    "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
-    "DevStudy/Backend/Spring/Security/JWT/4. Change front-code for JWT.md",
-    "DevStudy/Backend/Spring/Security/JWT/1. Advantages of Tokens based AuthN.md",
-    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
-    "DevStudy/Backend/Spring/Security/Customize most common/Handling Exception.md",
-    "DevStudy/Backend/Spring/Security/Customize most common/Handle Session timeout & invalid session ＆ Concurrent Session.md",
-    "DevStudy/Backend/Spring/Security/Resolving Ambiguities.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
     "supporter/image/Pasted image 20250531104343.png",
-    "supporter/image/Pasted image 20250519225442.png",
-    "supporter/image/Pasted image 20250519115241.png",
-    "supporter/image/Pasted image 20250520172336.png",
-    "supporter/image/Pasted image 20250520172404.png",
-    "supporter/image/Pasted image 20250523170619.png",
-    "supporter/image/Pasted image 20250523170930.png",
-    "supporter/image/Pasted image 20250523170855.png",
-    "supporter/image/Pasted image 20250523171111.png",
-    "supporter/image/Pasted image 20250523170500.png",
     "supporter/image/Spring_Security.pdf",
     "supporter/image/Spring_Security 1.pdf",
     "supporter/image/Spring_Security 2.pdf",
     "supporter/image/Spring_Security 4.pdf",
-    "supporter/templates/todo.md.md",
-    "supporter/templates/missing.md.md",
-    "supporter/templates/abstract.md.md",
-    "DevStudy/Infra/trouble/xargs is not available.md",
     "DevStudy/Infra/trouble",
-    "DevStudy/Infra/Docker-MutliStage.md",
-    "DevStudy/Backend/Spring/Security/Method Level Security/Intro.md",
-    "DevStudy/Backend/Spring/Security/Method Level Security/Invocation authorization.md",
-    "DevStudy/Backend/Spring/Security/Method Level Security/Filtering authorization.md",
-    "DevStudy/Backend/Spring/Security/Method Level Security/Demo of @Pre(post)Authorize.md",
     "DevStudy/Backend/Spring/Security/Method Level Security",
     "DevStudy/Backend/Spring/Security/JWT",
     "DevStudy/Backend/Spring/Security/Customize Own Filter",
-    "DevStudy/Argorithm",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
     "무제 파일.canvas"
   ]
 }

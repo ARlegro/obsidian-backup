@@ -1,6 +1,4 @@
-> **코드 설명 : Spring-Batch의 FileItemWriter에 쓰일 S3Resource 객체를 만들기 위한 코드**
->
-
+> **코드 설명 : Spring-Batch의 FileItemWriter에 쓰일 S3Resource 객체를 만들기 위한 코드**>
 ## 문제 발생
 
 문제의 코드

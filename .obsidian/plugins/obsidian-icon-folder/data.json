@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPackageSearch",
+      "🟥",
       "LiApple",
       "LiBrain",
-      "🧠",
-      "LiLayoutTemplate",
-      "♊"
+      "🧠"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -65,5 +65,9 @@
   "DevStudy/etc/Fundamentals/정보처리기사": {
     "iconName": "LiBookOpenText",
     "iconColor": "#6f0101"
+  },
+  "DevStudy/Backend/Redis": {
+    "iconName": "LiPackageSearch",
+    "iconColor": "#ff0000"
   }
 }

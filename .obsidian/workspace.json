@@ -41,12 +41,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
+                "file": "DevStudy/Argorithm/시간복잡도 모음.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How tables and indexes are stored on disk"
+              "title": "시간복잡도 모음"
+            }
+          },
+          {
+            "id": "1b18c3c34633340b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Exclusive Lock vs Shared Lock.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exclusive Lock vs Shared Lock"
+            }
+          },
+          {
+            "id": "f69a3b1ec7ebfb84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/레디스 설치 및 기본 설정, 실행 명령어.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "레디스 설치 및 기본 설정, 실행 명령어"
+            }
+          },
+          {
+            "id": "eee0cbe099fca276",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/더미 데이터.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "더미 데이터"
             }
           },
           {
@@ -64,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -96,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ssh",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -222,54 +264,54 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "f5eb966f8e2cf652",
+  "active": "eee0cbe099fca276",
   "lastOpenFiles": [
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
+    "DevStudy/Backend/Redis/레디스 설치 및 기본 설정, 실행 명령어.md",
+    "DevStudy/Backend/Redis/Redis 기본 명령어.md",
+    "DevStudy/Backend/Redis/Setting Redis in springboot.md",
+    "DevStudy/etc/settings/WSL_SSH_Github Connect.md",
+    "DevStudy/Infra/Connect_EC2_by_WSL(feat.SSH).md",
+    "DevStudy/Infra/docker system prune -a --volumes.md",
+    "DevStudy/Infra/trouble/xargs is not available.md",
+    "DevStudy/etc/이요한_중급프로젝트 회고.md",
+    "DevStudy/etc/Exhausted Connection-Pool.md",
+    "DevStudy/etc/Monew batch 구현 흐름도.md",
+    "DevStudy/etc/obsidian-hosting.md",
+    "DevStudy/etc/settings/Gradle에게 jdk 자동 설정.md",
+    "DevStudy/etc/settings/obsidian_shortcuts.md",
+    "DevStudy/etc/settings/Shell Comand 옵시디언 설정.md",
+    "DevStudy/etc/settings/Ubuntu JDK 설치 및 환경변수 설정.md",
+    "DevStudy/etc/settings/WSL Idea . 작동하도록.md",
+    "DevStudy/Backend/Redis/더미 데이터.md",
+    "DevStudy/Backend/Redis/강의 자료 노션.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
+    "DevStudy/Backend/Redis",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Exclusive Lock vs Shared Lock.md",
+    "DevStudy/Argorithm/정렬 개념 공부 모음(문제 X).md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control",
+    "DevStudy/Argorithm/시간복잡도 모음.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
+    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/0. What is Transaction❓.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled 1.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Untitled.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Deep Dive Read Phenomena.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/3. Consistency of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Eventually Consistency.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/2. Isolation of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID 실전.md",
     "supporter/image/Pasted image 20250603104133.png",
     "supporter/image/Pasted image 20250603103355.png",
     "supporter/image/Pasted image 20250603103338.png",
     "supporter/image/Pasted image 20250603103320.png",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/4. Durability of ACID.md",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow1. BasicFilter.md",
-    "Crafton면접준비/핵심 질문, 답변 모음.md",
-    "DevStudy/Backend/Spring/Security/Begin/Servlets & Filters - Before starting Security.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Deep dive UserDetails & Authentication.md",
-    "DevStudy/Backend/Spring/Security/Basic flow/Flow 3. AuthenticationProvider and Manager, encoder.md",
-    "DevStudy/Argorithm/시간복잡도 모음.md",
-    "DevStudy/Backend/Spring/S3Resource사용_순환참조 오류.md",
     "supporter/image/Pasted image 20250602162930.png",
-    "supporter/Excalidraw/Drawing 2025-06-02 16.21.22.excalidraw.md",
     "supporter/image/Pasted image 20250602162723.png",
     "supporter/image/Pasted Image 20250602162400_416.png",
     "supporter/image/Pasted Image 20250602162216_013.png",
     "supporter/image/Pasted image 20250602151851.png",
-    "supporter/templates/danger.md.md",
-    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
     "DevStudy/DB/Fundamentals of DB engineering/ACID",
     "DevStudy/DB/Fundamentals of DB engineering",
-    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
-    "DevStudy/Argorithm/Map 모음.md",
-    "DevStudy/Backend/Spring/Security/CORS & CSRF/CSRF Solution.md",
-    "DevStudy/etc/settings/Gradle에게 jdk 자동 설정.md",
     "supporter/image/Pasted image 20250531104343.png",
     "supporter/image/Spring_Security.pdf",
     "supporter/image/Spring_Security 1.pdf",
     "supporter/image/Spring_Security 2.pdf",
     "supporter/image/Spring_Security 4.pdf",
     "DevStudy/Infra/trouble",
-    "DevStudy/Backend/Spring/Security/Method Level Security",
-    "DevStudy/Backend/Spring/Security/JWT",
     "무제 파일.canvas"
   ]
 }

@@ -203,7 +203,14 @@ ls -l ~/.ssh
 -r-------- 1 root root 1678 May 13 17:36 jungle.pem
 ```
 
-#### 5. EC2 접속 
+#### 5. EC2에 공개 키 등록 
+
+ssh 연결에 쓰려는 비밀키의 공개키를 복사해서 ubuntu 서버의 ~/.ssh에 파일로 저장 
+```bash
+echo "id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICubrCDNOTLZE3lglCPWIHjtnT81GSBkeyZtCkJqidGJ icb1696@naver.com" >> ~/.ssh/redis_keys
+```
+#### 6. EC2 접속 
 ```bash
 ssh -i [키페어] ubuntu@ec2pulicIp
 

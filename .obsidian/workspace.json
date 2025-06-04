@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Infra/Connect_EC2_by_WSL(feat.SSH).md",
+                "file": "DevStudy/Backend/Redis/Setting/Redis Install 및 기본 설정, 실행 명령어.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Connect_EC2_by_WSL(feat.SSH)"
+              "title": "Redis Install 및 기본 설정, 실행 명령어"
+            }
+          },
+          {
+            "id": "f4c55f447535d0d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Setting Redis in springboot"
+            }
+          },
+          {
+            "id": "3eff8fcb8587a4bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Redis 기본 명령어"
+            }
+          },
+          {
+            "id": "d655fd7c75d08000",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/실제 성능 비교.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "실제 성능 비교"
+            }
+          },
+          {
+            "id": "e84cd84919ad09cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/Redis/부하 테스트.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "부하 테스트"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -74,8 +131,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,54 +236,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f21c104047cea618",
+  "active": "e84cd84919ad09cd",
   "lastOpenFiles": [
-    "DevStudy/ETC/my-security API.md",
+    "DevStudy/Backend/Redis/무제.md",
+    "DevStudy/Backend/Redis/부하 테스트.md",
+    "supporter/image/Pasted image 20250604232312.png",
+    "supporter/image/Pasted image 20250604232257.png",
+    "DevStudy/Backend/Redis/실제 성능 비교.md",
+    "DevStudy/Backend/Redis/캐싱 전략(COPY).md",
+    "supporter/image/Pasted image 20250604231034.png",
+    "supporter/image/Pasted image 20250604231025.png",
+    "DevStudy/Backend/Redis/Redis 간단히 개념 잡기.md",
+    "supporter/image/Pasted image 20250604230613.png",
+    "DevStudy/Infra/trouble/docker-cache로 인해 build 수정이 안되는 문제.md",
+    "DevStudy/Infra/trouble/xargs is not available.md",
+    "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
+    "supporter/image/Pasted image 20250604222924.png",
+    "supporter/image/Pasted image 20250604222318.png",
+    "DevStudy/Backend/Redis/Setting/더미 데이터.md",
+    "DevStudy/Backend/Redis/Setting/Redis Install 및 기본 설정, 실행 명령어.md",
+    "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
+    "supporter/image/Pasted image 20250604221421.png",
+    "DevStudy/Backend/Redis/Setting",
+    "supporter/image/Pasted image 20250604220136.png",
+    "supporter/image/Pasted image 20250604220123.png",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/ACID 실전.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. Atomicity of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Eventually Consistency.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Deep Dive Read Phenomena.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/4. Durability of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/3. Consistency of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
+    "README.md",
+    "DevStudy/Infra/Connect_EC2_by_WSL(feat.SSH).md",
+    "DevStudy/z.etc/my-security API.md",
     "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
-    "DevStudy/ETC/What is restful api.md",
+    "DevStudy/z.etc/What is restful api.md",
     "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
     "supporter/templates/danger.md.md",
-    "supporter/image/Pasted image 20250603104133.png",
-    "supporter/image/Pasted image 20250603103355.png",
-    "supporter/image/Pasted image 20250603103338.png",
-    "supporter/image/Pasted image 20250603103320.png",
-    "supporter/image/Pasted image 20250602162930.png",
-    "supporter/image/Pasted image 20250602162723.png",
-    "supporter/image/Pasted image 20250602151851.png",
-    "supporter/image/Pasted Image 20250602162400_416.png",
-    "supporter/image/Pasted Image 20250602162216_013.png",
     "supporter/Excalidraw/Drawing 2025-06-02 16.21.22.excalidraw.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Eventually Consistency.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/Deep Dive Read Phenomena.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/ACID 실전.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/4. Durability of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/3. Consistency of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/2. Isolation of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID/0. What is Transaction❓.md",
-    "DevStudy/DB/Fundamentals of DB engineering/ACID",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",
-    "DevStudy/Backend/Spring/Security/JWT/5. Testing JWT token.md",
-    "DevStudy/Backend/Spring/Security/JWT/4. Change front-code for JWT.md",
-    "DevStudy/Backend/Spring/Security/JWT/0. Start.md",
-    "DevStudy/Backend/Spring/Security/JWT/1. Advantages of Tokens based AuthN.md",
-    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
-    "DevStudy/ETC/250601. 불필요한 프레임워크 학습에 대한 생각.md",
-    "supporter/image/Pasted image 20250601183500.png",
-    "DevStudy/Backend/Spring/Security/PasswordEncoder/PasswordEncodder.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/Setting Before exploring security implementations.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/When error in wsl vs angular.md",
-    "DevStudy/ETC/settings/도커에 띄어진 POSTGRES 환경변수 확인.md",
-    "DevStudy/Backend/Spring/Security/Authentication Provider/Authority vs Role && Config Role.md",
     "DevStudy/Argorithm",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
     "DevStudy/Backend/Spring/Security/Method Level Security",
     "DevStudy/Backend/Spring/Security/JWT",
     "DevStudy/Backend/Spring/Security/Customize Own Filter",
     "DevStudy/Infra/trouble",
-    "DevStudy/Backend/Spring/Security/Authorization",
     "무제 파일.canvas"
   ]
 }

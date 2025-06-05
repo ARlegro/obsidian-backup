@@ -82,9 +82,8 @@ public class RedisCacheConfig {
         .build();
   }
 }
-
 ```
-
+https://docs.spring.io/spring-boot/reference/io/caching.html#io.caching.provider.redis
 ### 로직 
 ```java
 @Cacheable(cacheNames = "getBoards", key = "'boards:page:' + #page + ':size:' + #size", cacheManager = "boardCacheManager") public List<Board> getBoards(int page, int size) {

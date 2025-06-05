@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Redis/부하 테스트.md",
-                "mode": "source",
+                "file": "DevStudy/Backend/Spring/Cache/기본.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "부하 테스트"
+              "title": "기본"
             }
           }
         ],
@@ -101,7 +101,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -219,13 +219,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
       "templater-obsidian:Templater": false,
@@ -238,8 +238,14 @@
   },
   "active": "e84cd84919ad09cd",
   "lastOpenFiles": [
-    "DevStudy/Backend/Redis/무제.md",
+    "DevStudy/Infra/Docker-MutliStage.md",
+    "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
+    "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
+    "DevStudy/Backend/Redis/Setting/Redis Install 및 기본 설정, 실행 명령어.md",
+    "DevStudy/Backend/Spring/Cache/기본.md",
     "DevStudy/Backend/Redis/부하 테스트.md",
+    "DevStudy/Backend/Spring/Cache",
+    "DevStudy/Backend/Redis/무제.md",
     "supporter/image/Pasted image 20250604232312.png",
     "supporter/image/Pasted image 20250604232257.png",
     "DevStudy/Backend/Redis/실제 성능 비교.md",
@@ -250,12 +256,9 @@
     "supporter/image/Pasted image 20250604230613.png",
     "DevStudy/Infra/trouble/docker-cache로 인해 build 수정이 안되는 문제.md",
     "DevStudy/Infra/trouble/xargs is not available.md",
-    "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
     "supporter/image/Pasted image 20250604222924.png",
     "supporter/image/Pasted image 20250604222318.png",
     "DevStudy/Backend/Redis/Setting/더미 데이터.md",
-    "DevStudy/Backend/Redis/Setting/Redis Install 및 기본 설정, 실행 명령어.md",
-    "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
     "supporter/image/Pasted image 20250604221421.png",
     "DevStudy/Backend/Redis/Setting",
     "supporter/image/Pasted image 20250604220136.png",
@@ -273,8 +276,6 @@
     "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
     "DevStudy/z.etc/What is restful api.md",
     "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
-    "supporter/templates/danger.md.md",
-    "supporter/Excalidraw/Drawing 2025-06-02 16.21.22.excalidraw.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",
@@ -283,7 +284,6 @@
     "DevStudy/Backend/Spring/Security/Method Level Security",
     "DevStudy/Backend/Spring/Security/JWT",
     "DevStudy/Backend/Spring/Security/Customize Own Filter",
-    "DevStudy/Infra/trouble",
     "무제 파일.canvas"
   ]
 }

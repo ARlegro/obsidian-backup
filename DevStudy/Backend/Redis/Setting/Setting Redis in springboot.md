@@ -105,3 +105,59 @@ https://docs.spring.io/spring-boot/reference/io/caching.html#io.caching.provider
 >- ![[Pasted image 20250604221421.png]]
 
 
+
+
+### 번외 : docker 설정
+
+```dockerfile
+FROM eclipse-temurin:17-jdk AS build  
+  
+WORKDIR /app  
+  
+COPY . .  
+RUN chmod +x gradlew && ./gradlew clean build -x test;  
+  
+  
+FROM openjdk:17-jdk-slim  
+COPY --from=build /app/build/libs/*SNAPSHOT.jar app.jar  
+EXPOSE 8080  
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+```yaml
+services:  
+  server:  
+    build: .  
+    ports:  
+      - 8080:8080  
+    environment:  
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-dev}  
+      SPRING_DATASOURCE_USERNAME: ${RDS_USERNAME:-root}  
+      SPRING_DATASOURCE_PASSWORD: ${RDS_PASSWORD:-pwd1234}  
+    depends_on:  
+      cache-server:  
+        condition: service_healthy  
+  
+  cache-server:  
+    image: redis  
+    ports:  
+      - 6379:6379  
+    healthcheck:  
+      test: ["CMD", "redis-cli", "ping"]  
+      interval: 5s  
+      retries: 10  
+  
+#  my-db:  
+#    image: mysql:latest  
+#    environment:  
+#      MYSQL_ROOT_PASSWORD: pwd1234  
+#      MYSQL_DATABASE: mydb  
+#    volumes:  
+#      - my-db-data:/var/lib/mysql  
+#  
+#    ports:  
+#      - 3307:3306  
+#  
+#volumes:  
+#  my-db-data:
+```

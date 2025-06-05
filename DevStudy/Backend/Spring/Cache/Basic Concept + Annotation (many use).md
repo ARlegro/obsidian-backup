@@ -109,10 +109,10 @@ public @interface Cacheable {
 		- `@Cacheable(value = "results", condition = "#precision > 0")`: `precision`이 0보다 클 때만 캐싱
 		- `@Cacheable(value = "users", condition = "#result != null")`: 메서드 결과가 `null`이 아닐 때만 캐싱합니다. (메서드 실행 후 조건 검사)
 
-- cacheManager()
+- **cacheManager**
 	- 이 캐시 작업을 관리할 **`CacheManager` 빈의 이름**을 지정.
 	- 여러 `CacheManager`를 구성했을 때 특정 캐시 매니저를 선택적으로 사용하고자 할 때 활용
-	- By Default : Spring Boot가 자동 구성한 기본 `CacheManager`가 사용 💢
+	- **By Default** : Spring Boot가 자동 구성한 기본 `CacheManager`가 사용 💢
 
 - **sync() : 멀티스레드 환경에서 중요** ⭐
 	- By default = `false`
@@ -135,7 +135,7 @@ public @interface Cacheable {
 ### @CacheEvict
 
 #### 개념 
-- 목적 : 캐시 데이터를 캐시에서 제거
+- 목적 : **캐시 데이터를 캐시에서 제거**
 - **주요 사용처**: 원본 데이터를 변경하거나 삭제하는 메서드에 이 애노테이션을 적용
 - **동작 원리**
 	1. **원본 데이터가 변경/삭제되면, 해당 캐시 항목을 캐시에서 삭제** 
@@ -195,22 +195,22 @@ public @interface CacheEvict {
     - 이는 일시적인 불일치를 야기할 수 있지만, 특정 시나리오(예: 메서드 실패 시 캐시가 오래된 데이터를 반환하는 것을 방지)에서 유용할 수 있다.
 
 ```java
-@CacheEvict(cacheNames = "boards", key = "'board:page:' + #page + ':size:' + #size", cacheManager = "boardCacheManager")  
-public void update(Long id) {  
-    int page = 0;  
-    int size = 10;  
+@CacheEvict(cacheNames = "boards", key = "'board:page:1:size:10'", cacheManager = "boardCacheManager")
+public void update(Long id) {   
     Board board = boardRepository.findById(id)  
             .orElseThrow(() -> new RuntimeException("게시글이 존재하지 않습니다."));  
     board.setTitle("update title");
 ```
+
+
 
 ### @CachePut
 
 
 #### 개념 
 >[!tip] Modify작업 후 캐싱된 데이터를 갱신해주는 역할
->- @CacheEvicet ➡ 캐시 무효화 
->- @CachePut ➡ 캐시 갱신
+>- `@CacheEvicet` ➡ 캐시 무효화 
+>- `@CachePut` ➡ 캐시 갱신
 - **목적** : 결과 값을 캐시에 갱신하는 것이 주 목적 
 	- **원본 데이터의 변경과 동시에 캐시의 최신성을 보장**하여, 이후의 조회 요청이 항상 올바른 데이터를 캐시에서 가져갈 수 있도록 돕는 역할
 	- 캐시 데이터의 정합성을 유지하면서 불필요한 DB 재조회 비용을 줄이는 데 목적
@@ -222,4 +222,27 @@ public void update(Long id) {
 3. 실행 완료 후 결과 값을 지정한 캐시에 저장하거나 기존 값을 갱신 
 > 즉, 메서드의 반환 값이 캐시에 저장 
 	
+
+### 💢자주 틀리는 실수 
+
+>[!danger] SpEl쓸 때, 동적 변수 사용 시 **무조건 파라미터 값만 사용**해야한다.
+
+#### 잘못된 예시 ❌
+```java 
+@Cacheable(cacheNames = "boards", key = "'board:page:'+ #page + ':size:' + #size", cacheManager = "boardCacheManager")  
+public List<Board> getBoards(int page, int size) {  
+    ...
+}  
+  
+@CacheEvict(cacheNames = "boards", key = "'board:page:'+ #page + ':size:' + #size", cacheManager = "boardCacheManager")  
+public void update(Long id) {  
+    int page = 1;  
+    int size = 10;  
+    Board board = boardRepository.findById(id)  
+        .orElseThrow(() -> new RuntimeException("게시글이 존재하지 않습니다."));  
+    board.setContent("수정된 내용");  
+}
+```
+> `#page`, `#size`같은 SpEl을 쓰는 거는 단순 변수로 안되고, 파라미터 값으로 넘어와야 적용된다.
+
 

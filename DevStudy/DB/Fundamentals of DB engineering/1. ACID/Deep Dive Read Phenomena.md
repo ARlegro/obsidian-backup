@@ -1,6 +1,7 @@
 [[2. Isolation of ACID]] << 여기서 언급 했었음 
 
 
+
 ## 1.  Phantom Reads
 >[!tip] 한 트랜잭션 내 같은 퀄리 두 번 실행했을 때, 첫 번째 쿼리에서는 없던 **'new row'가 두 번째 쿼리에서 나타나는** 현상 
 >- 보통 동시성이 있고, 트랜잭션 격리 수준이 충분히 높지 않으면 발생한다.
@@ -10,20 +11,46 @@
 
 ### 문제가 되는 예시 
 
-
-
 ```SQL
+-- T1 BEGIN 
+BEGIN TRANSACTION 
+
+-- T2 BEGIN 
+BEGIN TRANSACTION 
+
+--T1 SELECT 
+SELECT * FROM sales;
+ id | price |    date    
+----+-------+------------
+  1 |    10 | 2024-01-07
+  2 |    13 | 2024-03-07
+(2 rows)
+
+T2 데이터 삽입 
 INSERT INTO salses (id, price, date) 
-VALUES (1, 15, 'feb-7-2024');
+VALUES (3, 15, 'feb-7-2024');
+
+-- T1 SELECT 
+SELECT * FROM SALES
+SELECT * FROM sales;
+ id | price |    date    
+----+-------+------------
+  1 |    10 | 2024-01-07
+  2 |    13 | 2024-03-07
+  3 |    15 | 2024-02-07
+(3 rows)
+💢한 트랜잭션에서 같은 읽기의 결과가 다름 
 ```
 
 ### 해결 in Postgres
 postgres는 Phantom Read를 해결하기 위한 방법을 제공한다.
 
 >[!tip] PostgresSQL은 Repeatble Read 격리 수준임에도 Phantom Read를 방지한다.
->- **반면**, MySQL, Oracle, SQL Server같은 다른 DB에서는 
+>- **반면**, MySQL(예전), Oracle, SQL Server같은 다른 DB에서는 
 >	1. **Serializable** 격리 수준을 사용해야 Phantom Read를 제거할 수 있다.
 >	2. 또는, **비관적 락**을 사용해서 팬텀 리드 방지 
+>	   
+>- 최근 MYSQL은 MVCC NEXT-KEY LOCK써서 Phantom Read방지가능하다네 
 
 #### MVCC for protecting Phantom Read 
 Postgres가 낮은 격리 수준에도 Phantom Read를 방지할 수 있는 이유는 '**MVCC**'구현 덕분이다.
@@ -51,6 +78,48 @@ Postgres가 낮은 격리 수준에도 Phantom Read를 방지할 수 있는 이�
 
 
 >[!tip] 낮은 격리 수준으로 Phantom Read를 방지한다는게 진짜 대단한거다.
+
+
+## Repeatable Read 격리 수준 - DB별 차이 
+
+> 락 기반 vs MVCC 기반 에서 차이가 있다. 
+#### 1. 락 기반 DB 🔒
+ex. SQL Server, Oracle 기본 설정
+
+
+**✅개념** 
+- **읽기 시 - 공유락(Shared Lock)을 건다.**
+	- 읽기 작업(`SELECT`) 시, 해당 행에 공유 락을 걸거나, 넥스트-키 락을 통해 검색된 레코드 범위에 락을 건다.
+	- 이로 인해, 다른 **트랜잭션이 해당 범위 내에서 새로운 행을 삽입하거나 기존 행을 수정/삭제하는 것을 방지** 
+	- 이 락들은 트랜잭션이 커밋되거나 롤백될 때까지 유지
+- **쓰기 시 - 배타락(Exclusive Lock)을 건다.**
+	- 쓰기 중인 row를 읽으려 하면 대기하거나 차단됨  
+
+💙장점 
+- 직관적이고 강력한 Serializability 보장 : 트랜잭션 간 충돌이 즉시 탐지되어 명시적 통제 가능
+- 팬텀 리드 방지 구현 간단 
+- 트랜잭션 충돌 시점이 명확 
+
+**💢단점** 
+- 데드락 발생 가능성 높음 
+- 낮은 동시성 : Lock을 오래, 길게 걸기 때문 
+- 단순 Lock으로는, Phantom Read는 해결 못 함 (Next-Key Lock은 가능하다네)
+
+#### 2. MVCC 기반 DB 
+ex. MySQL InnoDB, PostgreSQL
+
+✅개념 
+- 데이터를 직접 락을 거는 대신, 각 트랜잭션이 데이터의 특정 **"스냅샷"을** 보고 작업하도록 한다.
+- 쓰는 트랜잭션과 읽는 트랜잭션이 **충돌하지 않음**
+- 단, 쓰기 충돌 시에는 **커밋 시점에 충돌 검사 및 롤백 발생 가능**
+
+💙장점 
+- 높은 동시성 : 읽기 쓰기 간에 블로킹이 발생하지 않아 높은 동시성 제공 
+- Phantom Read도 방지된다.
+
+💢단점 
+- 추가 공간 必 : 이전 버전의 데이터를 유지해야 하므로 **추가적인 저장 공간**이 필요
+- GC 必 : 더 이상 필요 없는 이전 버전 데이터를 주기적으로 제거하기 위해 가비지 컬렉터 필요 
 
 
 ## Serializable vs Repeatable-Read
@@ -147,9 +216,13 @@ UPDATE test SET value = 'A' WHERE
 
 격리수준을 isolation으로 바꾸고 앞의 예시를 다시 실행한다고 가정하자
 Transaction 1 `COMMIT` ➡ Transaction 2 `COMMIT`  ❌ 오류 발생 ❌
-```TERMINAL
-`ERROR: could not serialize access due to read/write dependencies among transactions` `DETAIL: Reason code: Canceled on identification as a pivot during commit attempt. Hint: The transaction might succeed if retried.`
+```diff
+-ERROR: could not serialize access due to read/write dependencies among
++ transactionsDETAIL: Reason code: Canceled on identification as a pivot during commit attempt. Hint: The transaction might succeed if retried.
 ```
+
+
+
 PostgreSQL이 T1과 T2 간의 **읽기/쓰기 종속성**을 감지했기 때문
 T1이 `A`를 `B`로 바꾸는 동안, T2는 `B`를 `A`로 바꾸려고 한 것을 감지 
 > . `SERIALIZABLE` 격리 수준은 이러한 동시성 작업이 순차적으로 실행된 것처럼 보이게 해야 하므로, 데이터베이스는 T2의 커밋을 허용하지 않고 롤백시킨다.
@@ -185,4 +258,9 @@ UPDATE TABLE STUDENTS SET GRADE = 100 WHERE STUDENT_ID = 50;
 
 대부분의 CLI(MySQL, Postgres psql 등)에서는 각 SQL문이 끝나면 **자동으로 커밋**이 일어난다.
 **첫 UPDATE를 시작하고 그다음 ROLLBACK을 해도 첫 UPDATE는 커밋된 상태로 ROLLBACK이 효과가 전혀 없다.**
+
+
+
+
+
 

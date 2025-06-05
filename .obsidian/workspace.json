@@ -53,32 +53,14 @@
             "id": "d655fd7c75d08000",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Redis/실제 성능 비교.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "실제 성능 비교"
-            }
-          },
-          {
-            "id": "e84cd84919ad09cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevStudy/Backend/Spring/Cache/기본.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기본"
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -235,8 +217,24 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e84cd84919ad09cd",
+  "active": "ed54d954bc7cc25b",
   "lastOpenFiles": [
+    "supporter/image/Pasted image 20250605134951.png",
+    "supporter/image/Pasted image 20250605133547.png",
+    "supporter/image/Pasted image 20250605132504.png",
+    "supporter/image/Pasted image 20250605113452.png",
+    "supporter/image/Pasted image 20250605113333.png",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부 내용.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Two Phase Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Prventing Double books without 2PL.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/무제.md",
+    "DevStudy/Backend/Spring/Cache/Basic Concept + Annotation (many use).md",
+    "DevStudy/Backend/Redis/Setting/Dummy Data.md",
+    "DevStudy/Backend/Redis/Redis Basic Concept.md",
+    "DevStudy/Backend/Redis/Performance Comparison Based Caching.md",
+    "DevStudy/Backend/Redis/Load Testing.md",
+    "DevStudy/Backend/Redis/Caching Strategy(COPY).md",
+    "DevStudy/Backend/Redis/Add @CacheEvict + @CachePut.md",
     "DevStudy/Infra/Docker-MutliStage.md",
     "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
     "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
@@ -256,25 +254,9 @@
     "DevStudy/Infra/trouble/docker-cache로 인해 build 수정이 안되는 문제.md",
     "DevStudy/Infra/trouble/xargs is not available.md",
     "supporter/image/Pasted image 20250604222924.png",
-    "supporter/image/Pasted image 20250604222318.png",
     "DevStudy/Backend/Redis/Setting/더미 데이터.md",
-    "supporter/image/Pasted image 20250604221421.png",
     "DevStudy/Backend/Redis/Setting",
-    "supporter/image/Pasted image 20250604220136.png",
-    "supporter/image/Pasted image 20250604220123.png",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID/ACID 실전.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. Atomicity of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Eventually Consistency.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Deep Dive Read Phenomena.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/4. Durability of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/3. Consistency of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
-    "README.md",
-    "DevStudy/Infra/Connect_EC2_by_WSL(feat.SSH).md",
-    "DevStudy/z.etc/my-security API.md",
-    "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
-    "DevStudy/z.etc/What is restful api.md",
-    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",

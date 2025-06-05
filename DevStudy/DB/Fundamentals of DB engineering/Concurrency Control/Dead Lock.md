@@ -22,6 +22,8 @@
 > - **Circular wait(순환대기)**
 > 	- 프로세스들이 순환 형태로 서로의 리소스를 기다린다.
 
+![[Pasted image 20250605133547.png]]
+특히나 DB를 여러개 사용할 경우 위의 사진처럼 ROCK이 일어나면 엄청난 network 비용이 든다.
 
 ### 데드락이 발생하는 전형적인 시나리오
 
@@ -41,6 +43,82 @@
 - 결과적으로
 	- `T1`은 `T2`가 `B`를 놓아주기를 기다리고, `T2`는 `T1`이 `A`를 놓아주기를 기다리며, 
 	- 둘 다 영원히 진행되지 못하는데, 이것이 "**데드락**"이다.
+
+
+#### 실험 전 초기 상태
+```bash
+        List of relations
+ Schema | Name | Type  |  Owner   
+--------+------+-------+----------
+ public | test | table | postgres
+(1 row)
+
+postgres=# select * from test;
+ id 
+----
+(0 rows)
+```
+
+#### 테스트 : 트랜잭션 흐름 및 데드락 발생 
+```SQL
+T1
+BEGIN transaction;
+
+T2
+BEGIN transaction;
+
+T1
+INSERT INTO test VALUES(20); -- 아직 COMMIT하지 않음
+
+T2
+INSERT INTO test VALUES(21); -- 정상 실행
+INSERT INTO test VALUES(20);
+-- ❗대기 상태(락) 발생 (T1이 같은 값 20을 먼저 넣었기 때문에)
+
+T1 
+INSERT INTO test VALUES(20);
+❌ 데드락 오류 발생
+
+**🔐발생 오류** 
+ERROR:  deadlock detected
+DETAIL:  Process 72 waits for ShareLock on transaction 757; blocked by process 145.
+Process 145 waits for ShareLock on transaction 758; blocked by process 72.
+HINT:  See server log for query details.
+CONTEXT:  while inserting index tuple (0,4) in relation "test_pkey"
+```
+
+**❓왜 데드락이 발생했는가❓**
+1. T1이 먼저 `id=20`을 INSERT함 
+	- 아직 커밋하지 않았지만 **MVCC에 의해 메모리에는 존재함**
+2. 이후 T2가 동일한 `id=20`을 INSERT 하려 함 
+	- PK 제약 조건 위반 여부 확인 중, T1이 커밋을 안 했으므로 **T2는 T1의 트랜잭션 결과를 기다림**
+	  
+3. 그러다 T1이 다시 **같은 값을 INSERT 시도** 
+	- 이 시점에서 **T1은 T2의 트랜잭션을 기다리게 됨**
+
+- T1은 T2의 락을 기다림
+- T2는 T1의 락을 기다림  
+    → 🔁 **데드락 조건(Circular Wait)이** 충족되며 데드락 발생
+![[Pasted image 20250605132504.png]]
+#### PoswgreSQL의 데드락 감지 방식 
+- PostgreSQL은 **락 대기 그래프**를 주기적으로 확인하고 **사이클이 발견되면 데드락으로 판단**
+	- 트랜잭션 간 의존관계를 그래프의 형태로 추적
+	- 그래프에 cycle이 발생하면 cycle을 제거할 수 있도록 트랜잭션을 Rollback
+	  
+- 그 중 **가장 늦게 트랜잭션에 진입한 프로세스**를 **자동 롤백**시켜 데드락 해소
+> Postgres의 데드락 해결법 ➡ 데드락 일으킨 트랜잭션 **롤백** 시키기 
+
+
+
+>[!question] 아무것도 커밋하지 않았는데 Lock이 일어난 이유 ❓
+>- Row는 commit이 일어나지 않았지만, Memory에는 일어났다.
+>- postgres는 memory의 row를 체크하고 locking을 진행했던 것 
+
+
+
+
+
+
 
 
 ### OS의 데드락 해결방법 

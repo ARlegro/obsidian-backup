@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Redis/부하 테스트.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Deep Dive Read Phenomena.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "부하 테스트"
+              "title": "Deep Dive Read Phenomena"
             }
           }
         ],
@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -238,8 +237,15 @@
   },
   "active": "e84cd84919ad09cd",
   "lastOpenFiles": [
-    "DevStudy/Backend/Redis/무제.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/3. Consistency of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/4. Durability of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/2. Isolation of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. Atomicity of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/0. What is Transaction❓.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
     "DevStudy/Backend/Redis/부하 테스트.md",
+    "DevStudy/Backend/Redis/무제.md",
     "supporter/image/Pasted image 20250604232312.png",
     "supporter/image/Pasted image 20250604232257.png",
     "DevStudy/Backend/Redis/실제 성능 비교.md",
@@ -261,20 +267,13 @@
     "supporter/image/Pasted image 20250604220136.png",
     "supporter/image/Pasted image 20250604220123.png",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID/ACID 실전.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. Atomicity of ACID.md",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Eventually Consistency.md",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Deep Dive Read Phenomena.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/4. Durability of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/3. Consistency of ACID.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
     "README.md",
     "DevStudy/Infra/Connect_EC2_by_WSL(feat.SSH).md",
     "DevStudy/z.etc/my-security API.md",
     "DevStudy/Backend/Spring/Security/JWT/3. Building Logic to generate, validate JWT.md",
     "DevStudy/z.etc/What is restful api.md",
-    "DevStudy/Backend/Spring/Security/JWT/6. Publish an AuthNManager for custom or maunal.md",
-    "supporter/templates/danger.md.md",
-    "supporter/Excalidraw/Drawing 2025-06-02 16.21.22.excalidraw.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",

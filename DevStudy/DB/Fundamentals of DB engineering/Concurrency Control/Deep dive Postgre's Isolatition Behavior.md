@@ -117,6 +117,9 @@ The partial transaction isolation provided by Read Committed mode is adequate fo
 - 이유 : PostgreSQL은 `REPETABLE READ`에서는 락 해제 후 target row가 다른 트랜잭션에 의해 update됐다면 해제된 트랜잭션은 ROLLBACK된다.  
 - 참고 : [[MVCC]] -> 격리수준 격상으로 Lost Update 막기 in PostgreSQL
 
+>[!tip] 이 예시에서 UPDATE는 격리 수준 그냥 놔둬도 된다
+
+
 근데 이러면 DELETE를 계속 재시도 노려야하나❓
 격리수준 격상 + 재시도 로직 ❓❓❓
 

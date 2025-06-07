@@ -37,7 +37,7 @@ Hibernate:
 PostgreSQL은 UPDATE같은 변경 쿼리를 대상으로 암묵적 배타락을 걸어준다.
 즉, 백엔드에서 UPDATE 시 명시적으로 락을 걸지 않아도 자동으로 걸어주는 것이다.
 
->[!tip] PostgreSQL의 암묵적 배타락 실험은 다음 링크 참고 : [[Preventing Double books without 2PL]]
+>[!tip] PostgreSQL의 암묵적 배타락 실험은 다음 링크 참고 : [[Preventing 'Double_Books' Without 2PL]]
 
 #### 문제 ⛔
 (읽기 현상에 대한 글은 이전에 많이 언급했던 내용이라 자세한 내용은 생략)
@@ -242,10 +242,10 @@ A, B 는 이전 예시와 같다.
 > [!INFO] 위의 내용 회고 
 > - 애초에 이 실험이 이 동작을 테스트하려한게 아니라 조금 당황했다.(이거에 빠져서 파보니 이전에 이 실험을 한 이유를 까먹었다....)
 > - 아무튼, 결과가 이해가 되지 않았는데 이전에 공부했던 PostgreSQL의 내부 동작흐름을 떠올려보니 이해가 됐다.
-> - 참고 : [[Preventing Double books without 2PL]] << 여기서 비슷한 일이 벌어졌었다.
+> - 참고 : [[Preventing 'Double_Books' Without 2PL]] << 여기서 비슷한 일이 벌어졌었다.
 
 자세한 PostgreSQL 분석 : [[Deep dive Postgre's Isolatition Behavior]] ⭐⭐⭐
 
 
-[[Preventing Double books without 2PL]]
+[[Preventing 'Double_Books' Without 2PL]]
 https://www.postgresql.org/docs/17/transaction-iso.html -> 13.2.1. Read Committed Isolation Level

@@ -105,7 +105,9 @@ https://www.postgresql.org/docs/current/transaction-iso.html -> REPEATABLE READ
 > - `REPEATABLE READ` + 재시도 → CPU 는 조금 더 쓰지만 락 대기시간이 짧아짐.
 
 
-### 추가 : 격리수준을 높이지 않아도 충돌이 안되는 이유 (PostgreSQL)
+### 추가 : 격리수준을 높이지 않아도 충돌이 안되는 경우 (PostgreSQL)
+> 이전 예시에서의 Lost Update의 경우는 격리수준을 높여야 해결되는 문제이다.
+> 하지만, 아래의 예시는 격리수준을 그대로 둬도 되는 예시 
 
 #### 상황
 ```SQL 
@@ -127,10 +129,9 @@ SELECT * FROM test;
 >[!QUESTION] 분명, 다른 버전으로 작업중일텐데 어떻게 `UPDATE`문에 반영됐을까❓
 
 #### 해답 
+링크 : [[Deep dive Postgre's Isolatition Behavior]]
 
 
-
-**최신으로 커밋된 데이터를 기반으로 자신의 쿼리 조건을 다시 평가하고 연산을 수행**
 
 
 

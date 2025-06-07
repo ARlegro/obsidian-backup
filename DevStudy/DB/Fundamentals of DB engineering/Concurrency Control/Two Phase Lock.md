@@ -159,4 +159,4 @@ Optional<Board> findByIdForUpdate(@Param("id") Long id);
 
 
 2PL 말고도 더블 예약 문제를 해결하는 여러 방법이 있는데, 아래의 링크는 다른 방법 설명 
-[[Preventing Double books without 2PL]]
+[[Preventing 'Double_Books' Without 2PL]]

@@ -58,6 +58,7 @@ SELECT * FROM seats;
 T2는 update 요청을 대기 중이다가 T1이 `COMMIT` 하면 T2도 UPDATE됐다는 알림이 뜬다.
 여기서 T2가 `COMMIT`하면 성공적으로 된다. 이로 인해, 자리는 더블 예약이 된 것💢
 >이러한 문제를 2PL이 해결해 줄 수 있다.
+>(참고로 postgreSQL은 이론과 달리 UPDATE문 발생시 암묵적 배타락 걸어줌. 지금은 공부용이니 단순 UPDATE로는 락 안걸린다고가정)
 
 
 ### 2PL: Two-Phase Locking
@@ -158,4 +159,4 @@ Optional<Board> findByIdForUpdate(@Param("id") Long id);
 
 
 2PL 말고도 더블 예약 문제를 해결하는 여러 방법이 있는데, 아래의 링크는 다른 방법 설명 
-[[Prventing Double books without 2PL]]
+[[Preventing Double books without 2PL]]

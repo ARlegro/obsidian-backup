@@ -53,14 +53,88 @@
             "id": "d655fd7c75d08000",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/PostgreSQL's update Query.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "PostgreSQL's update Query"
+            }
+          },
+          {
+            "id": "a08d4a49c4dc0991",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/PostgreSQL's update Query.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PostgreSQL's update Query"
+            }
+          },
+          {
+            "id": "b240c64da6f28dd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/생각 생각 생각.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "생각 생각 생각"
+            }
+          },
+          {
+            "id": "e82cc4d672253033",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Optimistic Lock"
+            }
+          },
+          {
+            "id": "366bde54df59423f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/MVCC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MVCC"
+            }
+          },
+          {
+            "id": "1c7fe5ac46a3a5db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Deep dive Postgre's Isolatition Behavior"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -92,7 +166,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ssh",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +174,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
@@ -117,7 +191,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -217,46 +292,45 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ed54d954bc7cc25b",
+  "active": "1c7fe5ac46a3a5db",
   "lastOpenFiles": [
-    "supporter/image/Pasted image 20250605134951.png",
-    "supporter/image/Pasted image 20250605133547.png",
-    "supporter/image/Pasted image 20250605132504.png",
-    "supporter/image/Pasted image 20250605113452.png",
-    "supporter/image/Pasted image 20250605113333.png",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부 내용.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/MVCC.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/PostgreSQL's update Query.md",
+    "supporter/image/Pasted image 20250607142855.png",
     "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Two Phase Lock.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Prventing Double books without 2PL.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/무제.md",
-    "DevStudy/Backend/Spring/Cache/Basic Concept + Annotation (many use).md",
-    "DevStudy/Backend/Redis/Setting/Dummy Data.md",
-    "DevStudy/Backend/Redis/Redis Basic Concept.md",
-    "DevStudy/Backend/Redis/Performance Comparison Based Caching.md",
-    "DevStudy/Backend/Redis/Load Testing.md",
-    "DevStudy/Backend/Redis/Caching Strategy(COPY).md",
-    "DevStudy/Backend/Redis/Add @CacheEvict + @CachePut.md",
-    "DevStudy/Infra/Docker-MutliStage.md",
-    "DevStudy/Backend/Redis/Setting/Setting Redis in springboot.md",
-    "DevStudy/Backend/Redis/Setting/Redis 기본 명령어.md",
-    "DevStudy/Backend/Redis/Setting/Redis Install 및 기본 설정, 실행 명령어.md",
-    "DevStudy/Backend/Spring/Cache/기본.md",
-    "DevStudy/Backend/Redis/부하 테스트.md",
-    "DevStudy/Backend/Spring/Cache",
-    "DevStudy/Backend/Redis/무제.md",
-    "supporter/image/Pasted image 20250604232312.png",
-    "supporter/image/Pasted image 20250604232257.png",
-    "DevStudy/Backend/Redis/실제 성능 비교.md",
-    "DevStudy/Backend/Redis/캐싱 전략(COPY).md",
-    "supporter/image/Pasted image 20250604231034.png",
-    "supporter/image/Pasted image 20250604231025.png",
-    "DevStudy/Backend/Redis/Redis 간단히 개념 잡기.md",
-    "supporter/image/Pasted image 20250604230613.png",
-    "DevStudy/Infra/trouble/docker-cache로 인해 build 수정이 안되는 문제.md",
-    "DevStudy/Infra/trouble/xargs is not available.md",
-    "supporter/image/Pasted image 20250604222924.png",
-    "DevStudy/Backend/Redis/Setting/더미 데이터.md",
-    "DevStudy/Backend/Redis/Setting",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Row-level locks - PosgreSQL.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Preventing Double books without 2PL.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Exclusive Lock vs Shared Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/z.md",
+    "supporter/image/Pasted image 20250607141713.png",
+    "supporter/image/Pasted image 20250607112226.png",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID/ACID 실전.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/4. Durability of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/3. Consistency of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/2. Isolation of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. Atomicity of ACID.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/0. What is Transaction❓.md",
+    "supporter/image/Pasted image 20250607102513.png",
+    "supporter/image/Pasted image 20250607093820.png",
+    "supporter/image/Pasted image 20250606164924.png",
+    "supporter/image/Pasted image 20250606164829.png",
+    "supporter/image/Pasted image 20250606164823.png",
+    "supporter/image/Pasted image 20250606114332.png",
+    "supporter/image/Pasted image 20250606113937.png",
+    "DevStudy/Backend/Redis/Setting/Dummy Data.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Eventually Consistency.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/Deep Dive Read Phenomena.md",
+    "DevStudy/DB/mongo/기본.md",
+    "DevStudy/DB/mongo/메서드.md",
+    "DevStudy/DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
+    "DevStudy/DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "DevStudy/Backend/Spring/Cache",
+    "DevStudy/Backend/Redis/Setting",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",

@@ -57,7 +57,11 @@ COMMIT;
 >		- PostgreSQL은 락이 해제된 후에도 쿼리의 조건을 다시 평가하여 최종적인 결정(업데이트 여부)을 내린다.
 >- 이로 인해, WHERE절은 False가 되어서 UPDATER가 이루어지지 않은 것이다.
 
+자세한 PostgreSQL 분석 : [[Deep dive Postgre's Isolatition Behavior]]
+
+
 > 이러한 내부 동작원리는 DB 시스템마다 다르다.
+
 
 
 ### 위 방식의 단점 

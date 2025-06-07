@@ -3,9 +3,8 @@
 ```bash
 docker run --name pgacid -d -e POSTGRES_PASSWORD=postgres postgres:latest
 
+
 docker exec -it 8f75 psql -U postgres
-
-
 ```
 
 

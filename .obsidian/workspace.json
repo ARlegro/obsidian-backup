@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Java/CountDownLatch.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CountDownLatch"
+              "title": "Optimistic Lock"
             }
           }
         ],
@@ -294,8 +294,8 @@
   },
   "active": "1c7fe5ac46a3a5db",
   "lastOpenFiles": [
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
     "DevStudy/Backend/Java/CountDownLatch.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
     "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/ㅇ.md",
     "DevStudy/Argorithm/정렬 모음.md",
     "DevStudy/Argorithm/정렬 개념 공부 모음(문제 X).md",

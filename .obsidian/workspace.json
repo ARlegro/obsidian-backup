@@ -139,30 +139,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/ㅇㅇㅇ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index Scan VS Index-Only Scan"
+              "title": "ㅇㅇㅇ"
             }
           },
           {
-            "id": "f72a7c6bcc162e6b",
+            "id": "dfc66418aecbed53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Query Planner and Optimize with Explain"
+              "title": "최적화 해보기"
+            }
+          },
+          {
+            "id": "f2c2379b9deecc57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "최적화 해보기"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -185,7 +199,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -194,7 +208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "generate_series",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,7 +216,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
@@ -303,12 +317,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
@@ -320,54 +334,53 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f72a7c6bcc162e6b",
+  "active": "f2c2379b9deecc57",
   "lastOpenFiles": [
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Bitmap_Index_Scan VS  Index_Scan VS Table_Scan.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Create Table with millions rows.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Untitled.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Best Practice.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Primary Key vs Secondary Key.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Untitled.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Heap.md",
-    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
-    "DevStudy/Argorithm/결정 알고리즘.md",
-    "DevStudy/Argorithm/정렬 모음.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
+    "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
+    "supporter/image/Pasted image 20250610140153.png",
     "DevStudy/Backend/Redis/Setting/Dummy Data.md",
+    "supporter/image/Pasted image 20250610133621.png",
+    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Bitmap_Index_Scan VS  Index_Scan VS Table_Scan.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
+    "supporter/image/Pasted image 20250610130848.png",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/Postgre's VARCHAR vs TEXT.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/무제.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Untitled.md",
+    "supporter/image/Pasted image 20250610130636.png",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/JSONB vs TEXT.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE",
+    "DevStudy/DB/mongo/기본.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Untitled.md",
+    "DevStudy/DB/mongo/메서드.md",
+    "DevStudy/DB/mongo/화면에 노출하지 않는 데이터 저장하기.md",
+    "DevStudy/DB/mongo/Docker로 띄었을 때 내부 확인하는 법.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/SQL 튜닝 팁.md",
+    "DevStudy/Argorithm/결정 알고리즘.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/ㅇㅇㅇ.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Best Practice.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Create Table with millions rows.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/z.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
+    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
     "supporter/image/Pasted image 20250608194134.png",
-    "supporter/Excalidraw/Drawing 2025-06-08 19.37.25.excalidraw.md",
     "supporter/image/Pasted image 20250608193904.png",
     "supporter/image/Pasted image 20250608193903.png",
-    "DevStudy/Argorithm/Map 모음.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Page Deep.md",
-    "DevStudy/DB/setting/PostgreSQL 테이블 생성 시 헷갈린 것들.md",
-    "DevStudy/DB/Indexing.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing",
     "DevStudy/DB/setting",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
-    "DevStudy/Backend/Java/CountDownLatch.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/ㅇ.md",
-    "DevStudy/Argorithm/정렬 개념 공부 모음(문제 X).md",
     "supporter/image/Pasted image 20250607142855.png",
     "supporter/image/Pasted image 20250607141713.png",
     "supporter/image/Pasted image 20250607112226.png",
-    "supporter/image/Pasted image 20250607102513.png",
-    "supporter/image/Pasted image 20250607093820.png",
-    "supporter/image/Pasted image 20250606164924.png",
-    "supporter/image/Pasted image 20250606164829.png",
     "DevStudy/Backend/Spring/Cache",
     "DevStudy/Backend/Redis/Setting",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
     "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
     "DevStudy/DB/Fundamentals of DB engineering",
     "DevStudy/Argorithm",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
-    "DevStudy/Backend/Spring/Security/Method Level Security",
     "무제 파일.canvas"
   ]
 }

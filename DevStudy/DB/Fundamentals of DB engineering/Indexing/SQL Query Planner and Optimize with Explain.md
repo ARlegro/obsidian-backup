@@ -146,7 +146,7 @@ Execution Time: 2017.761 ms
 
 LIMIT을 안 썼는데도 이정도면 LIMIT 쓰면 엄청난 차이 발생 예상 가능 
 
-인덱스 X + LIMIT(10만)
+**💢인덱스 X + LIMIT(10만)**
 ```SQL
 EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name LIMIT 100_000
 
@@ -170,8 +170,7 @@ JIT:
 Execution Time: 16477.790 ms
 ```
 
-💚인덱스 O + LIMIT(10만)
-
+**💚인덱스 O + LIMIT(10만)**
 ```SQL
 EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name LIMIT 100_000
 
@@ -187,7 +186,9 @@ Execution Time: 17.698 ms
 와우!!! 엄청난 차이가 발생 
 16477.8 ms ➡ 17.7 ms
 
-1000배 달하는 차이 
+>[!tip] 1000배 달하는 차이 
+
+
 ### 추가 실험 
 
 ```SQL 

@@ -35,3 +35,6 @@ CREATE INDEX ON test(b)
 ```
 - 이번에는 Bitmap Index Scan이 아닌 Index Scan을 썼다.
 - 이유 : 굳이 10개 찾는데 bimap만들면서 오버헤드 일으킬 필요 없다고 PostgreSQL이 판단한 것 
+
+
+**리포트·대시보드용 고정 조회** + **변경 드문 테이블** → “모든 컬럼 포함(b covering)” 인덱스 + 주기적 `VACUUM` → Index-Only Scan 지향.

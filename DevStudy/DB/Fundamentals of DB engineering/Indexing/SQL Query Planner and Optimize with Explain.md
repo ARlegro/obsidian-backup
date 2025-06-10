@@ -67,26 +67,38 @@ FROM generate_series(1, 20000000)
 
 #### 기본 EXPLAIN
 ```SQL
-EXPLAIN SELECT * FROM grades 
+EXPLAIN ANALYZE SELECT * FROM grades 
 
 QUERY PLAN
-Seq Scan on grades  (cost=0.00..260178.24 rows=17168224 width=14)
+
+Seq Scan on grades  (cost=0.00..288496.96 rows=20000096 width=6) (actual time=0.011..1184.254 rows=20000000 loops=1)
+Planning Time: 0.152 ms
+Execution Time: 1796.071 ms
 ```
 2000만개의 데이터임에도 불구하고 Planner의 예상 rows는 다르다.
+이제는 `ORDER BY` 문을 사용했을 때를 알아보자 
 
 
 ### ORDER BY가 미치는 영향 ⭐⭐
+#### 기본 ORDER BY 
 ```SQL 
 EXPLAIN SELECT * FROM grades ORDER BY name;
 
+  
 QUERY PLAN
 
-Gather Merge  (cost=1358641.53..3303231.00 rows=16666746 width=6)
+Gather Merge  (cost=1358641.53..3303231.00 rows=16666746 width=6) (actual time=13728.863..17861.863 rows=20000000 loops=1)
   Workers Planned: 2
-  ->  Sort  (cost=1357641.51..1378474.94 rows=8333373 width=6)
-        Sort Key: name		        
-        ->  Parallel Seq Scan on grades  (cost=0.00..171829.73 rows=8333373 
-width=6)
+  Workers Launched: 2
+  ->  Sort  (cost=1357641.51..1378474.94 rows=8333373 width=6) (actual time=13658.816..14556.191 rows=6666667 loops=3)
+        Sort Key: name
+        Sort Method: external merge  Disk: 66776kB
+        Worker 0:  Sort Method: external merge  Disk: 64088kB
+        Worker 1:  Sort Method: external merge  Disk: 65064kB
+        ->  Parallel Seq Scan on grades  (cost=0.00..171829.73 rows=8333373 width=6) (actual time=0.022..537.267 rows=6666667 loops=3)
+
+Planning Time: 0.182 ms
+Execution Time: 18573.938 ms
 ```
 > 순서 : Parallel Seq Scan ➡ Sort ➡ Merge Sort
 
@@ -114,7 +126,68 @@ Sort + Gather Merge
 
 >[!tip] 빈번히 같은 정렬을 요구한다면, **B-tree 인덱스 구축**이 가장 손쉬운 개선
 
+#### 인덱스 추가 후 ORDERE BY 
 
+```SQL 
+CREATE INDEX ON grades(name);
+
+EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name;
+
+
+QUERY PLAN
+
+Index Only Scan using grades_name_idx on grades  (cost=0.44..369965.88 rows=20000096 width=6) (actual time=0.026..1401.230 rows=20000000 loops=1)
+  Heap Fetches: 0
+Planning Time: 0.158 ms
+Execution Time: 2017.761 ms
+```
+무려 9배나 차이가 난다.
+이번에는 Index Only Scan 
+
+LIMIT을 안 썼는데도 이정도면 LIMIT 쓰면 엄청난 차이 발생 예상 가능 
+
+인덱스 X + LIMIT(10만)
+```SQL
+EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name LIMIT 100_000
+
+QUERY PLAN
+
+Limit  (cost=906568.27..918235.75 rows=100000 width=6) (actual time=16363.194..16415.650 rows=100000 loops=1)
+  ->  Gather Merge  (cost=906568.27..2851157.73 rows=16666746 width=6) (actual time=16263.220..16309.685 rows=100000 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        ->  Sort  (cost=905568.25..926401.68 rows=8333373 width=6) (actual time=16169.230..16173.659 rows=34510 loops=3)
+              Sort Key: name
+              Sort Method: external merge  Disk: 64048kB
+              Worker 0:  Sort Method: external merge  Disk: 66808kB
+              Worker 1:  Sort Method: external merge  Disk: 65064kB
+              ->  Parallel Seq Scan on grades  (cost=0.00..171829.73 rows=8333373 width=6) (actual time=0.065..551.865 rows=6666667 loops=3)
+Planning Time: 0.558 ms
+JIT:
+  Functions: 1
+  Options: Inlining true, Optimization true, Expressions true, Deforming true
+  Timing: Generation 0.110 ms (Deform 0.000 ms), Inlining 90.590 ms, Optimization 2.417 ms, Emission 6.947 ms, Total 100.064 ms
+Execution Time: 16477.790 ms
+```
+
+💚인덱스 O + LIMIT(10만)
+
+```SQL
+EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name LIMIT 100_000
+
+QUERY PLAN
+
+Limit  (cost=0.44..1850.26 rows=100000 width=6) (actual time=0.169..14.574 rows=100000 loops=1)
+  ->  Index Only Scan using grades_name_idx on grades  (cost=0.44..369965.88 rows=20000096 width=6) (actual time=0.167..8.743 rows=100000 loops=1)
+        Heap Fetches: 0
+Planning Time: 0.201 ms
+Execution Time: 17.698 ms
+```
+
+와우!!! 엄청난 차이가 발생 
+16477.8 ms ➡ 17.7 ms
+
+1000배 달하는 차이 
 ### 추가 실험 
 
 ```SQL 
@@ -126,4 +199,4 @@ Index Scan using grades_pkey on grades  (cost=0.44..8.46 rows=1 width=10)
   Index Cond: (id = 10)
 ```
 - 초기 Cost(0.44) : 인덱스 스캔을 위해 heap에 jump한다?? 그래서 드는 비용 
-- 
+

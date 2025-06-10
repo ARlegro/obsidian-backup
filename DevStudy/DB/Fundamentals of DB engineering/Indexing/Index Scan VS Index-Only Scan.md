@@ -222,6 +222,7 @@ Execution Time: 1458.141 ms
 
 
 
+
 > [!WARNING] 인덱스가 무조건 좋은것은 아니다
 > - 인덱스를 위한 heap fetch가 필요
 > - 메모리 필요

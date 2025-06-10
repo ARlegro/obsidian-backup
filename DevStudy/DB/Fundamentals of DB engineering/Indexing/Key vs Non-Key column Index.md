@@ -22,50 +22,41 @@
 	- 이떄 정말 많은 컬럼을 넣어볼 것 (아무거나 id5, id7, id8) 
 	- Cuz 특정 컬럼만 가져오는 비용 비교해봐야하니까
 ```SQL
-CREATE TABLE students 
-(
-    id INTEGER GENERATED ALWAYS AS IDENTITY,
-    grade INTEGER NOT NULL,
+CREATE TABLE students (
+    id        INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    grade     INT NOT NULL,
     firstname VARCHAR(5),
-    lastname VARCHAR(20),
-    id6 INTEGER,
-    id7 INTEGER,
-    id8 INTEGER,
-    id9 INTEGER,
-    id10 INTEGER,
-    id11 INTEGER,
-    id12 INTEGER,
-    id13 INTEGER
-)   
+    lastname  VARCHAR(20),
+    id6  INT, id7  INT, id8  INT, id9  INT,
+    id10 INT, id11 INT, id12 INT, id13 INT
+);
 
-INSERT INTO students(grade, firstname, lastname, id6, id7, id8, id9)
-SELECT 
-    Floor(random() * 100),
-    '학생',
-    n::text,
-    random() * 1000,
-    random() * 1000,
-    random() * 1000,
-    random() * 1000
-FROM generate_series(1, 5000000) AS s(n)
+INSERT INTO students (grade, firstname, lastname, id6, id7, id8, id9)
+SELECT floor(random()*100), '학생', n::text,
+       (random()*1000)::INT, (random()*1000)::INT,
+       (random()*1000)::INT, (random()*1000)::INT
+FROM generate_series(1, 5_000_000) AS s(n);
 ```
 
 2. **`VACUUM` 실행:**
+	```SQL
+	VACUUM ANALYZE students;           -- 가시성 맵 + 통계 갱신	
+	```
 	 - 최적의 쿼리 성능을 위해 `VACUUM` 명령을 실행하여 가시성 맵(visibility map)을 포함한 모든 통계 정보를 최신 상태로 업데이트
 	 - `VACUUM VERBOSE students` 명령을 사용하여 자세한 정보를 확인
 	 - **`VACUUM`의 중요성:** PostgreSQL에서 Index_Only_Scan이 제대로 작동하려면 `VACUUM`을 통해 가시성 map이 최신 상태로 유지되어야 한다. 그렇지 않으면 인덱스만으로도 충분한 정보가 있더라도 불필요하게 힙 fetch가 발생할 수 있다.
 
-### 초기 쿼리 성능 (인덱스 없음)
-
+### 1. 인덱스 없이
 ```SQL
 EXPLAIN ANALYZE SELECT ID, grade
 FROM students
 WHERE grade > 80 AND grade < 95
 ORDER BY grade DESC;
 ```
-- 이거는 정말 많은 row에 접근해야하기 때문에 꽤 비싼 쿼리이다.
+- 이거는 **정말 많은 row에 접근해야하기** 때문에 꽤 **비싼 쿼리**이다.
 - 따라서 비추 쿼리💢 
 - 아래의 쿼리 플랜을 보자 
+
 ```SQL 
 QUERY PLAN
 
@@ -89,15 +80,16 @@ JIT:
 Execution Time: 526.393 ms
 ```
 - **실행 시간** : 526.39 ms
-- **`ORDER BY`로 인해 Sort작업**이 있다.
-- **`Parallel Seq Scan`** : 아직 grade에 대한 인덱스가 없기에 이 스캔을 통해 힙에 있는 데이터가 포함된 페이지를 가져옴 
-- **Rows Removed by filter**
+- `ORDER BY` : Sort작업이 있다.
+- `Parallel Seq Scan` : 아직 grade에 대한 인덱스가 없기에 이 스캔을 통해 **힙에 있는 데이터가 포함된 페이지를 가져옴** 
+- `Rows Removed by filter`
 	- **힙에서 해당 페이지를 가져와 메모리(shared buffer)로 올라온 뒤**, **튜플 단위**로 `WHERE` 절을 평가하여 필터링한다.
 
+  
 >이러한 비효율성 떄문에 인덱스가 필요 
 
 
-### LIMIT 절 추가 (인덱스 없음)
+### 2. 인덱스 없이 LIMIT 절 추가 
 ```SQL
 EXPLAIN ANALYZE 
 SELECT ID, grade 
@@ -133,7 +125,7 @@ Execution Time: 304.131 ms
 >- 전체 정렬 대신 heap push/pop 연산으로 비용 절감
 >- **`LIMIT 1000` 조건 덕분에, 내부적으로 “1,000개 이상의 값은 heap에서 즉시 버림” 처리**
 
-### B-Tree 인덱스 도입 (여전히 느린)
+### 3. 단순 B-Tree 인덱스 
 grade 필드에 B-Tree 인덱스 생성하고 테스트해볼 것 
 ```SQL
 CREATE INDEX ON students (grade);
@@ -182,9 +174,14 @@ JIT:
   
 Execution Time: 690.382 ms
 ```
+> Flow : Bitmap Index Scan → Bitmap Heap Scan → Sort
+
 **결과 분석:**
 - **실행 시간:** 더 느려졌다.
-- **인덱스 스캔 후 테이블 접근:** 인덱스를 사용하여 `grade` 조건을 만족하는 레코드를 찾습니다. 하지만 쿼리는 `ID` 컬럼도 요청하고 있는데, `ID`는 인덱스에 포함되어 있지 않습니다. 따라서 데이터베이스는 인덱스에서 ROWID를 얻은 후, **해당 ROWID를 사용하여 다시 테이블(힙)로 이동하여 `ID` 값을 가져와야 합니다.** 이 테이블 접근(힙 페치)이 대부분의 비용을 차지
+- **인덱스 스캔 후 테이블 접근:** 
+	- 인덱스를 사용하여 `grade` 조건을 만족하는 레코드를 찾는다. 
+	- 하지만 쿼리는 `ID` 컬럼도 요청하고 있는데, `ID`는 인덱스에 포함되어 있지 않고 있다. 
+	- 따라서 데이터베이스는 인덱스에서 ROWID를 얻은 후, **해당 ROWID를 사용하여 다시 테이블(힙)로 이동하여 `ID` 값을 가져와야 한다.** 이 테이블 접근(힙 페치)이 대부분의 비용을 차지
 
 #### 동일한 쿼리 재실행 (With LIMIT) ⭐⭐
 
@@ -201,10 +198,11 @@ Limit  (cost=0.43..295.17 rows=1000 width=8) (actual time=0.118..1.553 rows=1000
 Planning Time: 0.656 ms
 Execution Time: 1.603 ms
 ```
+> Flow : Index Scan Backward using students_grade_idx
 - **실행 시간:** 1.6ms로 훨씬 빨라졌다. 이는 `LIMIT`가 적용되어 **Index Scan이 필요한 최소한의 레코드만 찾고 테이블로 접근하기 때문**입니다.
-- **캐싱 효과:** 이전 쿼리들이 이미 실행되어 많은 페이지가 운영체제 캐시에 올라와 있기 때문에, 실제 디스크 I/O 없이 메모리에서 데이터를 가져와 훨씬 빠르게 느껴질 수 있다 (`shared hit` 비율이 높음). `buffers` 옵션을 추가하여 캐시 적중률을 확인할 수 있습니다.
+- `LIMIT` 덕분에 인덱스의 ‘Stop-after-N’ 성질이 발휘된다.
 
-### Non-Key Included Index 생성 및 성능 분석 ⭐⭐⭐
+### Covering Index (Non-Key Included Index)⭐⭐⭐
 
 기존 인덱스를 삭제하고 `grade` 필드에 인덱스를 생성하되, `ID` 필드를 포함(Include)시킨다.
 ```SQL
@@ -242,11 +240,13 @@ Index Only Scan Backward using students_grade_id_idx on students  (cost=0.43..21
 Planning Time: 0.082 ms
 Execution Time: 108.971 ms
 ```
+> Index Only Scan
+
 **결과 분석:**
 - **실행 시간:** 108ms (이전 기본 : 526ms, 단순 인덱스 : 690 ms)
-- **실행 계획:**
-    - **인덱스 온리 스캔(Index Only Scan):** 가장 중요한 변화는 `Index Only Scan`이 발생했다는 점입니다. 쿼리에서 요청하는 `ID`와 `grade` 컬럼이 모두 인덱스 내에 존재하므로, **테이블(힙)로의 접근(`Heap Fetches`)이 0**입니다. 이는 디스크 I/O 비용을 크게 줄여줍니다.
-    - **디스크 I/O:** 인덱스 자체도 디스크에 저장되어 있으므로, 인덱스 크기가 커서 메모리에 완전히 캐시되지 않으면 여전히 디스크에서 인덱스 페이지를 읽어와야 합니다. 그럼에도 불구하고 테이블 전체를 읽는 것보다 훨씬 효율적입니다.
+- **인덱스 온리 스캔(Index Only Scan):** 가장 중요한 변화는 `Index Only Scan`이 발생했다는 점입니다. 쿼리에서 요청하는 `ID`와 `grade` 컬럼이 모두 인덱스 내에 존재하므로, **테이블(힙)로의 접근(`Heap Fetches`)이 0**입니다. 이는 디스크 I/O 비용을 크게 줄여준다.
+- **디스크 I/O:** 인덱스 자체도 디스크에 저장되어 있으므로, 인덱스 크기가 커서 메모리에 완전히 캐시되지 않으면 여전히 디스크에서 인덱스 페이지를 읽어와야 한다. 그럼에도 불구하고 테이블 전체를 읽는 것보다 훨씬 효율적
+
 
 #### 동일한 쿼리 재실행 with `LIMIT`
 

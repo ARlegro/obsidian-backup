@@ -69,3 +69,6 @@ private List<String> keywords;
 @JdbcTypeCode(SqlTypes.ARRAY)  
 private List<String> keywords;
 ```
+
+
+719

@@ -80,7 +80,7 @@ Execution Time: 1796.071 ms
 
 
 ### ORDER BY가 미치는 영향 ⭐⭐
-#### 기본 ORDER BY 
+#### 1. 기본 ORDER BY (인덱스 X)
 ```SQL 
 EXPLAIN SELECT * FROM grades ORDER BY name;
 
@@ -126,7 +126,7 @@ Sort + Gather Merge
 
 >[!tip] 빈번히 같은 정렬을 요구한다면, **B-tree 인덱스 구축**이 가장 손쉬운 개선
 
-#### 인덱스 추가 후 ORDERE BY 
+#### 2. 인덱스 추가 후 ORDER BY 
 
 ```SQL 
 CREATE INDEX ON grades(name);
@@ -145,6 +145,9 @@ Execution Time: 2017.761 ms
 이번에는 Index Only Scan 
 
 LIMIT을 안 썼는데도 이정도면 LIMIT 쓰면 엄청난 차이 발생 예상 가능 
+
+#### 3. 인덱스(X, O) + ORDER BY + LIMIT
+>미리 말하지만, 이 조합에서 인덱스가 있고 없고는 1000배의 성능까지도 차이가 날 수 있다.
 
 **💢인덱스 X + LIMIT(10만)**
 ```SQL
@@ -169,9 +172,12 @@ JIT:
   Timing: Generation 0.110 ms (Deform 0.000 ms), Inlining 90.590 ms, Optimization 2.417 ms, Emission 6.947 ms, Total 100.064 ms
 Execution Time: 16477.790 ms
 ```
+- 어찌됐던 힙에 접근해서 병렬 순차 스캔 ➡ 정렬 ➡ 병합 정렬 Flow를 가진다.
 
 **💚인덱스 O + LIMIT(10만)**
 ```SQL
+CREATE INDEX ON grades(name);
+
 EXPLAIN ANALYZE SELECT * FROM grades ORDER BY name LIMIT 100_000
 
 QUERY PLAN
@@ -182,15 +188,16 @@ Limit  (cost=0.44..1850.26 rows=100000 width=6) (actual time=0.169..14.574 rows=
 Planning Time: 0.201 ms
 Execution Time: 17.698 ms
 ```
-
-와우!!! 엄청난 차이가 발생 
-16477.8 ms ➡ 17.7 ms
-
 >[!tip] 1000배 달하는 차이 
-
+>- 와우!!! 엄청난 차이가 발생 
+>- 16477.8 ms ➡ 17.7 ms
+- 현재 인덱스는 name 컬럼을 기준으로 만들어졌다.
+- 기본적으로 **인덱스는 정렬된 상태**로 되어있기에 **ORDER BY 문과 궁합**이 잘 맞는다.
+- 또한 현재는 오직 name필드만 가져오면 되기 때문에 Heap에 접근하지 않아도 된다.(**힙 fetches = 0**) 그렇기에 10만 데이터라도 매우매우 빠른 것 
+- 핵심은 **Index Only Scan**이다
+	- `Index Only Scan`은 **인덱스와 Visibility Map만 보고** 힙을 건너뛸 수 있다.
 
 ### 추가 실험 
-
 ```SQL 
 EXPLAIN SELECT * FROM grades where id = 10;
 
@@ -199,5 +206,4 @@ QUERY PLAN
 Index Scan using grades_pkey on grades  (cost=0.44..8.46 rows=1 width=10)
   Index Cond: (id = 10)
 ```
-- 초기 Cost(0.44) : 인덱스 스캔을 위해 heap에 jump한다?? 그래서 드는 비용 
 

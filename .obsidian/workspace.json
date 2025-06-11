@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/JSONB vs TEXT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "최적화 해보기"
+              "title": "JSONB vs TEXT"
             }
           }
         ],
@@ -336,14 +336,22 @@
   },
   "active": "f2c2379b9deecc57",
   "lastOpenFiles": [
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Bitmap_Index_Scan VS  Index_Scan VS Table_Scan.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Dummy - Create Table with millions rows.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Best Practice.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/z.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
+    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
     "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
     "supporter/image/Pasted image 20250610140153.png",
     "DevStudy/Backend/Redis/Setting/Dummy Data.md",
     "supporter/image/Pasted image 20250610133621.png",
-    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Bitmap_Index_Scan VS  Index_Scan VS Table_Scan.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
     "supporter/image/Pasted image 20250610130848.png",
     "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/Postgre's VARCHAR vs TEXT.md",
     "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/무제.md",
@@ -359,14 +367,7 @@
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/SQL 튜닝 팁.md",
     "DevStudy/Argorithm/결정 알고리즘.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/ㅇㅇㅇ.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Best Practice.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Create Table with millions rows.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/z.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID/1. ACID.md",
     "supporter/image/Pasted image 20250608194134.png",
     "supporter/image/Pasted image 20250608193904.png",
     "supporter/image/Pasted image 20250608193903.png",

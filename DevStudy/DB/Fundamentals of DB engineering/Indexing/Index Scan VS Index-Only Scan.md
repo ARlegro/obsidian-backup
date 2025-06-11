@@ -68,6 +68,7 @@ Execution Time: 422.612 ms
 	- 이는 Table Scan이며 테이블 자체로 이동하여 말 그대로 한 줄씩 검색하고, 각 행을 가져온 다음`ID`가 7인지 확인(ID = 7 행을 찾을때까지)
 
 
+## Index Scan
 ### ID 인덱스 생성 후 전체 컬럼 조회 
 > B-트리 인덱스를 생성하여 검색 속도를 조금 더 빠르게 만들 것
 ```SQL 
@@ -104,7 +105,67 @@ Execution Time: 1478.668 ms
 - Indexing을 생성했음에도 실행시간이 굉장히 느리다.
 - 이것은 아직도 여전히 힙영영의 Table Scan이 필요하기 때문 
 
+### Index Scan의 실제 동작 
 
+#### 흐름 
+인덱스에서 각 인덱스 값은 page 번호와 Row ID를 갖고 있다.
+우선 10개의 인덱스 값이 있다고 가정하자.
+1. 인덱스 탐색 (B-Tree 가정)
+	- 인덱스 탐색으로 각 값들의 CTID(page번호, row 오프셋)를 읽는다.
+		```TEXT
+		 키 값  …  CTID
+		  A       (page 217, off 5)
+		  B       (page  42, off 9)
+		  C       (page 998, off 2)
+		  D       (page  42, off 11)
+		```
+2. 힙 페이지 접근 
+	- CTIP가 가리키는 페이지에 접근하여 그 페이지 자체를 읽어온다.
+	- 읽어온 페이지는 Shared Buffer에 저장 
+3. 반복
+	- 만약 다른 인덱스값이 2번을 수행하려하기 전에 Shared buffer에 해당하는 페이지가 있으면 추가 I/O 없이 Shared buffer에서 바로 행만 꺼낸다.
+	- 이를 통해 불필요한 page 접근을 막음                                                                                           
+
+#### Q. 왜 랜덤 I/O ❓
+>[!QUESTION] 페이지를 중복해서 읽지 않는데 왜 랜덤 I/O가 발생한다고 할까 ❓
+>- 페이지를 **중복해서** 읽지 않는 건 맞지만, **읽게 되는 ‘첫 페이지들’ 자체가 디스크 여기저기에 흩어져** 있다
+>- 디스크 헤드가 **매번 위치를 바꿔야** 하므로 여전히 랜덤 I/O
+
+가령 아래와 같은 인덱스 키값과 CTID가 있다고 가정하자 
+```TEXT 
+키 값  …  CTID
+	A       (page 217, off 5)
+	B       (page  42, off 9)
+	C       (page 998, off 2)
+	D       (page  42, off 11)
+	…
+```
+- 키는 ABCD… 식으로 순서가 잡히지만 **page 217 → 42 → 998 → 42 …** 처럼 **페이지 번호가 튀는** 모습
+- 애초에 DB의 테이블은 인덱스 키 값을 기준으로 정렬된게 아니므로 이 상황이 당연한거다.
+- 따라서 인덱스 순서대로 페이지에 접근할 때, 디스크 헤드는 **페이지마다 점프**해야 하는 문제가 발생한다.
+
+> 즉, "Index Scan"은 **CTID 순서가 물리 페이지 순서와 무관**해서 처음 읽는 페이지마다 **디스크·OS가 위치를 바꿔야** 하고, 이것이 곧 **랜덤 I/O 비용**
+> 
+>   > 반면, Seq Scan은 헤드가 연속 트랙을 따라가서 블록을 한꺼번에 읽는 장점이 있다.
+
+
+**해결 방법** 
+1. **클러스터링** 
+	- `CLUSTER grades USING grades_name_idx;`
+	- 근데 PostgreSQL에서 클러스링은 일회성이라고 들음 
+2. **카디널리티 낮은 조건**으로 해서 Random I/O 발생 확률 줄이기 
+3. **Bitmap Scan**
+	- **먼저 Page ID를 모아 정렬 후 순차 읽기**로 이 랜덤 I/O를 줄인다.
+
+
+#### 면접 답변 
+index Scan은 **키 순서대로 CTID**를 뽑는데, CTID 안의 **페이지 번호는 디스크 여기저기에 흩어져** 있다.  
+중복 페이지는 한 번만 읽긴 하지만, **새 페이지에 닿을 때마다 디스크 헤드가 점프**하므로 여전히 **랜덤 I/O** 특성을 갖는다.  
+랜덤 I/O를 해결하는 방법으로는 Bitmap Scan이 있습니다. 이 방법은 **페이지 번호를 먼저 모아 정렬**한 뒤 순차로 읽어 랜덤 I/O을 크게 줄여줍니다
+이 외에도 카디널리티가 낮은 조건으로 SQL문을 작성하거나 클러스터링을 통해 인덱스 값을 기준으로 힙페이지를 정렬하는 방법 또한 있습니다.
+
+
+## Index-Only-Scan
 ### Index-Only-Scan의 예시 
 > ID 인덱스 생성 후 ID 컬럼만 조회 
 
@@ -133,10 +194,18 @@ Execution Time: 0.074 ms
 
 
 
-### 실용적 Index-Only-Scan 
+### 실용적 Index-Only-Scan (feat. 커버링 인덱스)
 > Non-Key Columns 에 주목 
 
 > [!TIP] 클라이언트가 ID를 기준으로 name을 자주 요청한다는 가정 
+
+>[!tip] 인덱스 온리 스캔(Index Only Scan) 조건
+>1. 커버링 인덱스로 필요한 모든 컬럼이 인덱스에 포함 
+>2. **visibility map** 상에 “이미 죽지 않은(visible) 튜플”임이 표시돼 있어야 함 (`VACUUM TABLE students`)
+>3. **정렬**(`ORDER BY id`)이나 **필터**(`WHERE id = …`)가 있어야 옵티마이저가 인덱스를 타고 탐색할 동기가 생김
+>	- 이게 없으면 걍 Seq Scan이 더 빠름 
+
+
 
 #### 세팅 1. include 인덱스 생성 
 기존 Index 삭제 후 재 생성 
@@ -169,7 +238,7 @@ VACUUM ANALYZE students;
 >- `Index Only Scan`을 쓸 수 있는 조건 중 하나가 **visibility map이 최신 상태**이기 때문
 
 
-#### 실행 
+#### 실행 (커버링 인덱스가 효과 ❌)
 
 ```SQL
                                Table "public.students"
@@ -208,19 +277,80 @@ JIT:
   Timing: Generation 0.220 ms (Deform 0.146 ms), Inlining 0.000 ms, Optimization 0.535 ms, Emission 4.078 ms, Total 4.833 ms
 Execution Time: 1458.141 ms
 ```
-❓id, name이 전부 Index에 있는데 Seq Scan이 발생한 이유 ❓
+**❓id, name이 전부 Index에 있는데 Seq Scan이 발생한 이유 ❓**
 - Index Only Scan이 _가능_하더라도 플래너는 **비용**이 낮은 경로를 고른다.
 - `WHERE` 없이 10 M 행 전체를 읽는 쿼리는 **연속적인 Seq Scan이 더 저렴**하다고 판단되기 때문에 Index Only Scan을 선택하지 않는 것이 정상 동작
+- 커버링 인덱스가 있어도 조건 없이 전 행을 읽으면 **인덱스 블록 × 랜덤 I/O**가 **테이블 × 순차 I/O**보다 비싸게 계산돼서, PostgreSQL은 Seq Scan을 고른다.
+
+>핵심 : 인덱스를 모두 읽는 작업이 생각보다 큰 비용
 
 
 ### INCLUDE가 빛을 발하는 상황 
 
-이전에 WHERE절 or 전체 조회 에서 INCLUDE가 딱히 효과가 안 보였다.
-그럼 언제 효과가 있을까??
+#### 1. 정렬 조건이 있을 때 (ORDER BY)
 
-모르겠다....
+```SQL
+EXPLAIN ANALYZE SELECT id, name FROM students ORDER BY id
+
+QUERY PLAN
+
+Index Only Scan using students_id_name_idx on students  (cost=0.43..347750.50 rows=9999871 width=18) (actual time=0.030..977.727 rows=10000000 loops=1)
+  Heap Fetches: 0
+Planning Time: 0.178 ms
+Execution Time: 1201.986 ms
+```
+- **인덱스 ❌ :**
+	- 시간 : 2827.419 ms
+	- Flow : Paraller Seq Scan ➡ Sort ➡ Merge Sort 
+	  
+- **인덱스 ✅**
+	- 시간 : 1201.986 (2배 차이) 
+	- Flow : Index Only Scan 
 
 
+**⭐참고로 이 효과는 LIMIT 과 있을 때 효과 만점 (다른 곳에서도 언급했던 내용)**
+```SQL
+EXPLAIN ANALYZE SELECT id, name FROM students ORDER BY id LIMIT 10000;
+
+QUERY PLAN
+
+Limit  (cost=0.43..348.19 rows=10000 width=18) (actual time=0.042..1.368 rows=10000 loops=1)
+  ->  Index Only Scan using students_id_name_idx on students  (cost=0.43..347752.43 rows=10000000 width=18) (actual time=0.040..0.930 rows=10000 loops=1)
+        Heap Fetches: 0
+Planning Time: 0.236 ms
+Execution Time: 1.593 ms
+```
+- 인덱스 ❌ : 1149 MS 
+- 인덱스 ✅ : 1.593 ⭐⭐⭐
+  
+> 약 722배정도나 차이난다.
+
+
+#### 2. 필터링 조건 있을 때 (WHERE)
+
+```SQL
+EXPLAIN ANALYZE SELECT id, name FROM students
+WHERE id >= 5_100_000
+LIMIT 1000;
+
+
+QUERY PLAN
+
+Limit  (cost=0.43..37.71 rows=1000 width=18) (actual time=0.092..0.249 rows=1000 loops=1)
+  ->  Index Only Scan using students_id_name_idx on students  (cost=0.43..183078.97 rows=4911459 width=18) (actual time=0.091..0.196 rows=1000 loops=1)
+        Index Cond: (id >= 5100000)
+        Heap Fetches: 0
+Planning Time: 0.054 ms
+Execution Time: 0.284 ms
+```
+- 전체 데이터 10M
+- 5M까지는 Seq Scan을 타는데 
+- 필터링 row가 50퍼 이하로 떨어지니까 index-only-scan 타네
+- 인덱스 ❌ : 5.272 MS 
+- 인덱스 ✅ : 0.284 ⭐⭐⭐
+
+
+> 계속 말하는거지만 전체를 조회할 때는 Seq Scan이 굉장히 효율적이다.
 
 
 > [!WARNING] 인덱스가 무조건 좋은것은 아니다

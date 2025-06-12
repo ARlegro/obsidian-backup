@@ -139,58 +139,114 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/ㅇㅇㅇ.md",
+                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ㅇㅇㅇ"
+              "title": "Index Scan VS Index-Only Scan"
             }
           },
           {
-            "id": "dfc66418aecbed53",
+            "id": "f72a7c6bcc162e6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+                "file": "DevStudy/Backend/RM/Intro/RM과 Erlang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "최적화 해보기"
+              "title": "RM과 Erlang"
             }
           },
           {
-            "id": "f2c2379b9deecc57",
+            "id": "e3fba3a3d3f05650",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+                "file": "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "최적화 해보기"
+              "title": "Basic Concepts Overview(RM)"
             }
           },
           {
-            "id": "1aa0d8fb37db131c",
+            "id": "4092e79fc5283084",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/Jpa/@OneToMany에서 mappedBy가 필요한 이유.md",
+                "file": "DevStudy/Backend/RM/Intro/R.M Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "@OneToMany에서 mappedBy가 필요한 이유"
+              "title": "R.M Architecture"
+            }
+          },
+          {
+            "id": "a94718a86ae752ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/Intro/Start with Spring.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Start with Spring"
+            }
+          },
+          {
+            "id": "11f6a24af10c9683",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/Intro/Create RM Producer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Create RM Producer"
+            }
+          },
+          {
+            "id": "8969f68aa1574086",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/Intro/Create Cosumer And How to Read Message.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Create Cosumer And How to Read Message"
+            }
+          },
+          {
+            "id": "0d22b7a7fefb159b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basic Concepts Overview(RM)"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -213,7 +269,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -230,7 +286,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
@@ -331,12 +387,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
@@ -348,54 +404,53 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1aa0d8fb37db131c",
+  "active": "0d22b7a7fefb159b",
   "lastOpenFiles": [
-    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
-    "DevStudy/Backend/Jpa/@OneToMany에서 mappedBy가 필요한 이유.md",
-    "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Covering Index VS Composite Index.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Dummy - Create Table with millions rows.md",
-    "DevStudy/Backend/Spring/Security/Setting and Supporter/NPM, nvm in WSL.md",
-    "DevStudy/Backend/Spring/Security/Managing User by DB/2. UserDetailsManager Cusomize.md",
-    "DevStudy/Backend/Spring/Security/JWT/JWT.md",
-    "DevStudy/Argorithm/정렬 모음.md",
-    "DevStudy/Argorithm/정렬 개념 공부 모음(문제 X).md",
-    "DevStudy/Argorithm/Map 모음.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Row-level locks - PosgreSQL.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Exclusive Lock vs Shared Lock.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/PostgreSQL's update Query.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/Postgre's VARCHAR vs TEXT.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/JSONB vs TEXT.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Primary Key vs Secondary Key.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Page Deep.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Heap.md",
+    "DevStudy/Backend/RM/Intro/Send JSON in RM.md",
+    "supporter/image/Pasted image 20250612171312.png",
+    "DevStudy/Backend/RM/Intro/Create Cosumer And How to Read Message.md",
+    "DevStudy/Backend/RM/Intro/Create RM Producer.md",
+    "DevStudy/Backend/RM/Intro/Start with Spring.md",
+    "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
+    "supporter/image/Pasted image 20250612160201.png",
+    "DevStudy/Backend/RM/Intro/R.M Architecture.md",
+    "supporter/image/Pasted image 20250612151703.png",
+    "supporter/image/Pasted image 20250612151549.png",
+    "supporter/image/Pasted image 20250612145106.png",
+    "supporter/image/Pasted image 20250612144759.png",
+    "DevStudy/Backend/RM/Intro/RabbitMQ❓.md",
+    "supporter/image/Pasted image 20250612144343.png",
+    "supporter/image/Pasted image 20250612144016.png",
+    "DevStudy/Backend/RM/setting/Docker에 설치.md",
+    "DevStudy/Backend/RM/setting",
+    "DevStudy/Backend/RM/Intro/RM과 Erlang.md",
+    "DevStudy/Backend/RM/Intro",
+    "면접/자바 질문 정리.md",
+    "DevStudy/Backend/RM",
     "supporter/image/Pasted image 20250611143226.png",
     "supporter/image/Pasted image 20250610140153.png",
-    "supporter/image/Pasted image 20250610133621.png",
-    "supporter/image/Pasted image 20250610130848.png",
-    "supporter/image/Pasted image 20250610130636.png",
+    "DevStudy/DB/Fundamentals of DB engineering/쿼리 최적화 백업.md",
+    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+    "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/Postgre's VARCHAR vs TEXT.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE/JSONB vs TEXT.md",
     "DevStudy/DB/Fundamentals of DB engineering/Postgre's TYPE",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/ㅇㅇㅇ.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/SQL 튜닝 팁.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기",
-    "supporter/image/Pasted image 20250608194134.png",
-    "supporter/image/Pasted image 20250608193904.png",
-    "supporter/image/Pasted image 20250608193903.png",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Dummy - Create Table with millions rows.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Covering Index VS Composite Index.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Preventing 'Double_Books' Without 2PL.md",
+    "면접",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Row-level locks - PosgreSQL.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Two Phase Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/인덱스가 많아도 좋지 않은 이유.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing",
     "DevStudy/DB/setting",
-    "supporter/image/Pasted image 20250607142855.png",
-    "supporter/image/Pasted image 20250607141713.png",
     "DevStudy/Backend/Spring/Cache",
     "DevStudy/Backend/Redis/Setting",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal",
-    "DevStudy/DB/Fundamentals of DB engineering/1. ACID",
-    "DevStudy/DB/Fundamentals of DB engineering",
-    "DevStudy/Argorithm",
     "무제 파일.canvas"
   ]
 }

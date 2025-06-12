@@ -181,12 +181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+                "file": "DevStudy/Backend/Jpa/@OneToMany에서 mappedBy가 필요한 이유.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "최적화 해보기"
+              "title": "@OneToMany에서 mappedBy가 필요한 이유"
             }
           }
         ],
@@ -350,11 +350,12 @@
   },
   "active": "1aa0d8fb37db131c",
   "lastOpenFiles": [
+    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
+    "DevStudy/Backend/Jpa/@OneToMany에서 mappedBy가 필요한 이유.md",
     "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/추가 공부할 내용.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Covering Index VS Composite Index.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
-    "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Dummy - Create Table with millions rows.md",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/NPM, nvm in WSL.md",
@@ -375,7 +376,6 @@
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Page Deep.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/How tables and indexes are stored on disk.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Heap.md",
-    "DevStudy/DB/Fundamentals of DB engineering/쿼리 최적화 백업.md",
     "supporter/image/Pasted image 20250611143226.png",
     "supporter/image/Pasted image 20250610140153.png",
     "supporter/image/Pasted image 20250610133621.png",

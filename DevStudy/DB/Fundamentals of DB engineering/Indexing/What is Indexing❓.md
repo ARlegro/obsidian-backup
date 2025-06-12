@@ -1,15 +1,27 @@
 
 
-### 인덱스란 ❓
-> 데이터베이스 테이블에 대한 검색 성능을 높여주는 자료 구조 
-> #데이터구조 #효율적_검색
-- 기존 테이블 위에 구축하고 할당하는 데이터 구조
-- 테이블을 살펴보고 분석하여 일종의 **지름길**을 만드는 역할
-- 실생활 예시 : 사전에 label 붙어 있는 것 
+
+### 📘인덱스란 ❓
+#### 정의 
+- **테이블과 별도로 존재하는 데이터 구조**이며, 특정 컬럼 값을 기준으로 데이터를 빠르게 찾을 수 있도록 설계된 **검색 도우미**(일종의 **지름길**을 만드는 역할)
+- 기본적으로 인덱스는 **정렬된 데이터 구조**(예: B-Tree)를 사용하여, 특정 값을 빠르게 검색하거나 정렬할 수 있다.
+- 모든 기본 키(Primary Key)는 기본적으로 인덱스를 가진다. 이는 B-tree 인덱스
 - 흔한 인덱스 유형으로는 B-Tree, LMS trees가 있다. (이거는 나중에)
 
-모든 기본 키(Primary Key)는 기본적으로 인덱스를 가진다. 이는 B-tree 인덱스???
+>요약 : 데이터 구조이며, 효과적인 검색을 가능하게 해준다.
 
+
+실생활 비유 : 사전에 label 붙어 있는 것 
+
+#### 인덱스의 핵심 메커니즘
+> 이건 지금 배워도 모르지만 일단은 한 번 읽어보기 
+
+| 구성 요소                      | 설명                                           |
+| -------------------------- | -------------------------------------------- |
+| `Key Column`               | **인덱스를 구성하는 기준 컬럼 (검색 기준)**                  |
+| `Non-Key Column (INCLUDE)` | Index-Only Scan을 가능하게 하기 위해 포함시키는 컬럼         |
+| `Visibility Map`           | **Index-Only Scan 가능 여부를 판별하는 내부 비트맵**       |
+| `B-Tree` 구조                | PostgreSQL에서 사용하는 기본 인덱스 구조. O(log N)의 검색 효율 |
 
 
 ### 성능 비교하기 전 세팅 : 인덱싱 O or X 
@@ -102,12 +114,13 @@ Execution Time: 0.092 ms
 
 > 만약 인라인 쿼리가 가능하다면 접근 비용이 비싼 Heap을 사용하지 않아도 돼서 굉장히 빨라질 것 
 
-**☑Planning time** 
-- 쿼리를 계획
-- **인덱스를 사용할지**❓아니면 **테이블을 스캔할지**❓ 결정하는 것
-
-**☑Execution Time**
-- 실제 작업을 수행하는 것
+| 항목                | 의미                                                                              |
+| ----------------- | ------------------------------------------------------------------------------- |
+| `Planning Time`   | 실행 계획을 세우는 시간. Index 사용 여부 결정 포함<br>ex. **인덱스를 사용할지**❓아니면 **테이블을 스캔할지**❓ 결정하는 것 |
+| `Execution Time`  | 실제 쿼리 실행에 걸린 시간                                                                 |
+| `Index Scan`      | 인덱스를 통해 대상 레코드를 찾고, 필요하면 Heap에서 데이터를 가져옴                                        |
+| `Index Only Scan` | 인덱스만 보고 결과 반환 (Heap 접근 없음)                                                      |
+| `Seq Scan`        | 전체 테이블을 스캔                                                                      |
 
 
 >[!QUESTION] 인덱스를 가져오는거 자체도 시간이 걸리지 않을까 ❓
@@ -123,8 +136,6 @@ Execution Time: 0.092 ms
 > 1. ID만 수정 
 > 2. name 만 수정 
 > 3. name 조건으로 ID 조회 
-
-
 
 
 ### 시나리오 1. Index Only Scan
@@ -156,14 +167,16 @@ Index Only Scan
 #### 실행 
 ```SQL 
 EXPLAIN ANALYZE SELECT name FROM employees WHERE id = 6000;
+```
 
+```SQL
 Index Scan using employees_pkey on employees  (cost=0.42..8.44 rows=1 width=14) (actual time=0.816..0.819 rows=1 loops=1)
 	 Index Cond: (id = 6000)
 Planning Time: 1.237 ms
 Execution Time: 0.998 ms
 (4 rows)
 ```
-엥❓별 차이 없는데???. 위의 결과는 SQL Client를 썼을 경우의 결과이다.
+엥❓별 차이 없는데??? 
 
 혹시나 시나리오 1번에서 캐시된 것일수도 있기에 다른 id 로 재시도 
 ```SQL
@@ -179,7 +192,7 @@ Execution Time: 6.115 ms
 #### 느린 이유 분석
 - 인덱스에서 ID를 찾았지만, name컬럼을 얻기위해서는 **디스크에 있는 테이블 행으로 점프해야 했기 때문**
  - Index에는 `name` 컬럼이 없고, **Heap-Table에 있다**. ⭐⭐⭐
- - 그렇기 떄문에 실제로 검색하기 위해서는 순차적으로 employees 테이블을 Scan해야 함 (최악의 경우 full-table-scan)
+ - 그렇기 때문에 실제로 검색하기 위해서는 순차적으로 employees 테이블을 Scan해야 함 (최악의 경우 full-table-scan)
 - 이것은 가능한 한 피해야 한다. 💢 
 
 >[!tip] PostgreSQL의 순차 스캔 최적화 
@@ -188,7 +201,7 @@ Execution Time: 6.115 ms
 >- **그래도 피하려고 노력해봐야 함** 
 
 
->[!danger] 어찌됐던 Heap 접근을 피하려고 노력해라. 그 다음은 Full-Table-Scan피하려고 노력
+>[!WARNING] 어찌 됐던 Heap 접근을 피하려고 노력해라. 그 다음은 Full-Table-Scan피하려고 노력
 
 
 ### 시나리오 3. name을 WHERE 절에 사용 🔐
@@ -220,11 +233,18 @@ Execution Time: 103.542 ms  <<<<
 *Note : PostgreSQL은  Parallel Seq Scan으로 내부 최적화가 있긴해서 이론보다 더 빠를 것*
 
 
-### LIKE 쿼리가 안 좋은 이유 
+### ⛔LIKE 쿼리가 안 좋은 이유 
 `LIKE`는 가장 나쁜 쿼리문 중에 하나이다 
 - 모든 행을 통과하면서 일치 여부를 확인해야 하기 때문 
 - '시나리오 3'같은 Full-Table-Scan이 발생
 
+하지만 `LIKE`라고해서 항상 Full-Table-Scan이 일어나는 것은 아니다
+
+| 패턴             | 인덱스 사용 가능 여부         |
+| -------------- | -------------------- |
+| `LIKE 'abc%'`  | ✅ 사용 가능              |
+| `LIKE '%abc%'` | ❌ 불가능 (Full Scan 발생) |
+- 이유: B-Tree는 앞에서부터 정렬되어 있어야 탐색이 가능하기 때문.
 
 
 
@@ -265,7 +285,7 @@ EXPLAIN ANALYZE SELECT id, name FROM employees WHERE name = 'DF';
 
 
 ### 만약 인덱스 + Like를 쓴다면?
->[!danger] 쓰지마라
+>[!warning] 쓰지마라
 >이거는 Index로도 해결하지 못 할 정도로 느린 쿼리이다.
 >LIKE쿼리는 Index로 Scan이 불가능하다.
 >즉, 최적화가 힘든게 LIKE 쿼리이다.
@@ -274,6 +294,4 @@ EXPLAIN ANALYZE SELECT id, name FROM employees WHERE name = 'DF';
 EXPLAIN ANALYZE SELECT id, name FROM employees WHERE name LIKE '%deFhzc%'
 ```
 - %~%는 Single Value가 아니다.
-
->
 

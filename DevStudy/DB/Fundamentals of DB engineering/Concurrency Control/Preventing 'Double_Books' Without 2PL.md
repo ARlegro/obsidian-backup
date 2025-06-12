@@ -4,7 +4,6 @@
 >- 링크 : [[Two Phase Lock]]
 >- 이번에는 다른 방식으로 더블 예약 문제를 막아볼 것 
 
-
 간단하게 생각하면 이전에 있던 더블 예약 문제에서 조건을 더 추가하면 해결되지 않을까? 라는 생각을 하기 쉽다. 아래처럼 
 ```SQL
 UPDATE seats SET isbooked = 1, name='YH' WHERE id = 1 and isbooked=0;

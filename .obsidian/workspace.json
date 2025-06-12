@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
+                "file": "면접/자바 질문 정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Query Planner and Optimize with Explain"
+              "title": "자바 질문 정리"
             }
           }
         ],
@@ -322,11 +322,22 @@
   },
   "active": "f72a7c6bcc162e6b",
   "lastOpenFiles": [
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Preventing 'Double_Books' Without 2PL.md",
+    "면접/자바 질문 정리.md",
+    "면접",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Row-level locks - PosgreSQL.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Two Phase Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/인덱스가 많아도 좋지 않은 이유.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/제약조건을 추가하면 자동으로 생성되는 인덱스.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/How Database Optimizers Decide to Use Indexes.md",
+    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Key vs Non-Key column Index.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Bitmap_Index_Scan VS  Index_Scan VS Table_Scan.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Create Table with millions rows.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Untitled.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Best Practice.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Primary Key vs Secondary Key.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Untitled.md",
@@ -334,8 +345,6 @@
     "DevStudy/Backend/Spring/Security/JWT/JWT.md",
     "DevStudy/Argorithm/결정 알고리즘.md",
     "DevStudy/Argorithm/정렬 모음.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/What is Indexing❓.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/SQL Query Planner and Optimize with Explain.md",
     "DevStudy/Backend/Redis/Setting/Dummy Data.md",
     "supporter/image/Pasted image 20250608194134.png",
     "supporter/Excalidraw/Drawing 2025-06-08 19.37.25.excalidraw.md",
@@ -343,16 +352,8 @@
     "supporter/image/Pasted image 20250608193903.png",
     "DevStudy/Argorithm/Map 모음.md",
     "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/Page Deep.md",
-    "DevStudy/DB/setting/PostgreSQL 테이블 생성 시 헷갈린 것들.md",
-    "DevStudy/DB/Indexing.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing",
     "DevStudy/DB/setting",
-    "DevStudy/DB/Fundamentals of DB engineering/Understanding DB Internal/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/추가 공부할 내용.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Optimistic Lock.md",
-    "DevStudy/Backend/Java/CountDownLatch.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/ㅇ.md",
-    "DevStudy/Argorithm/정렬 개념 공부 모음(문제 X).md",
     "supporter/image/Pasted image 20250607142855.png",
     "supporter/image/Pasted image 20250607141713.png",
     "supporter/image/Pasted image 20250607112226.png",
@@ -367,7 +368,6 @@
     "DevStudy/DB/Fundamentals of DB engineering",
     "DevStudy/Argorithm",
     "DevStudy/Backend/Spring/Security/Setting and Supporter/PDF.pdf",
-    "DevStudy/Backend/Spring/Security/Method Level Security",
     "무제 파일.canvas"
   ]
 }

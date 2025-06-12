@@ -1,14 +1,11 @@
 
 
 ### 인덱스 기본개념 : B-Tree와 검색 원리 
-데이터베이스에서 인덱스를 생성할 때는 하나 이상의 필드(컬럼)를 지정하여 그 위에 **B-Tree**라는 자료구조를 만듭니다. 이 필드(들)가 **키(Key)**가 되며, 검색 목적으로 사용
+데이터베이스에서 인덱스를 생성할 때는 하나 이상의 필드(컬럼)를 지정하여 그 위에 **B-Tree**라는 자료구조를 만듭니다. 이 필드(들)가 **키(Key)** 가 되며, 검색 목적으로 사용
 
-
-
-인덱스를 통해 검색을 수행하면, 데이터베이스 플래너는 이 인덱스를 활용하여 원하는 데이터를 찾습니다. 인덱스에서 발견된 항목들은 실제 테이블의 레코드를 가리키는 **행 포인터(ROWID)** 를 포함하고 있습니다. 따라서 인덱스를 통해 특정 레코드를 찾으면, 해당 ROWID를 사용하여 테이블에서 실제 데이터를 가져올 수 있다
-
+인덱스를 통해 검색을 수행하면, DB Planner는 이 인덱스를 활용하여 원하는 데이터를 찾습니다. 인덱스에서 발견된 항목들은 실제 테이블의 레코드를 가리키는 **행 포인터(ROWID)** 를 포함하고 있습니다. 따라서 인덱스를 통해 특정 레코드를 찾으면, 해당 ROWID를 사용하여 테이블에서 실제 데이터를 가져올 수 있습니다.
 ### Non-Key Included Index 
-모든 데이터베이스에 존재하는 기능은 아니지만, **PostgreSQL**에는 **논키(Non-Key) 포함(Included) 인덱스**라는 강력한 기능이 있습니다. 이는 인덱스를 생성할 때 검색 키로 사용되지 않는 추가 컬럼들을 인덱스 내에 **포함(Include)**시킬 수 있는 기능
+모든 데이터베이스에 존재하는 기능은 아니지만, **PostgreSQL**에는 **논키(Non-Key) 포함(Included) 인덱스**라는 강력한 기능이 있습니다. 이는 인덱스를 생성할 때 검색 키로 사용되지 않는 추가 컬럼들을 인덱스 내에 **포함(Include)** 시킬 수 있는 기능
 
 예를 들어, `grades` 필드에 인덱스를 생성하면서 `ID` 필드를 포함(Include)할 수 있습니다. 이렇게 하면 `grades` 필드를 기준으로 검색하고 `ID`를 선택하는 쿼리를 실행할 때, 데이터베이스는 더 이상 실제 테이블(힙)로 이동할 필요가 없습니다. 필요한 모든 정보(검색 키인 `grades`와 포함된 `ID`)가 이미 인덱스 내에 존재하기 때문
 
@@ -44,7 +41,7 @@ FROM generate_series(1, 5_000_000) AS s(n);
 	```
 	 - 최적의 쿼리 성능을 위해 `VACUUM` 명령을 실행하여 가시성 맵(visibility map)을 포함한 모든 통계 정보를 최신 상태로 업데이트
 	 - `VACUUM VERBOSE students` 명령을 사용하여 자세한 정보를 확인
-	 - **`VACUUM`의 중요성:** PostgreSQL에서 Index_Only_Scan이 제대로 작동하려면 `VACUUM`을 통해 가시성 map이 최신 상태로 유지되어야 한다. 그렇지 않으면 인덱스만으로도 충분한 정보가 있더라도 불필요하게 힙 fetch가 발생할 수 있다.
+	 - **`VACUUM`의 중요성:** PostgreSQL에서 Index_Only_Scan이 제대로 작동하려면 `VACUUM`을 통해 가시성 map이 최신 상태로 유지되어야 한다. 그렇지 않으면 인덱스만으로도 충분한 정보가 있더라도 불필요하게 힙 fetch가 발생할 수 있다.(근데 뭐 기본이 AUTO라고 한 것 같은데 이것도 데이터마다, 시간차가 있어서 일단 정확한 테스트를 위해 ㄱ)
 
 ### 1. 인덱스 없이
 ```SQL
@@ -60,23 +57,20 @@ ORDER BY grade DESC;
 ```SQL 
 QUERY PLAN
 
-Gather Merge  (cost=108924.92..175899.53 rows=574028 width=8) (actual time=326.958..457.742 rows=699845 loops=1)
+Gather Merge  (cost=108924.92..175899.53 rows=574028 width=8) ...
   Workers Planned: 2
   Workers Launched: 2
-  ->  Sort  (cost=107924.90..108642.43 rows=287014 width=8) (actual time=299.499..323.693 rows=233282 loops=3)
+  ->  Sort  (cost=107924.90..108642.43 rows=287014 width=8)...
         Sort Key: grade DESC
         Sort Method: external merge  Disk: 4464kB
         Worker 0:  Sort Method: external merge  Disk: 4032kB
         Worker 1:  Sort Method: external merge  Disk: 3888kB
-        ->  Parallel Seq Scan on students  (cost=0.00..77978.99 rows=287014 width=8) (actual time=8.163..222.713 rows=233282 loops=3)
+        ->  Parallel Seq Scan on students  ...
               Filter: ((grade > 80) AND (grade < 95))
               Rows Removed by Filter: 1433385   
 
 Planning Time: 0.524 ms
-JIT:
-  Functions: 12
-  Options: Inlining false, Optimization false, Expressions true, Deforming true
-  Timing: Generation 1.412 ms (Deform 0.305 ms), Inlining 0.000 ms, Optimization 1.398 ms, Emission 22.886 ms, Total 25.696 ms
+...
 Execution Time: 526.393 ms
 ```
 - **실행 시간** : 526.39 ms
@@ -101,18 +95,19 @@ LIMIT 1000;
 
 QUERY PLAN
 
-Limit  (cost=94715.68..94832.35 rows=1000 width=8) (actual time=298.741..303.809 rows=1000 loops=1)
-  ->  Gather Merge  (cost=94715.68..161690.29 rows=574028 width=8) (actual time=298.547..303.528 rows=1000 loops=1)
+Limit  (cost=94715.68..94832.35 rows=1000 width=8) ...
+  ->  Gather Merge  (cost=94715.68..161690.29 rows=574028 width=8) 
         Workers Planned: 2
         Workers Launched: 2
-        ->  Sort  (cost=93715.66..94433.19 rows=287014 width=8) (actual time=288.017..288.069 rows=1000 loops=3)
+        ->  Sort  (cost=93715.66..94433.19 rows=287014 width=8) 
               Sort Key: grade DESC
               Sort Method: top-N heapsort  Memory: 113kB
               Worker 0:  Sort Method: top-N heapsort  Memory: 113kB
               Worker 1:  Sort Method: top-N heapsort  Memory: 114kB
-              ->  Parallel Seq Scan on students  (cost=0.00..77978.99 rows=287014 width=8) (actual time=0.090..253.444 rows=233282 loops=3)
+              ->  Parallel Seq Scan on students  (cost=0.00..77978.99 ...
                     Filter: ((grade > 80) AND (grade < 95))
                     Rows Removed by Filter: 1433385
+                    
 Planning Time: 0.891 ms
 Execution Time: 304.131 ms
 ```
@@ -158,20 +153,16 @@ ORDER BY grade DESC;
 
 QUERY PLAN                                                                   
 
-Sort  (cost=142672.39..144394.48 rows=688833 width=8) (actual time=581.272..642.640 rows=699845 loops=1)
+Sort  (cost=142672.39..144394.48 rows=688833 width=8)
   Sort Key: grade DESC
   Sort Method: external merge  Disk: 12384kB
-  ->  Bitmap Heap Scan on students  (cost=9396.97..66458.47 rows=688833 width=8) (actual time=46.168..425.100 rows=699845 loops=1)
+  ->  Bitmap Heap Scan on students  (cost=9396.97..66458.47
         Recheck Cond: ((grade > 80) AND (grade < 95))
         Heap Blocks: exact=46729
-        ->  Bitmap Index Scan on students_grade_idx  (cost=0.00..9224.76 rows=688833 width=0) (actual time=33.383..33.384 rows=699845 loops=1)
+        ->  Bitmap Index Scan on students_grade_idx  
               Index Cond: ((grade > 80) AND (grade < 95))
+
 Planning Time: 0.497 ms
-JIT:
-  Functions: 4
-  Options: Inlining false, Optimization false, Expressions true, Deforming true
-  Timing: Generation 0.214 ms (Deform 0.065 ms), Inlining 0.000 ms, Optimization 0.524 ms, Emission 3.470 ms, Total 4.208 ms
-  
 Execution Time: 690.382 ms
 ```
 > Flow : Bitmap Index Scan → Bitmap Heap Scan → Sort
@@ -182,6 +173,7 @@ Execution Time: 690.382 ms
 	- 인덱스를 사용하여 `grade` 조건을 만족하는 레코드를 찾는다. 
 	- 하지만 쿼리는 `ID` 컬럼도 요청하고 있는데, `ID`는 인덱스에 포함되어 있지 않고 있다. 
 	- 따라서 데이터베이스는 인덱스에서 ROWID를 얻은 후, **해당 ROWID를 사용하여 다시 테이블(힙)로 이동하여 `ID` 값을 가져와야 한다.** 이 테이블 접근(힙 페치)이 대부분의 비용을 차지
+- 이 때, 랜덤 I/O가 발생한다면 성능은 더 느려지게 되는 것이다.
 
 #### 동일한 쿼리 재실행 (With LIMIT) ⭐⭐
 

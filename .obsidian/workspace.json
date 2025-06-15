@@ -237,16 +237,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
+                "file": "DevStudy/Backend/RM/Intro/MessageListnerAdapter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Concepts Overview(RM)"
+              "title": "MessageListnerAdapter"
+            }
+          },
+          {
+            "id": "5a28bd06c4e04fe6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/basic/Consumer간 작업 분배.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Consumer간 작업 분배"
+            }
+          },
+          {
+            "id": "8b920f1a1c1cdfb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevStudy/Backend/RM/test/STOMP + WebSocket으로 실시간 알림.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "STOMP + WebSocket으로 실시간 알림"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -404,31 +432,41 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "0d22b7a7fefb159b",
+  "active": "8b920f1a1c1cdfb2",
   "lastOpenFiles": [
+    "DevStudy/Backend/RM/basic/Publish_Subscribe 모델.md",
+    "DevStudy/Backend/RM/test/STOMP + WebSocket으로 실시간 알림.md",
+    "DevStudy/Backend/RM/test",
+    "DevStudy/Backend/RM/basic/Consumer간 작업 분배.md",
+    "supporter/image/Pasted image 20250615132127.png",
+    "DevStudy/Backend/RM/basic/기본 config.md",
+    "DevStudy/Backend/RM/Intro/MessageListnerAdapter.md",
+    "supporter/image/Pasted image 20250615105540.png",
+    "supporter/Excalidraw/Drawing 2025-06-15 10.51.31.excalidraw.md",
+    "DevStudy/Backend/RM/Intro/Auto Config.md",
+    "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
+    "DevStudy/Backend/RM/basic/Why use M.Q and What is AMQP❓.md",
+    "DevStudy/Backend/RM/Intro/Start with Spring.md",
+    "DevStudy/Backend/RM/Intro/RM과 Erlang.md",
+    "DevStudy/Backend/RM/Intro/RabbitMQ❓.md",
+    "DevStudy/Backend/RM/Intro/Create RM Producer.md",
+    "DevStudy/Backend/RM/Intro/Create Cosumer And How to Read Message.md",
+    "supporter/image/Pasted image 20250615101252.png",
+    "supporter/image/Pasted image 20250615100304.png",
+    "DevStudy/Backend/RM/basic",
     "DevStudy/Backend/RM/Intro/Send JSON in RM.md",
     "supporter/image/Pasted image 20250612171312.png",
-    "DevStudy/Backend/RM/Intro/Create Cosumer And How to Read Message.md",
-    "DevStudy/Backend/RM/Intro/Create RM Producer.md",
-    "DevStudy/Backend/RM/Intro/Start with Spring.md",
-    "DevStudy/Backend/RM/Intro/Basic Concepts Overview(RM).md",
     "supporter/image/Pasted image 20250612160201.png",
     "DevStudy/Backend/RM/Intro/R.M Architecture.md",
     "supporter/image/Pasted image 20250612151703.png",
     "supporter/image/Pasted image 20250612151549.png",
     "supporter/image/Pasted image 20250612145106.png",
     "supporter/image/Pasted image 20250612144759.png",
-    "DevStudy/Backend/RM/Intro/RabbitMQ❓.md",
-    "supporter/image/Pasted image 20250612144343.png",
-    "supporter/image/Pasted image 20250612144016.png",
     "DevStudy/Backend/RM/setting/Docker에 설치.md",
     "DevStudy/Backend/RM/setting",
-    "DevStudy/Backend/RM/Intro/RM과 Erlang.md",
     "DevStudy/Backend/RM/Intro",
     "면접/자바 질문 정리.md",
     "DevStudy/Backend/RM",
-    "supporter/image/Pasted image 20250611143226.png",
-    "supporter/image/Pasted image 20250610140153.png",
     "DevStudy/DB/Fundamentals of DB engineering/쿼리 최적화 백업.md",
     "DevStudy/DB/Fundamentals of DB engineering/최적화 해보기.md",
     "DevStudy/DB/Fundamentals of DB engineering/연관된 6개 테이블 시드 만들어보기.md",
@@ -439,18 +477,9 @@
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기/SQL 튜닝 팁.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/실습해보기",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing/Dummy - Create Table with millions rows.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Covering Index VS Composite Index.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Preventing 'Double_Books' Without 2PL.md",
     "면접",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Row-level locks - PosgreSQL.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Two Phase Lock.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Dead Lock.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Concurrency Control/Deep dive Postgre's Isolatition Behavior.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/인덱스가 많아도 좋지 않은 이유.md",
     "DevStudy/DB/Fundamentals of DB engineering/Indexing",
     "DevStudy/DB/setting",
-    "DevStudy/Backend/Spring/Cache",
-    "DevStudy/Backend/Redis/Setting",
     "무제 파일.canvas"
   ]
 }

@@ -1,7 +1,7 @@
 #Producer #Consumer #Queue #Exchange #Binding #Routing_Key #Message
 
 
-
+![[Pasted image 20250615100304.png]]
 
 ![[Pasted image 20250612144016.png]]
 
@@ -143,3 +143,26 @@ public Binding binding() {
 
 
 https://adjh54.tistory.com/497#2.%20Exchange%20%EC%9C%A0%ED%98%95-1-2
+
+### Exchange 유형에 따른 처리 흐름 
+![[Pasted image 20250615101252.png]]
+
+## 추가 용어 
+
+### 1. Prefetch Count 
+- 소비자가 받을 수 있는 최대 메시지 수 (설정)
+- 설정 이유 : 한 번에 많은 양의 메시지를 처리하지 않도록 하여 소비자 성능 최적화 
+
+
+### 2. Virtual Host(가상 호스트)
+- RabbitMQ 서버 내의 논리적 구획으로,
+- Queue, Exchange, 사용자 권한 등을 구분 
+- 하나의 RabbitMQ 서버 내에 여러 개의 가상 호스트를 설정 가능 
+
+### 3. Dead Letter Queue(DLQ)
+- 메시지가 처리되지 못하거나 유효 기간이 지난 경우 별도의 큐로 이동하는 구조로 설정 가능 
+
+
+### 4. RabbitTemplate 
+
+- ConnectionFactory는 RabbitMQ와의 연결을 관리하는 객체로, rabbitTemplate이 메시지를 전송할 때 사용할 연결을 제공한다.

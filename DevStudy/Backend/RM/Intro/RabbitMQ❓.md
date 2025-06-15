@@ -34,3 +34,17 @@
 각 서비스가 연결되어 작동하는 경우가 있는데, 이 경우에 Message Broker가 중간에서 전달하는 역할을 한다.
 
 ![[Pasted image 20250612144343.png]]
+
+
+
+### 아키텍쳐 
+
+![[Pasted image 20250612151549.png]]
+
+![[Pasted image 20250612151703.png]]
+
+1. Producer는 Exchange에 메시지를 보낸다.
+2. Exchange는 Routing Key를 활용해 메시지를 각 큐에 라우팅한다
+3. Cousumer는 Queue에 있는 메시지를 읽는다.
+
+

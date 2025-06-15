@@ -120,7 +120,11 @@ var PinnedNotesPlugin = class extends import_obsidian.Plugin {
         note.icon === "" ? "file" : note.icon,
         note.title,
         async (e) => {
-          await this.app.workspace.openLinkText(note.path, "");
+          await this.app.workspace.openLinkText(
+            note.path,
+            "",
+            e.button == 1 || e.button == 2 || import_obsidian.Keymap.isModifier(e, "Mod")
+          );
         }
       )
     );

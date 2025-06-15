@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -218,7 +217,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f95a6c80abf6c8f3",
+  "active": "ed54d954bc7cc25b",
   "lastOpenFiles": [
     "supporter/Excalidraw/Drawing 2025-06-13 20.27.47.excalidraw.md",
     "DevStudy/Backend/RM/rabbit-pay/도메인 요구사항 및 DDL.md",

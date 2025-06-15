@@ -9,7 +9,53 @@
 
 일단 직렬화/역직렬화할 수 있는 POJO객체가 필요하다 
 
-#### Queue-Binding 재설정 
+
+
+### Message Converter, Template 커스텀 
+> JSON을 직렬화 역직렬화 할 수 있게 등록 
+
+
+>[!EXAMPLE] REST API에서와 달리 따로 Json용 MesssageConverter가 필요한 이유 
+>- Spring AMQP에서 `RabbitTemplate`은 내부적으로 `MessageConverter`를 이용해서 객체를 byte[]로 변환해 메시지를 보낸다.  
+>- 기본값은 `SimpleMessageConverter`인데, 이건 JSON을 다루지 않는다.
+>	- simpleMessageConverter는 String, byte[], Serializable 객체만 처리 가능 
+
+기본 RabbitTemplate의 MessageConverter
+```java 
+public class RabbitTemplate extends RabbitAccessor ... {
+
+		private MessageConverter messageConverter = new SimpleMessageConverter();
+}
+```
+
+
+**✅Message Converter 빈 등록 - amqp 버전** 
+```java 
+import org.springframework.amqp.support.converter.MessageConverter;
+
+@Bean  
+public MessageConverter converter() {  
+		return new Jackson2JsonMessageConverter();  
+}
+```
+
+> Note : MessageConverter는 amqp버전으로 import해야한다!!! 
+
+
+**✅RabbitTemplate 커스텀**
+```java
+@Bean  
+public AmqpTemplate amqpTemplate(ConnectionFactory connectionFactory) {  
+    RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);  
+    rabbitTemplate.setMessageConverter(converter());  
+    return rabbitTemplate;  
+}
+```
+- AmqpTemplate : 인터페이스
+- RabbitTemplate : 구현체
+- ConnectionFactory도 amqp 버전 
+
+### Queue-Binding 재설정 
 
 ✅JSON 전용 Queue 생성
 ```JAVA 
@@ -26,36 +72,8 @@ public Binding jsonBinding() {
       .with(rabbitMQProperties.routing_key_json());  
 ```
 
-#### Message Converter, Template 커스텀 
-> JSON을 직렬화 역직렬화 할 수 있게 등록 
 
-✅Message Converter 빈 등록 - amqp 버전 
-```java 
-import org.springframework.amqp.support.converter.MessageConverter;
-
-@Bean  
-public MessageConverter converter() {  
-		return new Jackson2JsonMessageConverter();  
-}
-```
-
-> Note : MessageConverter는 amqp버전으로 import해야한다!!! 
-
-
-✅RabbitTemplate 커스텀
-```java
-@Bean  
-public AmqpTemplate amqpTemplate(ConnectionFactory connectionFactory) {  
-    RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);  
-    rabbitTemplate.setMessageConverter(converter());  
-    return rabbitTemplate;  
-}
-```
-- AmqpTemplate : 인터페이스
-- RabbitTemplate : 구현체
-- ConnectionFactory도 amqp 버전 
-
-#### Producer-Consumer 
+### Producer-Consumer 
 ```JAVA
 public void sendJsonMessage(CustomerDTO customerDTO) {  
   log.info("보낼 JSON : {} ", customerDTO);  

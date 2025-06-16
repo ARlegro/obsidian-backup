@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevStudy/Backend/RM/basic/Fanout Exchange 예제.md",
+                "file": "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/2. Front 기능 만들기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fanout Exchange 예제"
+              "title": "2. Front 기능 만들기"
             }
           }
         ],
@@ -101,7 +101,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "이벤트 버블",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -131,11 +131,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d6be8f304502169",
@@ -228,12 +230,12 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "file-cleaner-redux:Clean files": false,
@@ -248,14 +250,21 @@
   },
   "active": "f75521655555cc3e",
   "lastOpenFiles": [
-    "DevStudy/Backend/RM/basic/Publish_Subscribe 모델.md",
+    "DevStudy/z.etc/Fundamentals/carfton-test/복습/Favorit 부분 자주 쓰이는 CSS 보기.md",
+    "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/2. Front 기능 만들기.md",
+    "DevStudy/z.etc/Fundamentals/carfton-test/오류(or Tip)/Direct binding vs Event delegation.md",
+    "Crafton면접준비/질문.md",
+    "DevStudy/z.etc/Fundamentals/carfton-test/복습/복습하면서.md",
+    "DevStudy/z.etc/Fundamentals/carfton-test/복습/부트스트랩-기능.md",
+    "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/1. 채팅 기능 추가.md",
+    "Crafton면접준비/핵심 질문, 답변 모음.md",
+    "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/STOMP + WebSocket으로 실시간 알림.md",
     "DevStudy/Backend/RM/basic/Fanout Exchange 예제.md",
+    "DevStudy/Backend/RM/basic/Publish_Subscribe 모델.md",
     "DevStudy/Backend/RM/websocket_stomp/Spring Messaging.md",
     "DevStudy/Backend/RM/websocket_stomp/What is Websocket❓.md",
     "DevStudy/Backend/RM/Intro/Send JSON And User Multiple Queue in RM.md",
     "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/0. 기본 R.M설정 및 webSocket 연결.md",
-    "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/1. 채팅 기능 추가.md",
-    "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/STOMP + WebSocket으로 실시간 알림.md",
     "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림/무제",
     "supporter/image/Pasted image 20250615213518.png",
     "DevStudy/Backend/RM/basic/기본 config.md",
@@ -276,17 +285,10 @@
     "supporter/image/Pasted image 20250615105540.png",
     "supporter/image/Pasted image 20250615101252.png",
     "supporter/image/Pasted image 20250615100304.png",
-    "supporter/Excalidraw/Drawing 2025-06-15 10.51.31.excalidraw.md",
     "DevStudy/Backend/RM/STOMP + WebSocket으로 실시간 알림",
     "DevStudy/Backend/RM/basic",
-    "supporter/Excalidraw/Drawing 2025-06-13 20.27.47.excalidraw.md",
     "DevStudy/Backend/RM/rabbit-pay",
-    "DevStudy/Backend/RM/Intro/Create RM Producer.md",
-    "DevStudy/Backend/RM/Intro/Create Cosumer And How to Read Message.md",
     "supporter/image/Pasted image 20250613100232.png",
-    "DevStudy/z.etc/settings/Ubuntu JDK 설치 및 환경변수 설정.md",
-    "DevStudy/Backend/RM/Intro/R.M Architecture.md",
-    "DevStudy/DB/Fundamentals of DB engineering/Indexing/Index Scan VS Index-Only Scan.md",
     "supporter/image/Pasted image 20250612171312.png",
     "supporter/image/Pasted image 20250612160201.png",
     "DevStudy/Backend/RM/setting",
